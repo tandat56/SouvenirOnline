@@ -17,7 +17,7 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@EnableJpaRepositories(basePackages = { "com.fpoly.repository" })
+@EnableJpaRepositories(basePackages = { "com.souvenironline.repository" })
 @EnableTransactionManagement
 public class JPAConfig {
 
@@ -48,7 +48,7 @@ public class JPAConfig {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/souvenir?useSSL=false");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/souvenir");
 		dataSource.setUsername("root");
 		dataSource.setPassword("123456");
 		return dataSource;
