@@ -10,6 +10,7 @@ com\souvenironline\repository\UserRepository.class
 com\souvenironline\entity\CategoryProductEntity.class
 com\souvenironline\config\JpaAuditingConfig$AuditorAwareImpl.class
 com\souvenironline\config\JpaAuditingConfig.class
+com\souvenironline\entity\WarehouseEntity.class
 com\souvenironline\entity\UserEntity.class
 com\souvenironline\entity\BaseEntity.class
 com\souvenironline\entity\CategoryBlogEntity.class

@@ -48,7 +48,7 @@ public class JPAConfig {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/souvenir");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/souvenir?useSSL=false");
 		dataSource.setUsername("root");
 		dataSource.setPassword("123456");
 		return dataSource;
@@ -56,9 +56,9 @@ public class JPAConfig {
 
 	Properties additionalProperties() {
 		Properties properties = new Properties();
-		// properties.setProperty("hibernate.hbm2ddl.auto", "update");
+		//properties.setProperty("hibernate.hbm2ddl.auto", "update");
 		properties.setProperty("hibernate.hbm2ddl.auto", "create");
-		// properties.setProperty("hibernate.hbm2ddl.auto", "none");
+		//properties.setProperty("hibernate.hbm2ddl.auto", "none");
 		properties.setProperty("hibernate.enable_lazy_load_no_trans", "true");
 		return properties;
 	}

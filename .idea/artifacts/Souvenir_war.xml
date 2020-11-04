@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Souvenir:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Souvenir</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Souvenir-0.0.1.war">
+      <element id="artifact" artifact-name="Souvenir:war exploded" />
+    </root>
+  </artifact>
+</component>
