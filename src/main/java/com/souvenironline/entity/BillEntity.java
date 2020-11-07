@@ -3,9 +3,9 @@ package com.souvenironline.entity;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "Bill")
@@ -33,11 +33,4 @@ public class BillEntity extends BaseEntity {
 
 	@Column(name = "status")
 	private Integer status;
-
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "billid")
-	private UserEntity user;
-
-	@OneToMany(mappedBy = "bill")
-	private List<BillDetailEntity> billDetails = new ArrayList<>();
 }

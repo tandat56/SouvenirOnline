@@ -48,7 +48,7 @@
                     <div class="blog-post-content">
                         <h3 class="title text-capitalize mb-15"><a href="<c:url value='/page-singleblog'/>">This is first
                                 Post For XipBlog</a></h3>
-                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
+                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
                                 <p class="text">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                                     been the industrys standard dummy text ever since the 1500s, when ...
@@ -65,7 +65,7 @@
                     <div class="blog-post-content">
                         <h3 class="title text-capitalize mb-15"><a href="<c:url value='/page-singleblog'/>">This is first
                                 Post For XipBlog</a></h3>
-                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
+                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
                                 <p class="text">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                                     been the industrys standard dummy text ever since the 1500s, when ...
@@ -82,7 +82,7 @@
                     <div class="blog-post-content">
                         <h3 class="title text-capitalize mb-15"><a href="<c:url value='/page-singleblog'/>">This is first
                                 Post For XipBlog</a></h3>
-                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
+                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
                                 <p class="text">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                                     been the industrys standard dummy text ever since the 1500s, when ...
@@ -99,7 +99,7 @@
                     <div class="blog-post-content">
                         <h3 class="title text-capitalize mb-15"><a href="<c:url value='/page-singleblog'/>">This is first
                                 Post For XipBlog</a></h3>
-                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
+                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
                                 <p class="text">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                                     been the industrys standard dummy text ever since the 1500s, when ...
@@ -116,7 +116,7 @@
                     <div class="blog-post-content">
                         <h3 class="title text-capitalize mb-15"><a href="<c:url value='/page-singleblog'/>">This is first
                                 Post For XipBlog</a></h3>
-                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
+                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
                                 <p class="text">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                                     been the industrys standard dummy text ever since the 1500s, when ...

@@ -1,4 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/common/taglib.jsp" %>
 <!DOCTYPE html>
 <html>
@@ -55,39 +54,7 @@
 <!-- main slider end -->
 
 <!-- common banner  start -->
-<div class="common-banner pt-70 bg-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 mb-30">
-                <div class="position-relative zoom-in overflow-hidden">
-                    <div class="banner-thumb">
-                        <img src="<c:url value='/template/web/assets/img/banner/1.jpg'/>" alt="banner-thumb-naile">
-                    </div>
-                    <div class="banner-content">
-                        <p class="text text-capitalize text-dark mb-10">Cyber Monday</p>
-                        <h4 class="title text-capitalize text-dark">Ưu đãi lên đến 50%</h4>
-                        <a class="view-link text-capitalize mt-20" href="<c:url value='/page-shopgrid4'/>">Xem bộ sưu tập
-                            <span class="ion-android-arrow-dropright-circle theme-color"></span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-30">
-                <div class="position-relative zoom-in overflow-hidden">
-                    <div class="banner-thumb">
-                        <img src="<c:url value='/template/web/assets/img/banner/2.jpg'/>" alt="banner-thumb-naile">
-                    </div>
-                    <div class="banner-content">
-                        <p class="text text-capitalize text-dark mb-10">Black Fridays</p>
-                        <h4 class="title text-capitalize text-dark">Ưu đãi lên đến 70%
-                        </h4>
-                        <a class="view-link text-capitalize mt-20" href="<c:url value='/page-shopgrid4'/>">Xem bộ sưu tập
-                            <span class="ion-android-arrow-dropright-circle theme-color"></span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- common banner  end -->
 
 <!-- product tab start -->
@@ -97,23 +64,13 @@
             <div class="row align-items-center">
                 <div class="col-12">
                     <div class="section-title text-center mb-30">
-                        <h2 class="title text-dark text-capitalize mb-20">Bán chạy nhất</h2>
-                        <p class="text">Xem qua bộ sưu tập các sản phẩm mới của chúng tôi.</p>
+                        <h2 class="title text-dark text-capitalize mb-20"> MẮT KIẾNG DU LỊCH</h2>
+                        <p class="text"> Những mẫu kiếng hot sale và có sẳn tại cửa hàng !</p>
                     </div>
                 </div>
                 <div class="col-12">
                     <nav class="product-tab-menu theme1">
-                        <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Sản phẩm HOT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Tops & Sets</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Phụ kiện</a>
-                            </li>
-                        </ul>
+                        
                     </nav>
                 </div>
             </div>
@@ -132,8 +89,8 @@
                                             <div class="product-thumbnail w-100 position-relative">
                                                 <span class="badge badge-success top-left">-20%</span>
                                                 <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/1.jpg'/>" alt="thumbnail">
-                                                    <img class="second-img" src="<c:url value='template/web/assets/img/product/1.1.jpg'/>" alt="thumbnail">
+                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/kieng1.png'/>" alt="thumbnail">
+                                                    <img class="second-img" src="<c:url value='template/web/assets/img/product/kieng1.png'/>" alt="thumbnail">
                                                 </a>
                                                 <!-- product links -->
 
@@ -170,11 +127,10 @@
                                                         <span class="ion-ios-star"></span>
                                                         <span class="ion-ios-star"></span>
                                                     </div>
-                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">Juicy
-                                                            Couture
-                                                            Juicy Quilted Terry Track Jacket</a></h3>
-                                                    <h6 class="product-price"><del class="del">$23.90</del>
-                                                        <span class="onsale">$21.51</span></h6>
+                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">
+                                                           Mắt kiếng mát LEVI'S</a></h3>
+                                                    <h6 class="product-price"><del class="del">300.000 VND</del>
+                                                        <span class="onsale">270.000 VND</span></h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -189,8 +145,8 @@
                                             <div class="product-thumbnail w-100 position-relative">
                                                 <span class="badge badge-success top-left">-20%</span>
                                                 <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/2.jpg'/>" alt="thumbnail">
-                                                    <img class="second-img" src="<c:url value='/template/web/assets/img/product/2.1.jpg'/>" alt="thumbnail">
+                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/kieng2.jpg'/>" alt="thumbnail">
+                                                    <img class="second-img" src="<c:url value='/template/web/assets/img/product/kieng2.jpg'/>" alt="thumbnail">
                                                 </a>
                                                 <!-- product links -->
 
@@ -227,10 +183,9 @@
                                                         <span class="ion-ios-star"></span>
                                                         <span class="ion-ios-star"></span>
                                                     </div>
-                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgird4'/>">Originals
-                                                            Kaval Windbreaker Winter Jacket</a></h3>
-                                                    <h6 class="product-price"><del class="del">$23.90</del>
-                                                        <span class="onsale">$21.51</span></h6>
+                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgird4'/>">Mắt Kiếng Mát Thường</a></h3>
+                                                    <h6 class="product-price"><del class="del">150.000 VND</del>
+                                                        <span class="onsale">120.000 VND</span></h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -245,7 +200,7 @@
                                             <div class="product-thumbnail w-100 position-relative">
                                                 <span class="badge badge-danger top-left">new</span>
                                                 <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/3.jpg'/>" alt="thumbnail">
+                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/kieng3.jpg'/>" alt="thumbnail">
                                                 </a>
                                                 <!-- product links -->
 
@@ -282,10 +237,9 @@
                                                         <span class="ion-ios-star"></span>
                                                         <span class="ion-android-star-half de-selected"></span>
                                                     </div>
-                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgird4'/>">Trans-Weight Hooded Wind and
-                                                            Water Resistant Shell</a></h3>
+                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgird4'/>">Kiếng Mát Thể Thao Speed</a></h3>
                                                     <h6 class="product-price">
-                                                        <span class="onsale">$21.51</span></h6>
+                                                        <span class="onsale">450.000 VND</span></h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -300,9 +254,9 @@
                                             <div class="product-thumbnail w-100 position-relative">
                                                 <span class="badge badge-danger top-left">new</span>
                                                 <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                                    <img class="first-img"  src="<c:url value='/template/web/assets/img/product/4.jpg'/>" alt="thumbnail">
+                                                    <img class="first-img"  src="<c:url value='/template/web/assets/img/product/kieng4.jpg'/>" alt="thumbnail">
                                                    
-                                                    <img class="second-img" src="<c:url value='/template/web/assets/img/product/4.1.jpg'/>" alt="thumbnail">
+                                                    <img class="second-img" src="<c:url value='/template/web/assets/img/product/kieng4.jpg'/>" alt="thumbnail">
                                                 </a>
                                                 <!-- product links -->
 
@@ -339,10 +293,9 @@
                                                         <span class="ion-ios-star"></span>
                                                         <span class="ion-android-star-half"></span>
                                                     </div>
-                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgird4'/>">New
-                                                            Balance Fresh Foam Kaymin</a></h3>
+                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgird4'/>">Mắt Kiếng Thể Thao Cao Cấp</a></h3>
                                                     <h6 class="product-price">
-                                                        <span class="onsale">$21.51</span></h6>
+                                                        <span class="onsale">700.000 VND</span></h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -357,7 +310,7 @@
                                             <div class="product-thumbnail w-100 position-relative">
                                                 <span class="badge badge-danger top-left">new</span>
                                                 <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/5.jpg'/>" alt="thumbnail">
+                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/non1.jpg'/>" alt="thumbnail">
                                                 </a>
                                                 <!-- product links -->
 
@@ -394,10 +347,171 @@
                                                         <span class="ion-ios-star"></span>
                                                         <span class="ion-android-star-half"></span>
                                                     </div>
-                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgird4'/>">New
-                                                            Balance Fresh Foam Kaymin</a></h3>
+                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgird4'/>">Balo 10kg Speed</a></h3>
                                                     <h6 class="product-price">
-                                                        <span class="onsale">$21.51</span></h6>
+                                                        <span class="onsale">420.000 VND</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- slider-item end -->
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-danger top-left">new</span>
+                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/non2.jpg'/>" alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm vào giỏ hàng</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom" title="Quick view" class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom" title="Add to compare" class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="<c:url value='/page-wishtlist'/>">
+                                                                <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-android-star-half"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgird4'/>">Balo Triump 021</a></h3>
+                                                    <h6 class="product-price">
+                                                        <span class="onsale">450.000 VND</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- slider-item end -->
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-danger top-left">new</span>
+                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/non3.jpg'/>" alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm vào giỏ hàng</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom" title="Quick view" class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom" title="Add to compare" class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="<c:url value='/page-wishtlist'/>">
+                                                                <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-android-star-half"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgird4'/>">Balo Haft Craft</a></h3>
+                                                    <h6 class="product-price">
+                                                        <span class="onsale">420.000 VND</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- slider-item end -->
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-danger top-left">new</span>
+                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/non4.jpg'/>" alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm vào giỏ hàng</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom" title="Quick view" class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom" title="Add to compare" class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="<c:url value='/page-wishtlist'/>">
+                                                                <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-android-star-half"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgird4'/>">Balo Coolkid</a></h3>
+                                                    <h6 class="product-price">
+                                                        <span class="onsale">420.000 VND</span></h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -408,573 +522,9 @@
                         </div>
                     </div>
                     <!-- second tab-pane -->
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <div class="product-slider-init theme1 slick-nav">
-                            <div class="slider-item">
-                                <div class="card product-card">
-                                    <div class="card-body p-0">
-                                        <div class="media flex-column">
-                                            <div class="product-thumbnail w-100 position-relative">
-                                                <span class="badge badge-success top-left">-20%</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/1.jpg'/>" alt="thumbnail">
-                                                    
-                                                    <img class="second-img" src="<c:url value='/template/web/assets/img/product/1.1.jpg'/>" alt="thumbnail">
-                                                </a>
-                                                <!-- product links -->
-
-                                                <div class="product-links d-flex d-flex justify-content-between">
-                                                    <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm vào giỏ hàng</button>
-                                                    <ul class="d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Quick view" class="ion-ios-search-strong"></span>
-                                                            </a>
-                                                        </li>
-
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Add to compare" class="ion-ios-shuffle-strong"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="<c:url value='/page-wishtlist'/>">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="product-desc">
-                                                    <div class="star-rating">
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                    </div>
-                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">Juicy
-                                                            Couture
-                                                            Juicy Quilted Terry Track Jacket</a></h3>
-                                                    <h6 class="product-price"><del class="del">$23.90</del>
-                                                        <span class="onsale">$21.51</span></h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="card product-card">
-                                    <div class="card-body p-0">
-                                        <div class="media flex-column">
-                                            <div class="product-thumbnail w-100 position-relative">
-                                                <span class="badge badge-success top-left">-20%</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/2.jpg'/>" alt="thumbnail">
-                                                    
-                                                    <img class="second-img"  src="<c:url value='/template/web/assets/img/product/2.1.jpg'/>" alt="thumbnail">
-                                                   
-                                                </a>
-                                                <!-- product links -->
-
-                                                <div class="product-links d-flex d-flex justify-content-between">
-                                                    <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm vào giỏ hàng</button>
-                                                    <ul class="d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Quick view" class="ion-ios-search-strong"></span>
-                                                            </a>
-                                                        </li>
-
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Add to compare" class="ion-ios-shuffle-strong"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="<c:url value='/page-wishtlist'/>">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="product-desc">
-                                                    <div class="star-rating">
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                    </div>
-                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">Originals
-                                                            Kaval Windbreaker Winter Jacket</a></h3>
-                                                    <h6 class="product-price"><del class="del">$23.90</del>
-                                                        <span class="onsale">$21.51</span></h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="card product-card">
-                                    <div class="card-body p-0">
-                                        <div class="media flex-column">
-                                            <div class="product-thumbnail w-100 position-relative">
-                                                <span class="badge badge-danger top-left">new</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/3.jpg'/>" alt="thumbnail">
-                                                </a>
-                                                <!-- product links -->
-
-                                                <div class="product-links d-flex d-flex justify-content-between">
-                                                    <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm vào giỏ hàng</button>
-                                                    <ul class="d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Quick view" class="ion-ios-search-strong"></span>
-                                                            </a>
-                                                        </li>
-
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Add to compare" class="ion-ios-shuffle-strong"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="<c:url value='/page-wishtlist'/>">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="product-desc">
-                                                    <div class="star-rating">
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-android-star-half de-selected"></span>
-                                                    </div>
-                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">Trans-Weight Hooded Wind and
-                                                            Water Resistant Shell</a></h3>
-                                                    <h6 class="product-price">
-                                                        <span class="onsale">$21.51</span></h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="card product-card">
-                                    <div class="card-body p-0">
-                                        <div class="media flex-column">
-                                            <div class="product-thumbnail w-100 position-relative">
-                                                <span class="badge badge-danger top-left">new</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/4.jpg'/>" alt="thumbnail">
-                                                   <img class="first-img" src="<c:url value='/template/web/assets/img/product/4.1.jpg'/>" alt="thumbnail">
-                                                </a>
-                                                <!-- product links -->
-
-                                                <div class="product-links d-flex d-flex justify-content-between">
-                                                    <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm vào giỏ hàng</button>
-                                                    <ul class="d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Quick view" class="ion-ios-search-strong"></span>
-                                                            </a>
-                                                        </li>
-
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Add to compare" class="ion-ios-shuffle-strong"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="<c:url value='/page-wishtlist'/>">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="product-desc">
-                                                    <div class="star-rating">
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-android-star-half"></span>
-                                                    </div>
-                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">New
-                                                            Balance Fresh Foam Kaymin</a></h3>
-                                                    <h6 class="product-price">
-                                                        <span class="onsale">$21.51</span></h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="card product-card">
-                                    <div class="card-body p-0">
-                                        <div class="media flex-column">
-                                            <div class="product-thumbnail w-100 position-relative">
-                                                <span class="badge badge-danger top-left">new</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/5.jpg'/>" alt="thumbnail">
-                                                </a>
-                                                <!-- product links -->
-
-                                                <div class="product-links d-flex d-flex justify-content-between">
-                                                    <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm vào giỏ hàng</button>
-                                                    <ul class="d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Quick view" class="ion-ios-search-strong"></span>
-                                                            </a>
-                                                        </li>
-
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Add to compare" class="ion-ios-shuffle-strong"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="<c:url value='/page-wishtlist'/>">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="product-desc">
-                                                    <div class="star-rating">
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-android-star-half"></span>
-                                                    </div>
-                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">New
-                                                            Balance Fresh Foam Kaymin</a></h3>
-                                                    <h6 class="product-price">
-                                                        <span class="onsale">$21.51</span></h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                        </div>
-                    </div>
+                  
                     <!-- third tab-pane -->
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                        <div class="product-slider-init theme1 slick-nav">
-                            <div class="slider-item">
-                                <div class="card product-card">
-                                    <div class="card-body p-0">
-                                        <div class="media flex-column">
-                                            <div class="product-thumbnail w-100 position-relative">
-                                                <span class="badge badge-success top-left">-20%</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/1.jpg'/>" alt="thumbnail">
-                                                    <img class="second-img" src="<c:url value='/template/web/assets/img/product/1.1.jpg'/>" alt="thumbnail">
-                                                </a>
-                                                <!-- product links -->
-
-                                                <div class="product-links d-flex d-flex justify-content-between">
-                                                    <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm vào giỏ hàng</button>
-                                                    <ul class="d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Quick view" class="ion-ios-search-strong"></span>
-                                                            </a>
-                                                        </li>
-
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Add to compare" class="ion-ios-shuffle-strong"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="<c:url value='/page-wishtlist'/>">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="product-desc">
-                                                    <div class="star-rating">
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                    </div>
-                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">Juicy
-                                                            Couture
-                                                            Juicy Quilted Terry Track Jacket</a></h3>
-                                                    <h6 class="product-price"><del class="del">$23.90</del>
-                                                        <span class="onsale">$21.51</span></h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="card product-card">
-                                    <div class="card-body p-0">
-                                        <div class="media flex-column">
-                                            <div class="product-thumbnail w-100 position-relative">
-                                                <span class="badge badge-success top-left">-20%</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/2.jpg'/>" alt="thumbnail">
-                                                    <img class="second-img" src="<c:url value='/template/web/assets/img/product/2.1.jpg'/>" alt="thumbnail">
-                                                </a>
-                                                <!-- product links -->
-
-                                                <div class="product-links d-flex d-flex justify-content-between">
-                                                    <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm vào giỏ hàng</button>
-                                                    <ul class="d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Quick view" class="ion-ios-search-strong"></span>
-                                                            </a>
-                                                        </li>
-
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Add to compare" class="ion-ios-shuffle-strong"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="<c:url value='/page-wishtlist'/>">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="product-desc">
-                                                    <div class="star-rating">
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                    </div>
-                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">Originals
-                                                            Kaval Windbreaker Winter Jacket</a></h3>
-                                                    <h6 class="product-price"><del class="del">$23.90</del>
-                                                        <span class="onsale">$21.51</span></h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="card product-card">
-                                    <div class="card-body p-0">
-                                        <div class="media flex-column">
-                                            <div class="product-thumbnail w-100 position-relative">
-                                                <span class="badge badge-danger top-left">new</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/3.jpg'/>" alt="thumbnail">
-                                                </a>
-                                                <!-- product links -->
-
-                                                <div class="product-links d-flex d-flex justify-content-between">
-                                                    <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm vào giỏ hàng</button>
-                                                    <ul class="d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Quick view" class="ion-ios-search-strong"></span>
-                                                            </a>
-                                                        </li>
-
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Add to compare" class="ion-ios-shuffle-strong"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="<c:url value='/page-wishtlist'/>">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="product-desc">
-                                                    <div class="star-rating">
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-android-star-half de-selected"></span>
-                                                    </div>
-                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">Trans-Weight Hooded Wind and
-                                                            Water Resistant Shell</a></h3>
-                                                    <h6 class="product-price">
-                                                        <span class="onsale">$21.51</span></h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="card product-card">
-                                    <div class="card-body p-0">
-                                        <div class="media flex-column">
-                                            <div class="product-thumbnail w-100 position-relative">
-                                                <span class="badge badge-danger top-left">new</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/4.jpg'/>" alt="thumbnail">
-                                                    <img class="second-img" src="<c:url value='/template/web/assets/img/product/4.1.jpg'/>" alt="thumbnail">
-                                                </a>
-                                                <!-- product links -->
-
-                                                <div class="product-links d-flex d-flex justify-content-between">
-                                                    <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm vào giỏ hàng</button>
-                                                    <ul class="d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Quick view" class="ion-ios-search-strong"></span>
-                                                            </a>
-                                                        </li>
-
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Add to compare" class="ion-ios-shuffle-strong"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="<c:url value='/page-wishtlist'/>">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="product-desc">
-                                                    <div class="star-rating">
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-android-star-half"></span>
-                                                    </div>
-                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">New
-                                                            Balance Fresh Foam Kaymin</a></h3>
-                                                    <h6 class="product-price">
-                                                        <span class="onsale">$21.51</span></h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="card product-card">
-                                    <div class="card-body p-0">
-                                        <div class="media flex-column">
-                                            <div class="product-thumbnail w-100 position-relative">
-                                                <span class="badge badge-danger top-left">new</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                                    <img class="first-img" src="<c:url value='/template/web/assets/img/product/5.jpg'/>" alt="thumbnail">
-                                                </a>
-                                                <!-- product links -->
-
-                                                <div class="product-links d-flex d-flex justify-content-between">
-                                                    <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm vào giỏ hàng</button>
-                                                    <ul class="d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Quick view" class="ion-ios-search-strong"></span>
-                                                            </a>
-                                                        </li>
-
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="Add to compare" class="ion-ios-shuffle-strong"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="<c:url value='/page-wishtlist'/>">
-                                                                <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="product-desc">
-                                                    <div class="star-rating">
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-ios-star"></span>
-                                                        <span class="ion-android-star-half"></span>
-                                                    </div>
-                                                    <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">New
-                                                            Balance Fresh Foam Kaymin</a></h3>
-                                                    <h6 class="product-price">
-                                                        <span class="onsale">$21.51</span></h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    
                             <!-- slider-item end -->
                         </div>
                     </div>
@@ -991,8 +541,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title text-center mb-30">
-                    <h2 class="title text-dark text-capitalize mb-20">Sản phẩm nổi bật </h2>
-                    <p class="text">Xem qua bộ sưu tập các sản phẩm nổi bật của chúng tôi. </p>
+                    <h2 class="title text-dark text-capitalize mb-20"> BALO PHƯỢT </h2>
+                    <p class="text"> Hãy xem qua các mẫu balo của chúng tớ nhé ! </p>  
                 </div>
             </div>
             <div class="col-12">
@@ -1004,7 +554,7 @@
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-danger top-left">Mới</span>
                                         <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/5.jpg'/>" alt="thumbnail">
+                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/balo1.jpg'/>" alt="thumbnail">
                                         </a>
                                         <!-- product links -->
 
@@ -1041,10 +591,9 @@
                                                 <span class="ion-ios-star"></span>
                                                 <span class="ion-android-star-half"></span>
                                             </div>
-                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">New
-                                                    Balance Fresh Foam Kaymin</a></h3>
+                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">Balo 01 - Speed</a></h3>
                                             <h6 class="product-price">
-                                                <span class="onsale">$21.51</span></h6>
+                                                <span class="onsale">400.000</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -1059,14 +608,14 @@
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-success top-left">-20%</span>
                                         <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/1.jpg'/>" alt="thumbnail">
-                                            <img class="second-img" src="<c:url value='/template/web/assets/img/product/1.1.jpg'/>" alt="thumbnail">
+                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/balo2.png'/>" alt="thumbnail">
+                                            <img class="second-img" src="<c:url value='/template/web/assets/img/product/balo2.png'/>" alt="thumbnail">
                                         </a>
                                         <!-- product links -->
 
                                         <div class="product-links d-flex d-flex justify-content-between">
-                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Add
-                                                to cart</button>
+                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm Vào Giỏ Hàng
+                                               </button>
                                             <ul class="d-flex justify-content-center">
                                                 <li>
                                                     <a href="#" data-toggle="modal" data-target="#quick-view">
@@ -1098,11 +647,9 @@
                                                 <span class="ion-ios-star"></span>
                                                 <span class="ion-ios-star"></span>
                                             </div>
-                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">Juicy
-                                                    Couture
-                                                    Juicy Quilted Terry Track Jacket</a></h3>
-                                            <h6 class="product-price"><del class="del">$23.90</del>
-                                                <span class="onsale">$21.51</span></h6>
+                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">Balo 01 - Speed</a></h3>
+                                            <h6 class="product-price">
+                                                <span class="onsale">400.000</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -1117,13 +664,13 @@
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-danger top-left">new</span>
                                         <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/3.jpg'/>" alt="thumbnail">
+                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/balo3.jpg'/>" alt="thumbnail">
                                         </a>
                                         <!-- product links -->
 
                                         <div class="product-links d-flex d-flex justify-content-between">
-                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Add
-                                                to cart</button>
+                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm Vào Giỏ Hàng
+                                                </button>
                                             <ul class="d-flex justify-content-center">
                                                 <li>
                                                     <a href="#" data-toggle="modal" data-target="#quick-view">
@@ -1155,11 +702,9 @@
                                                 <span class="ion-ios-star"></span>
                                                 <span class="ion-android-star-half de-selected"></span>
                                             </div>
-                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">Trans-Weight
-                                                    Hooded Wind and
-                                                    Water Resistant Shell</a></h3>
+                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">Balo 01 - Speed</a></h3>
                                             <h6 class="product-price">
-                                                <span class="onsale">$21.51</span></h6>
+                                                <span class="onsale">400.000</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -1174,15 +719,15 @@
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-success top-left">-20%</span>
                                         <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/2.jpg'/>" alt="thumbnail">
+                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/balo4.jpg'/>" alt="thumbnail">
                                             
-                                            <img class="second-img" src="<c:url value='/template/web/assets/img/product/2..1jpg'/>" alt="thumbnail">
+                                            <img class="second-img" src="<c:url value='/template/web/assets/img/product/balo4.jpg'/>" alt="thumbnail">
                                         </a>
                                         <!-- product links -->
 
                                         <div class="product-links d-flex d-flex justify-content-between">
-                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Add
-                                                to cart</button>
+                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm Vào Giỏ Hàng
+                                                </button>
                                             <ul class="d-flex justify-content-center">
                                                 <li>
                                                     <a href="#" data-toggle="modal" data-target="#quick-view">
@@ -1214,74 +759,16 @@
                                                 <span class="ion-ios-star"></span>
                                                 <span class="ion-ios-star"></span>
                                             </div>
-                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">Originals
-                                                    Kaval Windbreaker Winter Jacket</a></h3>
-                                            <h6 class="product-price"><del class="del">$23.90</del>
-                                                <span class="onsale">$21.51</span></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- slider-item end -->
-                    <div class="slider-item">
-                        <div class="card product-card">
-                            <div class="card-body p-0">
-                                <div class="media flex-column">
-                                    <div class="product-thumbnail w-100 position-relative">
-                                        <span class="badge badge-danger top-left">new</span>
-                                        <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/4.jpg'/>" alt="thumbnail">
-                                            <img class="second-img" src="<c:url value='/template/web/assets/img/product/4.1.jpg'/>" alt="thumbnail">
-                                        </a>
-                                        <!-- product links -->
-
-                                        <div class="product-links d-flex d-flex justify-content-between">
-                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Add
-                                                to cart</button>
-                                            <ul class="d-flex justify-content-center">
-                                                <li>
-                                                    <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                        <span data-toggle="tooltip" data-placement="bottom" title="Quick view" class="ion-ios-search-strong"></span>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="#" data-toggle="modal" data-target="#compare">
-                                                        <span data-toggle="tooltip" data-placement="bottom" title="Add to compare" class="ion-ios-shuffle-strong"></span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="<c:url value='/page-wishtlist'/>">
-                                                        <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <!-- product links end-->
-                                        </div>
-
-                                    </div>
-                                    <div class="media-body">
-                                        <div class="product-desc">
-                                            <div class="star-rating">
-                                                <span class="ion-ios-star"></span>
-                                                <span class="ion-ios-star"></span>
-                                                <span class="ion-ios-star"></span>
-                                                <span class="ion-ios-star"></span>
-                                                <span class="ion-android-star-half"></span>
-                                            </div>
-                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">New
-                                                    Balance Fresh Foam Kaymin</a></h3>
+                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">Balo 01 - Speed</a></h3>
                                             <h6 class="product-price">
-                                                <span class="onsale">$21.51</span></h6>
+                                                <span class="onsale">400.000</span></h6>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- slider-item end -->
+                    
                 </div>
             </div>
         </div>
@@ -1293,57 +780,6 @@
 <section class="testimonial-section pb-70">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <div class="testimonial-init dots-style">
-                    <div class="slider-item">
-                        <div class="testimonial-content text-center">
-                            <img class="mb-30 mx-auto" src="<c:url value='/template/web/assets/img/profile/1.png'/>" alt="user">
-                            <p> Đây là mô tả của  </p>
-                            <span class="ion-quote mt-15 mb-30"></span>
-                            <h4 class="text-uppercase mb-15">John Doe</h4>
-                            <a class="text-capitalize" href="mailto:demo@hasthemes.com">demo@hasthemes.com</a>
-                        </div>
-                    </div>
-                    <!-- slider-item end -->
-                    <div class="slider-item">
-                        <div class="testimonial-content text-center">
-                            <img class="mb-30 mx-auto" src="<c:url value='/template/web/assets/img/profile/2.png'/>" alt="user">
-                            <p> Đây là mô tả của </p>
-                            <span class="ion-quote mt-15 mb-30"></span>
-                            <h4 class="text-uppercase mb-15">John Doe</h4>
-                            <a class="text-capitalize" href="mailto:demo@hasthemes.com">demo@hasthemes.com</a>
-                        </div>
-                    </div>
-                    <!-- slider-item end -->
-                    <div class="slider-item">
-                        <div class="testimonial-content text-center">
-                            <img class="mb-30 mx-auto" src="<c:url value='/template/web/assets/img/profile/3.png'/>" alt="user">
-                            <p> Đây là mô tả của </p>
-                            <span class="ion-quote mt-15 mb-30"></span>
-                            <h4 class="text-uppercase mb-15">John Doe</h4>
-                            <a class="text-capitalize" href="mailto:demo@hasthemes.com">demo@hasthemes.com</a>
-                        </div>
-                    </div>
-                    <!-- slider-item end -->
-                    <div class="slider-item">
-                        <div class="testimonial-content text-center">
-                            <img class="mb-30 mx-auto" src="<c:url value='/template/web/assets/img/profile/4.png'/>" alt="user">
-                            <p> Đây là mô tả của </p>
-                            <span class="ion-quote mt-15 mb-30"></span>
-                            <h4 class="text-uppercase mb-15">John Doe</h4>
-                            <a class="text-capitalize" href="mailto:demo@hasthemes.com">demo@hasthemes.com</a>
-                        </div>
-                    </div>
-                    <!-- slider-item end -->
-                    <div class="slider-item">
-                        <div class="testimonial-content text-center">
-                            <img class="mb-30 mx-auto" src="assets/img/profile/1.png" alt="user">
-                            <p> Đây là mô tả của </p>
-                            <span class="ion-quote mt-15 mb-30"></span>
-                            <h4 class="text-uppercase mb-15">John Doe</h4>
-                            <a class="text-capitalize" href="mailto:demo@hasthemes.com">demo@hasthemes.com</a>
-                        </div>
-                    </div>
                     <!-- slider-item end -->
                 </div>
             </div>
@@ -1357,8 +793,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title text-center mb-30">
-                    <h2 class="title text-dark text-capitalize mb-20">Sản phẩm mới </h2>
-                    <p class="text">Xem qua bộ sưu tập các sản phẩm mới của chúng tôi.</p>
+                    <h2 class="title text-dark text-capitalize mb-20">TEE LƯU NIỆM </h2>
+                    <p class="text">Những items đang "CHÁY" tại cửa hàng !</p>
                 </div>
             </div>
             <div class="col-12">
@@ -1370,13 +806,13 @@
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-danger top-left">Mới</span>
                                         <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/5.jpg'/>" alt="thumbnail">
+                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/aotrang1.jpg'/>" alt="thumbnail">
                                         </a>
                                         <!-- product links -->
 
                                         <div class="product-links d-flex d-flex justify-content-between">
-                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm
-                                               vào giỏ hàng</button>
+                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm Vào Giỏ Hàng
+                                               </button>
                                             <ul class="d-flex justify-content-center">
                                                 <li>
                                                     <a href="#" data-toggle="modal" data-target="#quick-view">
@@ -1408,10 +844,9 @@
                                                 <span class="ion-ios-star"></span>
                                                 <span class="ion-android-star-half"></span>
                                             </div>
-                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">New
-                                                    Balance Fresh Foam Kaymin</a></h3>
+                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>"> Áo thun lưu niệm 01</a></h3>
                                             <h6 class="product-price">
-                                                <span class="onsale">$21.51</span></h6>
+                                                <span class="onsale">230.000 VND</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -1426,14 +861,14 @@
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-success top-left">-20%</span>
                                         <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/1.jpg'/>" alt="thumbnail">
-                                            <img class="second-img" src="<c:url value='/template/web/assets/img/product/1.1.jpg'/>" alt="thumbnail">
+                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/aotrang2.jpg'/>" alt="thumbnail">
+                                            <img class="second-img" src="<c:url value='/template/web/assets/img/product/aotrang2.jpg'/>" alt="thumbnail">
                                         </a>
                                         <!-- product links -->
 
                                         <div class="product-links d-flex d-flex justify-content-between">
-                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Add
-                                                to cart</button>
+                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm Vào Giỏ Hàng
+                                                </button>
                                             <ul class="d-flex justify-content-center">
                                                 <li>
                                                     <a href="#" data-toggle="modal" data-target="#quick-view">
@@ -1465,11 +900,9 @@
                                                 <span class="ion-ios-star"></span>
                                                 <span class="ion-ios-star"></span>
                                             </div>
-                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">Juicy
-                                                    Couture
-                                                    Juicy Quilted Terry Track Jacket</a></h3>
-                                            <h6 class="product-price"><del class="del">$23.90</del>
-                                                <span class="onsale">$21.51</span></h6>
+                                             <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>"> Áo thun lưu niệm 01</a></h3>
+                                            <h6 class="product-price">
+                                                <span class="onsale">230.000 VND</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -1484,13 +917,13 @@
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-danger top-left">new</span>
                                         <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/6.jpg'/>" alt="thumbnail">
+                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/aotrang3.jpg'/>" alt="thumbnail">
                                         </a>
                                         <!-- product links -->
 
                                         <div class="product-links d-flex d-flex justify-content-between">
-                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Add
-                                                to cart</button>
+                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm Vào Giỏ Hàng
+                                                </button>
                                             <ul class="d-flex justify-content-center">
                                                 <li>
                                                     <a href="#" data-toggle="modal" data-target="#quick-view">
@@ -1522,11 +955,9 @@
                                                 <span class="ion-ios-star"></span>
                                                 <span class="ion-android-star-half de-selected"></span>
                                             </div>
-                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">Trans-Weight
-                                                    Hooded Wind and
-                                                    Water Resistant Shell</a></h3>
+                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>"> Áo thun lưu niệm 01</a></h3>
                                             <h6 class="product-price">
-                                                <span class="onsale">$21.51</span></h6>
+                                                <span class="onsale">230.000 VND</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -1541,14 +972,14 @@
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-success top-left">-20%</span>
                                         <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/2.jpg'/>" alt="thumbnail">
-                                            <img class="second-img" src="<c:url value='/template/web/assets/img/product/2.1.jpg'/>" alt="thumbnail">
+                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/aotrang4.jpg'/>" alt="thumbnail">
+                                            <img class="second-img" src="<c:url value='/template/web/assets/img/product/aotrang4.jpg'/>" alt="thumbnail">
                                         </a>
                                         <!-- product links -->
 
                                         <div class="product-links d-flex d-flex justify-content-between">
-                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Add
-                                                to cart</button>
+                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm Vào Giỏ Hàng
+                                                </button>
                                             <ul class="d-flex justify-content-center">
                                                 <li>
                                                     <a href="#" data-toggle="modal" data-target="#quick-view">
@@ -1580,10 +1011,9 @@
                                                 <span class="ion-ios-star"></span>
                                                 <span class="ion-ios-star"></span>
                                             </div>
-                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">Originals
-                                                    Kaval Windbreaker Winter Jacket</a></h3>
-                                            <h6 class="product-price"><del class="del">$23.90</del>
-                                                <span class="onsale">$21.51</span></h6>
+                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>"> Áo thun lưu niệm 01</a></h3>
+                                            <h6 class="product-price">
+                                                <span class="onsale">230.000 VND</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -1598,14 +1028,14 @@
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-danger top-left">new</span>
                                         <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/4.jpg'/>" alt="thumbnail">
-                                            <img class="second-img" src="<c:url value='/template/web/assets/img/product/4.1.jpg'/>" alt="thumbnail">
+                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/aotrang5.jpg'/>" alt="thumbnail">
+                                            <img class="second-img" src="<c:url value='/template/web/assets/img/product/aotrang5.jpg'/>" alt="thumbnail">
                                         </a>
                                         <!-- product links -->
 
                                         <div class="product-links d-flex d-flex justify-content-between">
-                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Add
-                                                to cart</button>
+                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm Vào Giỏ Hàng
+                                                </button>
                                             <ul class="d-flex justify-content-center">
                                                 <li>
                                                     <a href="#" data-toggle="modal" data-target="#quick-view">
@@ -1637,10 +1067,9 @@
                                                 <span class="ion-ios-star"></span>
                                                 <span class="ion-android-star-half"></span>
                                             </div>
-                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">New
-                                                    Balance Fresh Foam Kaymin</a></h3>
+                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>"> Áo thun lưu niệm 01</a></h3>
                                             <h6 class="product-price">
-                                                <span class="onsale">$21.51</span></h6>
+                                                <span class="onsale">230.000 VND</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -1648,6 +1077,178 @@
                         </div>
                     </div>
                     <!-- slider-item end -->
+                    <!-- slider-item end -->
+                    <div class="slider-item">
+                        <div class="card product-card">
+                            <div class="card-body p-0">
+                                <div class="media flex-column">
+                                    <div class="product-thumbnail w-100 position-relative">
+                                        <span class="badge badge-danger top-left">new</span>
+                                        <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/aoden1.jpg'/>" alt="thumbnail">
+                                            <img class="second-img" src="<c:url value='/template/web/assets/img/product/aoden1.jpg'/>" alt="thumbnail">
+                                        </a>
+                                        <!-- product links -->
+
+                                        <div class="product-links d-flex d-flex justify-content-between">
+                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm Vào Giỏ Hàng
+                                               </button>
+                                            <ul class="d-flex justify-content-center">
+                                                <li>
+                                                    <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                        <span data-toggle="tooltip" data-placement="bottom" title="Quick view" class="ion-ios-search-strong"></span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" data-toggle="modal" data-target="#compare">
+                                                        <span data-toggle="tooltip" data-placement="bottom" title="Add to compare" class="ion-ios-shuffle-strong"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="<c:url value='/page-wishtlist'/>">
+                                                        <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- product links end-->
+                                        </div>
+
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="product-desc">
+                                            <div class="star-rating">
+                                                <span class="ion-ios-star"></span>
+                                                <span class="ion-ios-star"></span>
+                                                <span class="ion-ios-star"></span>
+                                                <span class="ion-ios-star"></span>
+                                                <span class="ion-android-star-half"></span>
+                                            </div>
+                                             <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>"> Áo thun lưu niệm 01</a></h3>
+                                            <h6 class="product-price">
+                                                <span class="onsale">230.000 VND</span></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider-item end -->
+                     <!-- slider-item end -->
+                    <div class="slider-item">
+                        <div class="card product-card">
+                            <div class="card-body p-0">
+                                <div class="media flex-column">
+                                    <div class="product-thumbnail w-100 position-relative">
+                                        <span class="badge badge-danger top-left">new</span>
+                                        <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/aoden2.jpg'/>" alt="thumbnail">
+                                            <img class="second-img" src="<c:url value='/template/web/assets/img/product/aoden2.jpg'/>" alt="thumbnail">
+                                        </a>
+                                        <!-- product links -->
+
+                                        <div class="product-links d-flex d-flex justify-content-between">
+                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm Vào Giỏ Hàng
+                                               </button>
+                                            <ul class="d-flex justify-content-center">
+                                                <li>
+                                                    <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                        <span data-toggle="tooltip" data-placement="bottom" title="Quick view" class="ion-ios-search-strong"></span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" data-toggle="modal" data-target="#compare">
+                                                        <span data-toggle="tooltip" data-placement="bottom" title="Add to compare" class="ion-ios-shuffle-strong"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="<c:url value='/page-wishtlist'/>">
+                                                        <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- product links end-->
+                                        </div>
+
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="product-desc">
+                                            <div class="star-rating">
+                                                <span class="ion-ios-star"></span>
+                                                <span class="ion-ios-star"></span>
+                                                <span class="ion-ios-star"></span>
+                                                <span class="ion-ios-star"></span>
+                                                <span class="ion-android-star-half"></span>
+                                            </div>
+                                           <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>"> Áo thun lưu niệm 01</a></h3>
+                                            <h6 class="product-price">
+                                                <span class="onsale">230.000 VND</span></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider-item end -->
+                     <!-- slider-item end -->
+                    <div class="slider-item">
+                        <div class="card product-card">
+                            <div class="card-body p-0">
+                                <div class="media flex-column">
+                                    <div class="product-thumbnail w-100 position-relative">
+                                        <span class="badge badge-danger top-left">new</span>
+                                        <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/aoden3.jpg'/>" alt="thumbnail">
+                                            <img class="second-img" src="<c:url value='/template/web/assets/img/product/aoden3.jpg'/>" alt="thumbnail">
+                                        </a>
+                                        <!-- product links -->
+
+                                        <div class="product-links d-flex d-flex justify-content-between">
+                                            <button class="pro-btn" data-toggle="modal" data-target="#add-to-cart">Thêm Vào Giỏ Hàng
+                                                </button>
+                                            <ul class="d-flex justify-content-center">
+                                                <li>
+                                                    <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                        <span data-toggle="tooltip" data-placement="bottom" title="Quick view" class="ion-ios-search-strong"></span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" data-toggle="modal" data-target="#compare">
+                                                        <span data-toggle="tooltip" data-placement="bottom" title="Add to compare" class="ion-ios-shuffle-strong"></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="<c:url value='/page-wishtlist'/>">
+                                                        <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- product links end-->
+                                        </div>
+
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="product-desc">
+                                            <div class="star-rating">
+                                                <span class="ion-ios-star"></span>
+                                                <span class="ion-ios-star"></span>
+                                                <span class="ion-ios-star"></span>
+                                                <span class="ion-ios-star"></span>
+                                                <span class="ion-android-star-half"></span>
+                                            </div>
+                                             <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>"> Áo thun lưu niệm 01</a></h3>
+                                            <h6 class="product-price">
+                                                <span class="onsale">230.000 VND</span></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider-item end -->
+                    
                     <div class="slider-item">
                         <div class="card product-card">
                             <div class="card-body p-0">
@@ -1655,8 +1256,8 @@
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-danger top-left">Mới</span>
                                         <a class="d-block" href="<c:url value='/page-singleP'/>">
-                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/6.jpg'/>" alt="thumbnail">
-                                            <img class="second-img" src="<c:url value='/template/web/assets/img/product/8.jpg'/>" alt="thumbnail">
+                                            <img class="first-img" src="<c:url value='/template/web/assets/img/product/aoden4.jpg'/>" alt="thumbnail">
+                                            <img class="second-img" src="<c:url value='/template/web/assets/img/product/aoden4.jpg'/>" alt="thumbnail">
                                         </a>
                                         <!-- product links -->
 
@@ -1693,10 +1294,9 @@
                                                 <span class="ion-ios-star"></span>
                                                 <span class="ion-android-star-half"></span>
                                             </div>
-                                            <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>">New
-                                                    Balance Fresh Foam Kaymin</a></h3>
+                                             <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>"> Áo thun lưu niệm 01</a></h3>
                                             <h6 class="product-price">
-                                                <span class="onsale">$21.51</span></h6>
+                                                <span class="onsale">230.000 VND</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -1718,14 +1318,10 @@
             <div class="col-12">
                 <div class="position-relative zoom-in overflow-hidden">
                     <div class="banner-thumb banner-lagre">
-                        <img src="<c:url value='/template/web/assets/img/banner/3.jpg'/>" alt="banner-thumb-naile">
+                        <img src="<c:url value='/template/web/assets/img/banner/banner3.jpg'/>" alt="banner-thumb-naile">
                     </div>
                     <div class="banner-content banner-content-large">
-                        <p class="text text-uppercase text-dark mb-10">Black Friday</p>
-                        <h4 class="title text-capitalize text-dark">Ưu đãi lên đến
-                            <span class="d-block d-inline-sm-block mt-10 mt-md-20">50% </span> </h4>
-                        <a class="view-link text-capitalize mt-25" href="<c:url value='/page-shopgrid4'/>">Xem bộ sưu tập
-                            <span class="ion-android-arrow-dropright-circle theme-color"></span></a>
+                        
                     </div>
                 </div>
             </div>
@@ -1740,8 +1336,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title text-center mb-30">
-                    <h2 class="title text-dark text-capitalize">Blog mới nhất</h2>
-                    <p class="text mt-20">Trình bày bài viết theo cách tốt nhất để làm nổi bật những khoảnh khắc thú vị trên blog của bạn.
+                    <h2 class="title text-dark text-capitalize">CỬA HÀNG CHÚNG TỚ</h2>
+                    <p class="text mt-20"> Hiện tại cửa hàng chúng tớ luôn đón mời các cậu tới tham quan và mua sắm !
                     </p>
                 </div>
             </div>
@@ -1752,13 +1348,10 @@
                     <div class="slider-item">
                         <div class="single-blog">
                             <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="blog-grid-left-sidebar.html">
-                                <img src="<c:url value='/template/web/assets/img/blog-post/1.jpg'/>" alt="blog-thumb-naile">
+                                <img src="<c:url value='/template/web/assets/img/blog-post/over1.jpg'/>" alt="blog-thumb-naile">
                             </a>
                             <div class="blog-post-content">
-                                <h3 class="title text-capitalize mb-15"><a href="single-blog.html">Đây là lần đầu
-                                        Post For XipBlog</a></h3>
-                                <h5 class="sub-title mb-30 text-capitalize"> Đăng bởi <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">HasTech</a>Oct 4TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
-                                <a class="btn read-more text-capitalize" href="single-blog.html">Xem thêm</a>
+                                <h3 class="title text-capitalize mb-15"><a href="single-blog.html">GLASSES </a></h3>
                             </div>
                         </div>
                     </div>
@@ -1766,13 +1359,10 @@
                     <div class="slider-item">
                         <div class="single-blog">
                             <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="blog-grid-left-sidebar.html">
-                                <img src="<c:url value='/template/web/assets/img/blog-post/2.jpg'/>" alt="blog-thumb-naile">
+                                <img src="<c:url value='/template/web/assets/img/blog-post/over2.jpg'/>" alt="blog-thumb-naile">
                             </a>
                             <div class="blog-post-content">
-                                <h3 class="title text-capitalize mb-15"><a href="single-blog.html">Đây là lần đầu
-                                        Post For XipBlog</a></h3>
-                                <h5 class="sub-title mb-30 text-capitalize"> Đăng bởi <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">HasTech</a>Oct 4TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
-                                <a class="btn read-more text-capitalize" href="single-blog.html">Xem thêm</a>
+                                <h3 class="title text-capitalize mb-15"><a href="single-blog.html"> BACKPACK</a></h3>
                             </div>
                         </div>
                     </div>
@@ -1780,30 +1370,15 @@
                     <div class="slider-item">
                         <div class="single-blog">
                             <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="blog-grid-left-sidebar.html">
-                                <img src="<c:url value='/template/web/assets/img/blog-post/3.jpg'/>" alt="blog-thumb-naile">
+                                <img src="<c:url value='/template/web/assets/img/blog-post/over3.jpg'/>" alt="blog-thumb-naile">
                             </a>
                             <div class="blog-post-content">
-                                <h3 class="title text-capitalize mb-15"><a href="single-blog.html">Đây là lần đầu
-                                        Post For XipBlog</a></h3>
-                                <h5 class="sub-title mb-30 text-capitalize"> Đăng bởi <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">HasTech</a>Oct 4TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
-                                <a class="btn read-more text-capitalize" href="single-blog.html">Xem thêm</a>
+                                <h3 class="title text-capitalize mb-15"><a href="single-blog.html">T-SHIRT</a></h3>
                             </div>
                         </div>
                     </div>
                     <!-- slider-item end -->
-                    <div class="slider-item">
-                        <div class="single-blog">
-                            <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="blog-grid-left-sidebar.html">
-                                <img src="<c:url value='/template/web/assets/img/blog-post/4.jpg'/>" alt="blog-thumb-naile">
-                            </a>
-                            <div class="blog-post-content">
-                                <h3 class="title text-capitalize mb-15"><a href="single-blog.html">Đây là lần đầu
-                                        Post For XipBlog</a></h3>
-                                <h5 class="sub-title mb-30 text-capitalize"> Đăng bởi <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">HasTech</a>Oct 4TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
-                                <a class="btn read-more text-capitalize" href="single-blog.html">Xem thêm</a>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <!-- slider-item end -->
                 </div>
             </div>
@@ -1848,7 +1423,7 @@
                         <div class="product-sync-init mb-20">
                             <div class="single-product">
                                 <div class="product-thumb">
-                                    <img src="<c:url value='/template/web/assets/img/slider/thumb/1.jpg'/>" alt="product-thumb">
+                                    <img src="<c:url value='/template/web/assets/img/slider/thumb/kieng1.jpg'/>" alt="product-thumb">
                                 </div>
                             </div>
                             <!-- single-product end -->
