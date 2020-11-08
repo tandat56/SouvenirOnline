@@ -145,6 +145,7 @@
             <li>
                 <a href="<c:url value='/page-singleP'/>" class="image"><img src="<c:url value='/template/web/assets/img/product/4.jpg'/>" alt="Cart product Image"></a>
                 <div class="content">
+                
                     <a href="<c:url value='/page-singleP'/>" class="title">Walnut Cutting Board</a>
                     <span class="quantity-price">1 x <span class="amount">$100.00</span></span>
                     <a href="#" class="remove">×</a>
@@ -213,7 +214,7 @@
         <a href="<c:url  value='/page-cart'/>" class="btn theme--btn1 btn--lg text-uppercase  d-block d-sm-inline-block mr-sm-2">view
             cart</a>
         <a href="<c:url  value='/page-checkout'/>" class="btn theme--btn1 btn--lg text-uppercase  d-block d-sm-inline-block mt-4 mt-sm-0">checkout</a>
-        <p class="minicart-message">Free Shipping on All Orders Over $100!</p>
+        <p class="minicart-message">Freeship trên mọi nẻo đường !</p>
     </div>
 </div>
 <!-- OffCanvas Cart End -->
@@ -276,7 +277,7 @@
             <div class="row align-items-center position-relative">
                 <div class="col-6 col-lg-2 col-xl-3 order-first">
                     <div class="logo">
-                        <a href="<c:url value='/trang-chu'/>"><img src="<c:url value='/template/web/assets/img/logo/logo2.png'/>" alt="logo"></a>
+                        <a href="<c:url value='/trang-chu'/>"><img src="<c:url value='/template/web/assets/img/logo/logo-chuan.png'/>" alt="logo"></a>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-7 col-xl-6 d-none d-lg-block">
@@ -291,53 +292,42 @@
                                     <li class="col-3">
                                         <ul class="border-right h-100 pr-20">
                                             <li class="mega-menu-title"><a href="#">Áo</a></li>
-                                            <li><a href="#">Áo thun lưu niệm</a></li>
-                                            <li><a href="#">Áo dài lưu niệm</a></li>
-                                            <li><a href="#">Áo thun lưu niệm</a></li>
-                                            <li><a href="#">Áo dài lưu niệm</a></li>
-                                            <li><a href="#">Áo thun lưu niệm</a></li>
+                                            <li><a href="#">Áo thun trắng lưu niệm</a></li>
+                                            <li><a href="#">Áo thun đen lưu niệm</a></li>
+                                            
                                             
                                         </ul>
                                     </li>
                                     <li class="col-3">
                                         <ul class="border-right h-100 pr-20">
-                                            <li class="mega-menu-title"><a href="#">Quà lưu niệm</a></li>
-                                            <li><a href="#">Quà trưng bày</a></li>
-                                            <li><a href="#">Quà trưng bày</a></li>
-                                            <li><a href="#">Quà trưng bày</a></li>
-                                            <li><a href="#">Quà trưng bày</a></li>
-                                            <li><a href="#">Quà trưng bày</a></li>
+                                            <li class="mega-menu-title"><a href="#">Mắt kiếng</a></li>
+                                            <li><a href="#">Mắt kính thể thao</a></li>
+                                            <li><a href="#">Mắt kính mát</a></li>
+                                            <li><a href="#">Mắt kính phượt</a></li>
+                                           
 
                                         </ul>
                                     </li>
                                     <li class="col-3">
                                         <ul class="border-right h-100 pr-20">
-                                            <li class="mega-menu-title"><a href="#">Đồ dùng cá nhân</a></li>
-                                            <li><a href="#">đồ đùng cá nhân</a></li>
-                                            <li><a href="#">đồ đùng cá nhân</a></li>
-                                            <li><a href="#">đồ đùng cá nhân</a></li>
-                                            <li><a href="#">đồ đùng cá nhân</a></li>
-                                            <li><a href="#">đồ đùng cá nhân</a></li>
+                                            <li class="mega-menu-title"><a href="#">Nón</a></li>
+                                            <li><a href="#">Nón đen lưu niệm</a></li>
+                                            <li><a href="#">Nón đen lưu niệm</a></li>
+                                           
 
                                         </ul>
                                     </li>
                                     <li class="col-3">
                                         <ul>
-                                            <li class="mega-menu-title"><a href="#">Đồ linh tinh</a></li>
-                                            <li><a href="#">quà linh tinh</a></li>
-                                            <li><a href="#">quà linh tinh</a></li>
-                                            <li><a href="#">quà linh tinh</a></li>
-                                            <li><a href="#">quà linh tinh</a></li>
-                                            <li><a href="#">quà linh tinh</a></li>
+                                            <li class="mega-menu-title"><a href="#">Balo</a></li>
+                                            <li><a href="#">Balo thể thao</a></li>
+                                            <li><a href="#">Balo phượt</a></li>
+                                            <li><a href="#">Balo thời trang</a></li>
+                                         
 
                                         </ul>
                                     </li>
-                                    <li class="col-12 mt-4">
-                                        <a href="<c:url value='/page-singleP'/>" class="zoom-in overflow-hidden d-block">                                          
-                                             <img class="w-100" src="<c:url value='/template/web/assets/img/mega-menu/1.jpg'/>" alt="img">    
-                                                                            
-                                        </a>
-                                    </li>
+                                    
                                 </ul>
                             </li>
                             <li>

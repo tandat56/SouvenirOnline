@@ -1,12 +1,11 @@
 package com.souvenironline.entity;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "Product")
@@ -35,6 +34,7 @@ public class ProductEntity extends BaseEntity {
 
 	@Column(name = "status")
 	private Integer status;
+<<<<<<< HEAD
 
 	@OneToMany(mappedBy = "productComment")
 	private List<CommentEntity> comments = new ArrayList<>();
@@ -145,4 +145,7 @@ public class ProductEntity extends BaseEntity {
 	public void setWarehouse(WarehouseEntity warehouse) {
 		this.warehouse = warehouse;
 	}
+=======
+	
+>>>>>>> 2e6a162e5df2a5557ce2aaef6e413bf533288531
 }

@@ -1,7 +1,9 @@
 package com.souvenironline.entity;
 
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "Bill_Detail")
@@ -17,6 +19,7 @@ public class BillDetailEntity extends BaseEntity {
 	@Column(name = "discount")
 	private String discount;
 
+<<<<<<< HEAD
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "billDetailid")
 	private BillEntity bill;
@@ -64,4 +67,6 @@ public class BillDetailEntity extends BaseEntity {
 	public void setProduct(ProductEntity product) {
 		this.product = product;
 	}
+=======
+>>>>>>> 2e6a162e5df2a5557ce2aaef6e413bf533288531
 }

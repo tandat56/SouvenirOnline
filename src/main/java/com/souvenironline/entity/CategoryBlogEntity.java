@@ -5,10 +5,7 @@ import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "Category_Blog")
@@ -19,6 +16,7 @@ public class CategoryBlogEntity extends BaseEntity {
 
 	@Column(name = "name")
 	private String name;
+<<<<<<< HEAD
 
 	@OneToMany(mappedBy = "categoryBlog")
 	private List<BlogEntity> blogs = new ArrayList<>();
@@ -46,4 +44,6 @@ public class CategoryBlogEntity extends BaseEntity {
 	public void setBlogs(List<BlogEntity> blogs) {
 		this.blogs = blogs;
 	}
+=======
+>>>>>>> 2e6a162e5df2a5557ce2aaef6e413bf533288531
 }
