@@ -19,6 +19,11 @@ public class HomeController {
 		ModelAndView mav = new ModelAndView("web/login");
 		return mav;
 	}
+	@RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
+	public ModelAndView homePage() {
+		ModelAndView mav = new ModelAndView("web/home");
+		return mav;
+	}
 
 	@RequestMapping(value = "/page-about", method = RequestMethod.GET)
 	public ModelAndView aboutPage() {
@@ -55,14 +60,7 @@ public class HomeController {
 		ModelAndView mav = new ModelAndView("web/contact");
 		return mav;
 	}
-	
-	@RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
-	public ModelAndView homePage() {
-		ModelAndView mav = new ModelAndView("web/home");
-		return mav;
-	}
-	
-	
+
 	@RequestMapping(value = "/page-myaccount", method = RequestMethod.GET)
 	public ModelAndView accountPage() {
 		ModelAndView mav = new ModelAndView("web/myaccount");
@@ -92,8 +90,6 @@ public class HomeController {
 		ModelAndView mav = new ModelAndView("web/single-product");
 		return mav;
 	}
-	
-	
 	
 	@RequestMapping(value = "/page-singlePA", method = RequestMethod.GET)
 	public ModelAndView singlePAPage() {

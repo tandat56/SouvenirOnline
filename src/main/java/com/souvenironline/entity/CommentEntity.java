@@ -1,9 +1,7 @@
 package com.souvenironline.entity;
 
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "Comment")
@@ -14,7 +12,7 @@ public class CommentEntity extends BaseEntity {
 
 	@Column(name = "status")
 	private Integer status;
-<<<<<<< HEAD
+
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "blogid")
@@ -67,7 +65,4 @@ public class CommentEntity extends BaseEntity {
 	public void setProductComment(ProductEntity productComment) {
 		this.productComment = productComment;
 	}
-=======
-	
->>>>>>> 2e6a162e5df2a5557ce2aaef6e413bf533288531
 }

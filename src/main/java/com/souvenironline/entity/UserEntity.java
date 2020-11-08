@@ -3,13 +3,7 @@ package com.souvenironline.entity;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "User")
@@ -45,7 +39,6 @@ public class UserEntity extends BaseEntity {
 	
 	private List<RoleEntity> Role = new ArrayList<>();
 
-<<<<<<< HEAD
 	public List<RoleEntity> getRole() {
 		return Role;
 	}
@@ -139,6 +132,5 @@ public class UserEntity extends BaseEntity {
 	public void setBills(List<BillEntity> bills) {
 		this.bills = bills;
 	}
-=======
->>>>>>> 2e6a162e5df2a5557ce2aaef6e413bf533288531
+
 }

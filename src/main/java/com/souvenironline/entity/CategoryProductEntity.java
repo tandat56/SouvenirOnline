@@ -3,7 +3,10 @@ package com.souvenironline.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "Category_Product")
@@ -15,7 +18,7 @@ public class CategoryProductEntity extends BaseEntity {
 
 	@Column(name = "name")
 	private String name;
-<<<<<<< HEAD
+
 
 	@OneToMany(mappedBy = "categoryProduct")
 	private List<ProductEntity> products = new ArrayList<>();
@@ -43,7 +46,4 @@ public class CategoryProductEntity extends BaseEntity {
 	public void setProducts(List<ProductEntity> products) {
 		this.products = products;
 	}
-=======
-	
->>>>>>> 2e6a162e5df2a5557ce2aaef6e413bf533288531
 }

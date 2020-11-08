@@ -277,7 +277,7 @@
             <div class="row align-items-center position-relative">
                 <div class="col-6 col-lg-2 col-xl-3 order-first">
                     <div class="logo">
-                        <a href="<c:url value='/trang-chu'/>"><img src="<c:url value='/template/web/assets/img/logo/logo-chuan.png'/>" alt="logo"></a>
+                        <a href="<c:url value='/trang-chu'/>"><img src="<c:url value='/template/web/assets/img/logo/logo2.png'/>" alt="logo"></a>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-7 col-xl-6 d-none d-lg-block">
