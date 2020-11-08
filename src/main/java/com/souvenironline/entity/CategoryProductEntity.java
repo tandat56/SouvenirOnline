@@ -1,7 +1,5 @@
 package com.souvenironline.entity;
 
-import lombok.Getter;
-import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,8 +10,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "Category_Product")
-@Getter
-@Setter
+
 public class CategoryProductEntity extends BaseEntity {
 
 	@Column(name = "code")
@@ -24,4 +21,28 @@ public class CategoryProductEntity extends BaseEntity {
 
 	@OneToMany(mappedBy = "categoryProduct")
 	private List<ProductEntity> products = new ArrayList<>();
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<ProductEntity> getProducts() {
+		return products;
+	}
+
+	public void setProducts(List<ProductEntity> products) {
+		this.products = products;
+	}
 }

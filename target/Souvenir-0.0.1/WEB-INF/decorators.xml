@@ -9,7 +9,7 @@
        <pattern>/quan-tri*</pattern>
     </decorator>
     
-    <decorator name="login" page="login.jsp">
+    <decorator name="login" page="web.jsp">
         <pattern>/dang-nhap</pattern>
     </decorator>
 </decorators>

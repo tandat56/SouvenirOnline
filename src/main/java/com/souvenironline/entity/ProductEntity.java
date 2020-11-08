@@ -10,8 +10,6 @@ import java.util.List;
 
 @Entity
 @Table(name = "Product")
-@Getter
-@Setter
 public class ProductEntity extends BaseEntity {
 
 	@Column(name = "product_name")
@@ -51,4 +49,100 @@ public class ProductEntity extends BaseEntity {
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "productwarehouseid")
 	private WarehouseEntity warehouse;
+
+	public String getProductName() {
+		return productName;
+	}
+
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+	public String getMoreImage() {
+		return moreImage;
+	}
+
+	public void setMoreImage(String moreImage) {
+		this.moreImage = moreImage;
+	}
+
+	public String getDetail() {
+		return detail;
+	}
+
+	public void setDetail(String detail) {
+		this.detail = detail;
+	}
+
+	public Long getViewCount() {
+		return viewCount;
+	}
+
+	public void setViewCount(Long viewCount) {
+		this.viewCount = viewCount;
+	}
+
+	public String getDiscount() {
+		return discount;
+	}
+
+	public void setDiscount(String discount) {
+		this.discount = discount;
+	}
+
+	public Double getPrice() {
+		return price;
+	}
+
+	public void setPrice(Double price) {
+		this.price = price;
+	}
+
+	public Integer getStatus() {
+		return status;
+	}
+
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+
+	public List<CommentEntity> getComments() {
+		return comments;
+	}
+
+	public void setComments(List<CommentEntity> comments) {
+		this.comments = comments;
+	}
+
+	public CategoryProductEntity getCategoryProduct() {
+		return categoryProduct;
+	}
+
+	public void setCategoryProduct(CategoryProductEntity categoryProduct) {
+		this.categoryProduct = categoryProduct;
+	}
+
+	public List<BillDetailEntity> getBillDetails() {
+		return billDetails;
+	}
+
+	public void setBillDetails(List<BillDetailEntity> billDetails) {
+		this.billDetails = billDetails;
+	}
+
+	public WarehouseEntity getWarehouse() {
+		return warehouse;
+	}
+
+	public void setWarehouse(WarehouseEntity warehouse) {
+		this.warehouse = warehouse;
+	}
 }

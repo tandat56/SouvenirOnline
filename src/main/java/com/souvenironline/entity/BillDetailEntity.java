@@ -1,14 +1,11 @@
 package com.souvenironline.entity;
 
-import lombok.Getter;
-import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "Bill_Detail")
-@Getter
-@Setter
+
 public class BillDetailEntity extends BaseEntity {
 
 	@Column(name = "unit_price")
@@ -27,4 +24,44 @@ public class BillDetailEntity extends BaseEntity {
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "billProductDetailid")
 	private ProductEntity product;
+
+	public String getUnitPrice() {
+		return unitPrice;
+	}
+
+	public void setUnitPrice(String unitPrice) {
+		this.unitPrice = unitPrice;
+	}
+
+	public String getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(String quantity) {
+		this.quantity = quantity;
+	}
+
+	public String getDiscount() {
+		return discount;
+	}
+
+	public void setDiscount(String discount) {
+		this.discount = discount;
+	}
+
+	public BillEntity getBill() {
+		return bill;
+	}
+
+	public void setBill(BillEntity bill) {
+		this.bill = bill;
+	}
+
+	public ProductEntity getProduct() {
+		return product;
+	}
+
+	public void setProduct(ProductEntity product) {
+		this.product = product;
+	}
 }

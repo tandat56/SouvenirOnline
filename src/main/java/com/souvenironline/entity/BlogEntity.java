@@ -9,8 +9,6 @@ import java.util.List;
 
 @Entity
 @Table(name = "Blog")
-@Getter
-@Setter
 public class BlogEntity extends BaseEntity {
 
 	@Column(name = "title")
@@ -32,5 +30,51 @@ public class BlogEntity extends BaseEntity {
 	@OneToMany(mappedBy = "blog")
 	private List<CommentEntity> comments = new ArrayList<>();
 
+	public String getTitle() {
+		return title;
+	}
 
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getThumbnail() {
+		return thumbnail;
+	}
+
+	public void setThumbnail(String thumbnail) {
+		this.thumbnail = thumbnail;
+	}
+
+	public String getShortDescription() {
+		return shortDescription;
+	}
+
+	public void setShortDescription(String shortDescription) {
+		this.shortDescription = shortDescription;
+	}
+
+	public Integer getStatus() {
+		return status;
+	}
+
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+
+	public CategoryBlogEntity getCategoryBlog() {
+		return categoryBlog;
+	}
+
+	public void setCategoryBlog(CategoryBlogEntity categoryBlog) {
+		this.categoryBlog = categoryBlog;
+	}
+
+	public List<CommentEntity> getComments() {
+		return comments;
+	}
+
+	public void setComments(List<CommentEntity> comments) {
+		this.comments = comments;
+	}
 }

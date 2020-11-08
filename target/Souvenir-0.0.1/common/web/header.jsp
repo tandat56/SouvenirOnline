@@ -64,7 +64,7 @@
                                 <li><a href="<c:url  value='/page-cart'/>">Cart Page</a></li>
                                 <li><a href="<c:url  value='/page-checkout'/>">Checkout Page</a></li>
                                 <li><a href="<c:url  value='/page-compare'/>">Compare Page</a></li>
-                                <li><a href="<c:url  value='/page-login'/>">Login &amp; Register Page</a></li>
+                                <li><a href="<c:url  value='/dang-nhap'/>">Login &amp; Register Page</a></li>
                                 <li><a href="<c:url  value='/page-myaccount'/>">Account Page</a></li>
                                 <li><a href="<c:url  value='/page-wishtlist'/>">Wishlist Page</a></li>
                             </ul>
@@ -77,7 +77,7 @@
                         <li><a href="<c:url  value='/page-cart'/>">Cart Page</a></li>
                         <li><a href="<c:url  value='/page-checkout'/>">Checkout Page</a></li>
                         <li><a href="<c:url  value='/page-compare'/>">Compare Page</a></li>
-                        <li><a href="<c:url  value='/page-login'/>">Login &amp; Register Page</a></li>
+                        <li><a href="<c:url  value='/dang-nhap'/>">Login &amp; Register Page</a></li>
                         <li><a href="<c:url  value='/page-myaccount'/>">Account Page</a></li>
                         <li><a href="<c:url  value='/page-wishtlist'/>">Wishlist Page</a></li>
                     </ul>
@@ -236,7 +236,7 @@
                         <a href="<c:url  value='/page-checkout'/>">Checkout</a>
                     </li>
                     <li>
-                        <a href="<c:url  value='/page-login'/>">Sign in</a>
+                        <a href="<c:url  value='/dang-nhap'/>">Sign in</a>
                     </li>
 
                 </ul>
@@ -347,7 +347,7 @@
                                     <li><a href="<c:url value='/page-cart'/>">Giỏ hàng</a></li>
                                     <li><a href="<c:url value='/page-checkout'/>">Checkout</a></li>
                                     <li><a href="<c:url value='/page-compare'/>">So sánh</a></li>
-                                    <li><a href="<c:url value='/page-login'/>">Đăng nhập &amp; Đăng ký</a></li>
+                                    <li><a href="<c:url value='/dang-nhap'/>">Đăng nhập &amp; Đăng ký</a></li>
                                     <li><a href="<c:url value='/page-myaccount'/>">Tài khoản</a></li>
                                     <li><a href="<c:url value='/page-wishtlist'/>">Danh sách yêu thích</a></li>
                                 </ul>

@@ -7,116 +7,111 @@
 <title>Insert title here</title>
 </head>
 <body>
- <nav class="breadcrumb-section theme1 breadcrumb-bg1">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="breadcrumb-title text-center my-20">
-            <h2 class="title text-dark text-capitalize">Đăng nhập</h2>
-          </div>
-        </div>
-        <div class="col-12">
-          <ol class="breadcrumb bg-transparent m-0 p-0 align-items-center justify-content-center">
-            <li class="breadcrumb-item"><a href="<c:url value='/trang-chu'/>">Trang chủ</a></li>
-            <li class="breadcrumb-item active" aria-current="page">
-              Trang đăng nhập
-            </li>
-          </ol>
+
+<!-- breadcrumb-section start -->
+<nav class="breadcrumb-section theme1 breadcrumb-bg1">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="breadcrumb-title text-center my-20">
+          <h2 class="title text-dark text-capitalize">login</h2>
         </div>
       </div>
+      <div class="col-12">
+        <ol class="breadcrumb bg-transparent m-0 p-0 align-items-center justify-content-center">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            login page
+          </li>
+        </ol>
+      </div>
     </div>
-  </nav>
-  <!-- breadcrumb-section end -->
+  </div>
+</nav>
+<!-- breadcrumb-section end -->
 
-  <!-- product tab start -->
-  <div class="my-account pb-70">
-    <div class="container grid-wraper">
+<!-- product tab start -->
+<div class="my-account pb-70">
+  <div class="container grid-wraper">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="title text-capitalize pb-30"> Log in to your account</h3>
+
+        <form action="/j_spring_security_check" id="formLogin" method="post" class="log-in-form">
+          <div class="form-group row">
+            <label for="staticEmail" class="col-md-3 col-form-label">Email</label>
+            <div class="col-md-6">
+              <input type="text" class="form-control" id="staticEmail" name="j_username" placeholder="Email Address or User Name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-md-3 col-form-label">Password</label>
+            <div class="col-md-6">
+              <div class="input-group mb-2 mr-sm-2">
+                <input name="j_password" type="password" class="form-control" id="inputPassword" placeholder="Password">
+                <div class="input-group-prepend">
+                  <button type="button" class="input-group-text  theme-btn--dark1 btn--md show-password">show</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="form-group row pb-3 text-center">
+            <div class="col-md-6 offset-md-3">
+              <div class="login-form-links">
+                <a href="#" class="for-get">Forgot your password?</a>
+                <div class="sign-btn">
+                 <!-- <a href="#" type="submit" class="btn theme-btn--dark1 btn--md">Sign in</a> -->
+                  <button type="submit" class="btn theme-btn--dark1 btn--md">Sign in</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row text-center mb-0">
+            <div class="col-12">
+              <div class="border-top">
+                <a href="register.html" class="no-account">No account? Create one here</a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- product tab end -->
+
+<!-- news-letter start -->
+<section class="news-letter-section theme1 bg-white">
+  <div class="container">
+    <div class="news-letter-wrapper pt-65 pb-65">
       <div class="row">
         <div class="col-12">
-          <h3 class="title text-capitalize pb-30"> Đăng nhập vào tài khoản của bạn</h3>
-          
-          <form class="log-in-form">
-             <div class="form-group row">
-              <label for="staticEmail" class="col-md-3 col-form-label">Email</label>
-              <div class="col-md-6 ">
-                <input type="text" class="form-control" placeholder="abc@gmail.com" id="staticEmail">
-              
-                <span class="haha" id="email-error"></span>
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <label for="inputPassword" class="col-md-3 col-form-label">Mật khẩu</label>
-              <div class="col-md-6">
-                <input type="password" class="form-control" placeholder="Nhập mật khẩu" id="inputPassword">
-                <span class="haha" id="ps-error"></span>    
-              </div>
-            </div>
-
-            </div>
-            <div class="form-group row pb-3 text-center">
-              <div class="col-md-6 offset-md-3">
-                <div class="login-form-links">
-                  <a href="#" class="for-get">Quên mật khẩu?</a>
-                  <div class="sign-btn">
-                    <a href="#" class="btn theme-btn--dark1 btn--md" onclick="save()">Đăng nhập</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form-group row text-center mb-0">
-              <div class="col-12">
-                <div class="border-top">
-                  <a href="<c:url value='/page-register'/>" class="no-account">Không tài khoản? Tạo một cái ở đây</a>
-                </div>
-              </div>
-            </div>
+          <div class="form-title mb-30 text-center">
+            <p class="text mb-10">Special Ofers For Subscribers</p>
+            <h4 class="title text text-capitalize">
+              Ten Percent Member Discount
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <form class="news-letter-form position-relative" action="
+                          http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef" target="_blank" method="post">
+            <input class="form-control" type="text" placeholder="Your email address">
+            <button class="btn news-letter-btn text-uppercase" type="submit">
+              Subscribe
+            </button>
           </form>
         </div>
       </div>
     </div>
   </div>
-  <script type="text/javascript">
+</section>
+<!-- news-letter end -->
 
-    var reg_email = /^[A-Za-z0-9]+([_\.\-]?[A-Za-z0-9])*@[A-Za-z0-9]+([\.\-]?[A-Za-z0-9]+)*(\.[A-Za-z]+)+$/;
 
-    function save() {
-      var email = document.getElementById('staticEmail').value;
-      var password = document.getElementById('inputPassword').value;
-
-      if (_.isEmpty(email)) {
-        document.getElementById('email-error').innerHTML = 'Vui lòng nhập Email';
-      } else if (reg_email.test(email) == false) {
-        document.getElementById('email-error').innerHTML = 'Không đúng định dạng email';
-      } else {
-        document.getElementById('email-error').innerHTML = '';
-      }
-
-      if (_.isEmpty(password)) {
-        document.getElementById('ps-error').innerHTML = 'Vui lòng nhập mật khẩu';
-      } else if (password.length <= 5) {
-        document.getElementById('ps-error').innerHTML = 'Mật khẩu phải từ 6 tới 16 kí tự';
-      } else {
-        document.getElementById('ps-error').innerHTML = '';
-      }
-    }
-    function setErrorFor(input, message) {
-    const formControl = input.parentElement;
-    const span = formControl.querySelector("span");
-    formControl.className = "form-control error";
-    span.innerText = message;
-}
-
-function setSuccessFor(input) {
-    const formControl = input.parentElement;
-    formControl.className = "form-control success";
-}
-  </script>
-
-<style>
-  span.haha{
-    color: red;
-  }
-</style>
 </body>
 </html>

@@ -14,6 +14,12 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller(value = "homeControllerOfWeb")
 public class HomeController {
 
+	@RequestMapping(value = "/dang-nhap", method = RequestMethod.GET)
+	public ModelAndView loginPage() {
+		ModelAndView mav = new ModelAndView("web/login");
+		return mav;
+	}
+
 	@RequestMapping(value = "/page-about", method = RequestMethod.GET)
 	public ModelAndView aboutPage() {
 		ModelAndView mav = new ModelAndView("web/about-us");
@@ -53,12 +59,6 @@ public class HomeController {
 	@RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
 	public ModelAndView homePage() {
 		ModelAndView mav = new ModelAndView("web/home");
-		return mav;
-	}
-	
-	@RequestMapping(value = "/page-login", method = RequestMethod.GET)
-	public ModelAndView loginPage() {
-		ModelAndView mav = new ModelAndView("web/login");
 		return mav;
 	}
 	
