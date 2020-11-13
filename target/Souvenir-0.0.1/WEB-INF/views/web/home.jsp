@@ -27,6 +27,7 @@
                 </div>
             </div>
         </div>
+
         <!-- slider-item end -->
         <div class="slider-item bg-img bg-img2">
             <div class="container">
@@ -89,7 +90,7 @@
                                         <div class="media flex-column">
                                             <div class="product-thumbnail w-100 position-relative">
                                                 <span class="badge badge-success top-left">-20%</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                                <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                                     <img class="first-img" src="<c:url value='/template/web/assets/img/product/kieng1.png'/>" alt="thumbnail">
                                                     <img class="second-img" src="<c:url value='template/web/assets/img/product/kieng1.png'/>" alt="thumbnail">
                                                 </a>
@@ -145,7 +146,7 @@
                                         <div class="media flex-column">
                                             <div class="product-thumbnail w-100 position-relative">
                                                 <span class="badge badge-success top-left">-20%</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                                <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                                     <img class="first-img" src="<c:url value='/template/web/assets/img/product/kieng2.jpg'/>" alt="thumbnail">
                                                     <img class="second-img" src="<c:url value='/template/web/assets/img/product/kieng2.jpg'/>" alt="thumbnail">
                                                 </a>
@@ -166,7 +167,7 @@
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="<c:url value='/page-wishtlist'/>">
+                                                            <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                                 <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                             </a>
                                                         </li>
@@ -200,7 +201,7 @@
                                         <div class="media flex-column">
                                             <div class="product-thumbnail w-100 position-relative">
                                                 <span class="badge badge-danger top-left">new</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                                <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                                     <img class="first-img" src="<c:url value='/template/web/assets/img/product/kieng3.jpg'/>" alt="thumbnail">
                                                 </a>
                                                 <!-- product links -->
@@ -220,7 +221,7 @@
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="<c:url value='page-wishtlist'/>">
+                                                            <a href="<c:url value='danh-sach-yeu-thich'/>">
                                                                 <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                             </a>
                                                         </li>
@@ -254,7 +255,7 @@
                                         <div class="media flex-column">
                                             <div class="product-thumbnail w-100 position-relative">
                                                 <span class="badge badge-danger top-left">new</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                                <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                                     <img class="first-img"  src="<c:url value='/template/web/assets/img/product/kieng4.jpg'/>" alt="thumbnail">
                                                    
                                                     <img class="second-img" src="<c:url value='/template/web/assets/img/product/kieng4.jpg'/>" alt="thumbnail">
@@ -276,7 +277,7 @@
                                                             </a>
                                                         </li>
                                                         <li>
-                                                        <a href="<c:url value='/page-wishtlist'/>">
+                                                        <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                                 <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                             </a>
                                                         </li>
@@ -310,7 +311,7 @@
                                         <div class="media flex-column">
                                             <div class="product-thumbnail w-100 position-relative">
                                                 <span class="badge badge-danger top-left">new</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                                <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                                     <img class="first-img" src="<c:url value='/template/web/assets/img/product/non1.jpg'/>" alt="thumbnail">
                                                 </a>
                                                 <!-- product links -->
@@ -330,7 +331,7 @@
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="<c:url value='/page-wishtlist'/>">
+                                                            <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                                 <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                             </a>
                                                         </li>
@@ -364,7 +365,7 @@
                                         <div class="media flex-column">
                                             <div class="product-thumbnail w-100 position-relative">
                                                 <span class="badge badge-danger top-left">new</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                                <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                                     <img class="first-img" src="<c:url value='/template/web/assets/img/product/non2.jpg'/>" alt="thumbnail">
                                                 </a>
                                                 <!-- product links -->
@@ -384,7 +385,7 @@
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="<c:url value='/page-wishtlist'/>">
+                                                            <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                                 <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                             </a>
                                                         </li>
@@ -418,7 +419,7 @@
                                         <div class="media flex-column">
                                             <div class="product-thumbnail w-100 position-relative">
                                                 <span class="badge badge-danger top-left">new</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                                <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                                     <img class="first-img" src="<c:url value='/template/web/assets/img/product/non3.jpg'/>" alt="thumbnail">
                                                 </a>
                                                 <!-- product links -->
@@ -438,7 +439,7 @@
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="<c:url value='/page-wishtlist'/>">
+                                                            <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                                 <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                             </a>
                                                         </li>
@@ -472,7 +473,7 @@
                                         <div class="media flex-column">
                                             <div class="product-thumbnail w-100 position-relative">
                                                 <span class="badge badge-danger top-left">new</span>
-                                                <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                                <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                                     <img class="first-img" src="<c:url value='/template/web/assets/img/product/non4.jpg'/>" alt="thumbnail">
                                                 </a>
                                                 <!-- product links -->
@@ -492,7 +493,7 @@
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="<c:url value='/page-wishtlist'/>">
+                                                            <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                                 <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                             </a>
                                                         </li>
@@ -554,7 +555,7 @@
                                 <div class="media flex-column">
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-danger top-left">Mới</span>
-                                        <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                        <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                             <img class="first-img" src="<c:url value='/template/web/assets/img/product/balo1.jpg'/>" alt="thumbnail">
                                         </a>
                                         <!-- product links -->
@@ -574,7 +575,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="<c:url value='/page-wishtlist'/>">
+                                                    <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                         <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                     </a>
                                                 </li>
@@ -608,7 +609,7 @@
                                 <div class="media flex-column">
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-success top-left">-20%</span>
-                                        <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                        <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                             <img class="first-img" src="<c:url value='/template/web/assets/img/product/balo2.png'/>" alt="thumbnail">
                                             <img class="second-img" src="<c:url value='/template/web/assets/img/product/balo2.png'/>" alt="thumbnail">
                                         </a>
@@ -630,7 +631,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="<c:url value='/page-wishtlist'/>">
+                                                    <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                         <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                     </a>
                                                 </li>
@@ -664,7 +665,7 @@
                                 <div class="media flex-column">
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-danger top-left">new</span>
-                                        <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                        <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                             <img class="first-img" src="<c:url value='/template/web/assets/img/product/balo3.jpg'/>" alt="thumbnail">
                                         </a>
                                         <!-- product links -->
@@ -685,7 +686,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="<c:url value='/page-wishtlist'/>">
+                                                    <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                         <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                     </a>
                                                 </li>
@@ -719,7 +720,7 @@
                                 <div class="media flex-column">
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-success top-left">-20%</span>
-                                        <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                        <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                             <img class="first-img" src="<c:url value='/template/web/assets/img/product/balo4.jpg'/>" alt="thumbnail">
                                             
                                             <img class="second-img" src="<c:url value='/template/web/assets/img/product/balo4.jpg'/>" alt="thumbnail">
@@ -742,7 +743,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="<c:url value='/page-wishtlist'/>">
+                                                    <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                         <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                     </a>
                                                 </li>
@@ -806,7 +807,7 @@
                                 <div class="media flex-column">
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-danger top-left">Mới</span>
-                                        <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                        <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                             <img class="first-img" src="<c:url value='/template/web/assets/img/product/aotrang1.jpg'/>" alt="thumbnail">
                                         </a>
                                         <!-- product links -->
@@ -827,7 +828,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="<c:url value='/page-wishtlist'/>">
+                                                    <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                         <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                     </a>
                                                 </li>
@@ -861,7 +862,7 @@
                                 <div class="media flex-column">
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-success top-left">-20%</span>
-                                        <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                        <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                             <img class="first-img" src="<c:url value='/template/web/assets/img/product/aotrang2.jpg'/>" alt="thumbnail">
                                             <img class="second-img" src="<c:url value='/template/web/assets/img/product/aotrang2.jpg'/>" alt="thumbnail">
                                         </a>
@@ -883,7 +884,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="<c:url value='/page-wishtlist'/>">
+                                                    <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                         <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                     </a>
                                                 </li>
@@ -917,7 +918,7 @@
                                 <div class="media flex-column">
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-danger top-left">new</span>
-                                        <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                        <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                             <img class="first-img" src="<c:url value='/template/web/assets/img/product/aotrang3.jpg'/>" alt="thumbnail">
                                         </a>
                                         <!-- product links -->
@@ -938,7 +939,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="<c:url value='/page-wishtlist'/>">
+                                                    <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                         <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                     </a>
                                                 </li>
@@ -972,7 +973,7 @@
                                 <div class="media flex-column">
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-success top-left">-20%</span>
-                                        <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                        <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                             <img class="first-img" src="<c:url value='/template/web/assets/img/product/aotrang4.jpg'/>" alt="thumbnail">
                                             <img class="second-img" src="<c:url value='/template/web/assets/img/product/aotrang4.jpg'/>" alt="thumbnail">
                                         </a>
@@ -994,7 +995,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="<c:url value='/page-wishtlist'/>">
+                                                    <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                         <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                     </a>
                                                 </li>
@@ -1028,7 +1029,7 @@
                                 <div class="media flex-column">
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-danger top-left">new</span>
-                                        <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                        <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                             <img class="first-img" src="<c:url value='/template/web/assets/img/product/aotrang5.jpg'/>" alt="thumbnail">
                                             <img class="second-img" src="<c:url value='/template/web/assets/img/product/aotrang5.jpg'/>" alt="thumbnail">
                                         </a>
@@ -1050,7 +1051,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="<c:url value='/page-wishtlist'/>">
+                                                    <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                         <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                     </a>
                                                 </li>
@@ -1085,7 +1086,7 @@
                                 <div class="media flex-column">
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-danger top-left">new</span>
-                                        <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                        <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                             <img class="first-img" src="<c:url value='/template/web/assets/img/product/aoden1.jpg'/>" alt="thumbnail">
                                             <img class="second-img" src="<c:url value='/template/web/assets/img/product/aoden1.jpg'/>" alt="thumbnail">
                                         </a>
@@ -1107,7 +1108,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="<c:url value='/page-wishtlist'/>">
+                                                    <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                         <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                     </a>
                                                 </li>
@@ -1142,7 +1143,7 @@
                                 <div class="media flex-column">
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-danger top-left">new</span>
-                                        <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                        <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                             <img class="first-img" src="<c:url value='/template/web/assets/img/product/aoden2.jpg'/>" alt="thumbnail">
                                             <img class="second-img" src="<c:url value='/template/web/assets/img/product/aoden2.jpg'/>" alt="thumbnail">
                                         </a>
@@ -1164,7 +1165,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="<c:url value='/page-wishtlist'/>">
+                                                    <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                         <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                     </a>
                                                 </li>
@@ -1199,7 +1200,7 @@
                                 <div class="media flex-column">
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-danger top-left">new</span>
-                                        <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                        <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                             <img class="first-img" src="<c:url value='/template/web/assets/img/product/aoden3.jpg'/>" alt="thumbnail">
                                             <img class="second-img" src="<c:url value='/template/web/assets/img/product/aoden3.jpg'/>" alt="thumbnail">
                                         </a>
@@ -1221,7 +1222,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="<c:url value='/page-wishtlist'/>">
+                                                    <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                         <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                     </a>
                                                 </li>
@@ -1256,7 +1257,7 @@
                                 <div class="media flex-column">
                                     <div class="product-thumbnail w-100 position-relative">
                                         <span class="badge badge-danger top-left">Mới</span>
-                                        <a class="d-block" href="<c:url value='/page-singleP'/>">
+                                        <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
                                             <img class="first-img" src="<c:url value='/template/web/assets/img/product/aoden4.jpg'/>" alt="thumbnail">
                                             <img class="second-img" src="<c:url value='/template/web/assets/img/product/aoden4.jpg'/>" alt="thumbnail">
                                         </a>
@@ -1277,7 +1278,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="<c:url value='/page-wishtlist'/>">
+                                                    <a href="<c:url value='/danh-sach-yeu-thich'/>">
                                                         <span data-toggle="tooltip" data-placement="bottom" title="add to wishlist" class="ion-android-favorite-outline"> </span>
                                                     </a>
                                                 </li>
@@ -1352,7 +1353,7 @@
                                 <img src="<c:url value='/template/web/assets/img/blog-post/over1.jpg'/>" alt="blog-thumb-naile">
                             </a>
                             <div class="blog-post-content">
-                                <h3 class="title text-capitalize mb-15"><a href="single-blog.html">GLASSES </a></h3>
+                                <h3 class="title text-capitalize mb-15"><a href="<c:url value='/chi-tiet-san-pham'/>">GLASSES </a></h3>
                             </div>
                         </div>
                     </div>
@@ -1363,7 +1364,7 @@
                                 <img src="<c:url value='/template/web/assets/img/blog-post/over2.jpg'/>" alt="blog-thumb-naile">
                             </a>
                             <div class="blog-post-content">
-                                <h3 class="title text-capitalize mb-15"><a href="single-blog.html"> BACKPACK</a></h3>
+                                <h3 class="title text-capitalize mb-15"><a href="<c:url value='/chi-tiet-san-pham'/>"> BACKPACK</a></h3>
                             </div>
                         </div>
                     </div>
@@ -1374,7 +1375,7 @@
                                 <img src="<c:url value='/template/web/assets/img/blog-post/over3.jpg'/>" alt="blog-thumb-naile">
                             </a>
                             <div class="blog-post-content">
-                                <h3 class="title text-capitalize mb-15"><a href="single-blog.html">T-SHIRT</a></h3>
+                                <h3 class="title text-capitalize mb-15"><a href="<c:url value='/chi-tiet-san-pham'/>">T-SHIRT</a></h3>
                             </div>
                         </div>
                     </div>

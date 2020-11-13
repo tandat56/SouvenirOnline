@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>So sánh</title>
 </head>
 <body>
 <nav class="breadcrumb-section theme1 breadcrumb-bg1">
@@ -41,11 +41,11 @@
                                 <th scope="col">Thông tin sản phẩm</th>
                                 <th scope="col" class="text-center"> <img src="<c:url value='/template/web/assets/img/product/1.jpg'/>" alt="img">
                                     <span class="sub-title d-block">Water and Wind Resistant</span>
-                                    <a href="<c:url value='/page-cart'/>" class="btn  theme-btn--dark1 btn--xl"> thêm vào giỏ hàng</a>
+                                    <a href="<c:url value='/gio-hang'/>" class="btn  theme-btn--dark1 btn--xl"> thêm vào giỏ hàng</a>
                                 </th>
                                 <th scope="col" class="text-center"> <img src="<c:url value='/template/web/assets/img/product/2.jpg'/>" alt="img">
                                     <span class="sub-title d-block">Originals Kaval Windbreaker</span>
-                                    <a href="<c:url value='/page-cart'/>" class="btn  theme-btn--dark1 btn--xl"> thêm vào giỏ hàng</a>
+                                    <a href="<c:url value='/gio-hang'/>" class="btn  theme-btn--dark1 btn--xl"> thêm vào giỏ hàng</a>
                                 </th>
                             </tr>
                         </thead>

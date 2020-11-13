@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Đăng ký</title>
 </head>
 <body>
 <nav class="breadcrumb-section theme1 breadcrumb-bg1">
@@ -38,7 +38,7 @@
                     <form action="./assets/php/mail.php" class="personal-information">
                         <div class="order-asguest theme1 mb-3">
                             <span>Bạn đã để tạo một tài khoản?</span>
-                            <a class="text-muted hover-color" href="<c:url value='/page-login'/>">	Đăng nhập !</a>
+                            <a class="text-muted hover-color" href="<c:url value='/dang-nhap'/>">	Đăng nhập !</a>
                         </div>
                          <div class="form-group row">
                 <label for="name" class="col-md-3 col-form-label">Họ và tên</label>

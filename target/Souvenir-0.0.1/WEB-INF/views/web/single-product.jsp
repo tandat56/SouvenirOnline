@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Chi tiết sản phẩm</title>
 </head>
 <body>
 <nav class="breadcrumb-section theme1 breadcrumb-bg1">

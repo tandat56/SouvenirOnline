@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Liên hệ</title>
 </head>
 <body>
 <nav class="breadcrumb-section theme1 breadcrumb-bg1">
@@ -37,14 +37,12 @@
                 <!--  contact page side content  -->
                 <div class="contact-page-side-content">
                     <h3 class="contact-page-title">Liên hệ với chúng tôi</h3>
-                    <p class="contact-page-message mb-30">Claritas est etiam processus dynamicus, qui sequitur
-                        mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum
-                        claram anteposuerit litterarum formas human.</p>
+                    <p class="contact-page-message mb-30">Đạt đẹp trai</p>
                     <!--  single contact block  -->
 
                     <div class="single-contact-block">
                         <h4><i class="fa fa-fax"></i> Địa chỉ</h4>
-                        <p>123 Main Street, Anytown, CA 12345 – USA</p>
+                        <p>4449 Nguyễn Cửu Phú, phường Tân Tạo A, Bình Tân, Hồ Chí Minh</p>
                     </div>
 
                     <!--  End of single contact block -->
@@ -52,11 +50,10 @@
                     <!--  single contact block -->
 
                     <div class="single-contact-block">
-                        <h4><i class="fa fa-phone"></i> SDT</h4>
+                        <h4><i class="fa fa-phone"></i> Điện thoại</h4>
                         <p>
-                            <a href="tel:123456789">Mobile: (08) 123 456 789</a>
+                            <a href="tel:123456789">Mobile: 036 898 5595</a>
                         </p>
-                        <p><a href="tel:1009678456">Hotline: 1009 678 456</a></p>
                     </div>
 
                     <!-- End of single contact block -->
@@ -66,9 +63,9 @@
                     <div class="single-contact-block">
                         <h4><i class="fas fa-envelope"></i> Email</h4>
                         <p>
-                            <a href="mailto:yourmail@domain.com">yourmail@domain.com</a>
+                            <a href="mailto:datlt.letandat@gmail.com">datlt.letandat@gmail.com</a>
                         </p>
-                        <p> <a href="mailto:support@hastech.company">support@hastech.company</a></p>
+                        <p> <a href="mailto:datltps09246@fpt.edu.vn">datltps09246@fpt.edu.vn</a></p>
                     </div>
 
                     <!--=======  End of single contact block  =======-->
@@ -88,11 +85,11 @@
                                 <input type="text" name="customerName" id="customername" required="">
                             </div>
                             <div class="form-group">
-                                <label>Email của bạn <span class="required">*</span></label>
+                                <label>Email<span class="required">*</span></label>
                                 <input type="email" name="customerEmail" id="customerEmail" required="">
                             </div>
                             <div class="form-group">
-                                <label>Đối tượng</label>
+                                <label>Tiêu đề</label>
                                 <input type="text" name="contactSubject" id="contactSubject" required="">
                             </div>
                             <div class="form-group">

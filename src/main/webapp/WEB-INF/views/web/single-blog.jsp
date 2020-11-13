@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Chi tiết bài viết</title>
 </head>
 <body>
 <nav class="breadcrumb-section theme1 breadcrumb-bg1">
@@ -58,29 +58,27 @@
                         <a class="blog-link" href="../../user/hastech.html">Electronics</a>
                       </h5>
                       <p class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim adminim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip commodo consequat. Duis aute irure dolor in rep
-                        rehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiumod tempor incididunt ut labore et dolore magna
-                        aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim adminim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip commodo consequat. Duis aute irure dolor in rep
-                        rehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiumod tempor incididunt ut labore et dolore magna
-                        aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim adminim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip commodo consequat. Duis aute irure dolor in rep
-                        rehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiumod tempor incididunt ut labore et dolore magna
-                        aliqua.
+                        Gấu bông xinh xắn tuyệt vời Sắm ngay một bé bầu trời đáng yêu! ^^
+                         Dù là trẻ con hay người lớn thì chắc hẳn ai cũng thích thú nhồi bông,
+                          hoa quả nhồi bông đúng không. Vừa dễ thương lại êm êm, mềm mềm,
+                           ôm hay gối cả ngày đều không thấy chán luôn ý. Nắm bắt được nhu cầu của các bạn,
+                            Tô lại mới về thêm một em bé Thú bông chó Shiba Nằm Bẹp siêu cute và đáng yêu cho các bạn đây ạ!
+                             Chất liệu: + Bên ngoài: Được làm từ vải nhung mềm mại, chỉ cần chạm vào là cứ muốn sờ mãi không thôi.
+                              + Bên trong: Bông sợi cao cấp, an toàn cho người sử dụng.
+                               Kích thước: đa dạng cho bạn thoải mái lựa chọn Mô tả:
+                                Thiết kế hình chú chó Shiba nằm ngủ vô cùng dễ thương, kích thước vừa vặn, dễ mang theo khi di chuyển.
+                                 + Phia bên ngoài làm từ vải nhung mềm mại, tạo cảm giác cực đã khi ôm. 
+                                 + Chất vải co dãn, có độ đàn hồi tốt, không lo bị xẹp khi sử dụng. 
+                                 + Giữ form cực tốt, dù bạn ôm, gối đầu hay gác chân, nằm lên, hoặc thậm chí là khi giặt thì cũng không hề phải lo nha.
+                           Ứng dụng:
+                             + Các bé thú bông luôn là người bạn thân ở bên cạnh chúng ta dù vui hay buồn.
+                              + Chỉ cần ôm sương sương các bé là các bạn sẽ cảm nhận được ngay sự ấm áp, mềm mại, an toàn rồi đấy. 
+                              Không tin thì các bạn có thể ghé Tô thử ngay nhé. + Thiết kế cực kì đa dạng.
+                            Từ các bé dễ thương, đáng yêu cho đến các bé mặt ngầu lòi, hài hước, các bạn có thể thỏa sức lựa chọn hen.
+                            + Trong phòng nếu quá khô khan và buồn tẻ thì chỉ cần xuất hiện 1 bé thú bông là mọi chuyện sẽ được giải quyết liền.
+                           Vừa xinh xắn vừa đáng yêu, em nó sẽ là 1 phụ kiện trang trí cho phòng của bạn trở nên tươi mới hơn đó. 
+                           + Là món quà ý nghĩa, xinh xắn để tặng bạn bè và người thân trong các dịp đặc biệt đó nha.
+                           Bảo hành: Mọi sản phẩm gấu bông của Tô đều được bảo hành đường may trong 12 tháng đó nha.
                       </p>
                     </div>
                   </div>
@@ -94,12 +92,7 @@
                       <span>14 oct, 2020 </span>
                       <button class="reply">Reply</button>
                       <p>
-                        Ev kullanımı için en uygun HP Orjinal Ucuz Kartuşlar artık
-                        avatar.com adresinde 7/24 aktif şipariş hattımız ile her zaman
-                        Orijinal Kartuş alabilir ve bayilik fırsatlarımız ile her zaman
-                        %50 İndirimli alabilirsiniz. Sarf Depo olarak her zaman müşteri
-                        desteğimiz en ön plandadır.Her zaman canlı destek yada whatsapp
-                        hattımızdan yazmayı unutmayınız. www.avatar.com
+                        lalalala
                       </p>
                     </div>
                     <div class="comment-list">
@@ -109,12 +102,7 @@
                       <span>14 oct, 2020 </span>
                       <button class="reply">Reply</button>
                       <p>
-                        Ev kullanımı için en uygun HP Orjinal Ucuz Kartuşlar artık
-                        avatar.com adresinde 7/24 aktif şipariş hattımız ile her zaman
-                        Orijinal Kartuş alabilir ve bayilik fırsatlarımız ile her zaman
-                        %50 İndirimli alabilirsiniz. Sarf Depo olarak her zaman müşteri
-                        desteğimiz en ön plandadır.Her zaman canlı destek yada whatsapp
-                        hattımızdan yazmayı unutmayınız. www.avatar.com
+                        lalalala
                       </p>
                     </div>
                   </div>

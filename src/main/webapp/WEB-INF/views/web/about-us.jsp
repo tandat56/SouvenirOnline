@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Thông tin</title>
 </head>
 <body>
 <nav class="breadcrumb-section theme1 breadcrumb-bg1">
@@ -34,18 +34,16 @@
         <div class="row">
             <div class="col-lg-6 mb-30">
                 <div class="about-content">
-                    <h2 class="title mb-20">Chào mừng đến với Zonan</h2>
+                    <h2 class="title mb-20">Chào mừng đến với Souvenir Online</h2>
                     <p class="mb-20">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aperiam fugit consequuntur
-                        voluptatibus ex sint iure in, distinctio sed dolorem aspernatur veritatis repellendus dolorum
-                        voluptate, animi libero officiis eveniet accusamus recusandae. Temporibus
-                        amet ducimus sapiente voluptatibus autem dolorem magnam quas, officiis eveniet accusamus animi
-                        libero officiis eveniet accusamus recusandae. Temporibus
+                        Các sản phẩm luôn được kiểm soát chất lượng gắt gao. 
+                        Chế độ đổi mới sản phẩm lỗi hay hoàn tiền dễ dàng trong vòng 3 ngày sau bán hàng nếu sản phẩm lỗi sản xuất. 
+                        Bảo hành đường may, khóa kéo của sản phẩm 12 tháng sau khi bán. 
+                        Bảo hành sản phẩm điện tử, phụ kiện công nghệ tùy loại tối thiểu từ 1->24 tháng sau khi bán.
                     </p>
                     <p>
-                        Sint voluptatum beatae necessitatibus quos mollitia vero, optio asperiores aut tempora iusto eum
-                        rerum, possimus, minus quidem ut saepe laboriosam. Praesentium aperiam accusantium minus
-                        repellendus accusamus neque iusto pariatur laudantium provident quod
+                        Website tích hợp cổng vận chuyển với các hãng VNPost, Viettel, GHN, GHTK, Ecotrans, J&T ...
+                        Nhanh chóng giao đi khắp mọi miền Việt Nam với phí vận chuyển cực thấp cùng nhiều chương trình miễn phí vận chuyển.
                     </p>
                 </div>
             </div>
@@ -58,31 +56,26 @@
         <div class="row">
             <div class="col-md-4 mb-30">
                 <div class="about-info">
-                    <h4 class="title mb-20">Công ty chúng tôi</h4>
+                    <h4 class="title mb-20">Đặt hàng trực tuyến</h4>
                     <p>
-                        Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur
-                        adipisicing elit.
+                        Đặt hàng trực tuyến dễ dàng, thanh toán tiện lợi bằng thẻ ATM/ Visa/ Master trong nước... hoặc COD - Thanh toán khi nhận hàng
                     </p>
                 </div>
             </div>
             <div class="col-md-4 mb-30">
                 <div class="about-info">
-                    <h4 class="title mb-20">Đội ngũ chúng tôi</h4>
+                    <h4 class="title mb-20">Sản phẩm được cập nhật liên tục</h4>
                     <p>
-                        Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur
-                        adipisicing elit.
+                        Sản phẩm độc đáo trên thế giới, hầu như không thể có ở cửa hàng nào khác trong Việt Nam
                     </p>
                 </div>
             </div>
             <div class="col-md-4 mb-30">
                 <div class="about-info">
-                    <h4 class="title mb-20">Lời chứng thực</h4>
+                    <h4 class="title mb-20">Lời cảm ơn</h4>
                     <p>
-                        Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur
-                        adipisicing elit.
+                        Xin chân thành cảm ơn bạn đã tin tưởng và mua sắm tại shop chúng tôi! 
+                        Chúc bạn mua sắm vui vẻ.
                     </p>
                 </div>
             </div>

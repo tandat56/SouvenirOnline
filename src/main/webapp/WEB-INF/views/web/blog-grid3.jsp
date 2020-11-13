@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Chi tiết sản phẩm</title>
 </head>
 <body>
 <nav class="breadcrumb-section theme1 breadcrumb-bg1">
@@ -34,7 +34,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="blog-title">
-                    <h2 class="title">Từ Blog của chúng tôi </h2>
+                    <h2 class="title">Tin tức </h2>
                     <p class="text">Tin tức, video và chủ đề thảo luận mới nhất</p>
                 </div>
             </div>
@@ -42,154 +42,136 @@
         <div class="row">
             <div class="col-12 col-sm-6  col-md-6 col-lg-4 col-xl-4 mb-30">
                 <div class="single-blog">
-                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/page-singleblog'/>">
+                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/chi-tiet-bai-viet'/>">
                         <img src="<c:url value='/template/web/assets/img/blog-post/2.jpg'/>" alt="blog-thumb-naile">
                     </a>
                     <div class="blog-post-content">
-                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/page-singleblog'/>">This is first
-                                Post For XipBlog</a></h3>
-                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
+                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/chi-tiet-bai-viet'/>">Đây là tiêu đề</a></h3>
+                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="">Souvenir Online</a>11/2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/Souvenir Online.html">Fashion</a></h5>
                                 <p class="text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                    been the industrys standard dummy text ever since the 1500s, when ...
+                                    Đây là mô tả ngắn
                                 </p>
-                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/page-singleblog'/>">Read More</a>
+                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/chi-tiet-bai-viet'/>">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6  col-md-6 col-lg-4 col-xl-4 mb-30">
                 <div class="single-blog">
-                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/page-singleblog'/>">
+                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/chi-tiet-bai-viet'/>">
                         <img src="<c:url value='/template/web/assets/img/blog-post/2.jpg'/>" alt="blog-thumb-naile">
                     </a>
                     <div class="blog-post-content">
-                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/page-singleblog'/>">This is first
-                                Post For XipBlog</a></h3>
-                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
+                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/chi-tiet-bai-viet'/>">Đây là tiêu đề</a></h3>
+                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="">Souvenir Online</a>11/2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/Souvenir Online.html">Fashion</a></h5>
                                 <p class="text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                    been the industrys standard dummy text ever since the 1500s, when ...
+                                    Đây là mô tả ngắn
                                 </p>
-                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/page-singleblog'/>">Read More</a>
+                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/chi-tiet-bai-viet'/>">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6  col-md-6 col-lg-4 col-xl-4 mb-30">
                 <div class="single-blog">
-                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/page-singleblog'/>">
+                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/chi-tiet-bai-viet'/>">
                         <img src="<c:url value='/template/web/assets/img/blog-post/2.jpg'/>" alt="blog-thumb-naile">
                     </a>
                     <div class="blog-post-content">
-                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/page-singleblog'/>">This is first
-                                Post For XipBlog</a></h3>
-                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
+                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/chi-tiet-bai-viet'/>">Đây là tiêu đề</a></h3>
+                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="">Souvenir Online</a>11/2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/Souvenir Online.html">Fashion</a></h5>
                                 <p class="text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                    been the industrys standard dummy text ever since the 1500s, when ...
+                                    Đây là mô tả ngắn
                                 </p>
-                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/page-singleblog'/>">Read More</a>
+                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/chi-tiet-bai-viet'/>">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6  col-md-6 col-lg-4 col-xl-4 mb-30">
                 <div class="single-blog">
-                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/page-singleblog'/>">
+                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/chi-tiet-bai-viet'/>">
                         <img src="<c:url value='/template/web/assets/img/blog-post/2.jpg'/>" alt="blog-thumb-naile">
                     </a>
                     <div class="blog-post-content">
-                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/page-singleblog'/>">This is first
-                                Post For XipBlog</a></h3>
-                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
+                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/chi-tiet-bai-viet'/>">Đây là tiêu đề</a></h3>
+                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="">Souvenir Online</a>11/2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/Souvenir Online.html">Fashion</a></h5>
                                 <p class="text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                    been the industrys standard dummy text ever since the 1500s, when ...
+                                    Đây là mô tả ngắn
                                 </p>
-                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/page-singleblog'/>">Read More</a>
+                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/chi-tiet-bai-viet'/>">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6  col-md-6 col-lg-4 col-xl-4 mb-30">
                 <div class="single-blog">
-                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/page-singleblog'/>">
+                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/chi-tiet-bai-viet'/>">
                         <img src="<c:url value='/template/web/assets/img/blog-post/2.jpg'/>" alt="blog-thumb-naile">
                     </a>
                     <div class="blog-post-content">
-                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/page-singleblog'/>">This is first
-                                Post For XipBlog</a></h3>
-                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
+                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/chi-tiet-bai-viet'/>">Đây là tiêu đề</a></h3>
+                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="">Souvenir Online</a>11/2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/Souvenir Online.html">Fashion</a></h5>
                                 <p class="text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                    been the industrys standard dummy text ever since the 1500s, when ...
+                                    Đây là mô tả ngắn
                                 </p>
-                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/page-singleblog'/>">Read More</a>
+                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/chi-tiet-bai-viet'/>">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6  col-md-6 col-lg-4 col-xl-4 mb-30">
                 <div class="single-blog">
-                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/page-singleblog'/>">
+                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/chi-tiet-bai-viet'/>">
                         <img src="<c:url value='/template/web/assets/img/blog-post/2.jpg'/>" alt="blog-thumb-naile">
                     </a>
                     <div class="blog-post-content">
-                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/page-singleblog'/>">This is first
-                                Post For XipBlog</a></h3>
-                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
+                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/chi-tiet-bai-viet'/>">Đây là tiêu đề</a></h3>
+                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="../../user/Souvenir Online.html">Souvenir Online</a>11/2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/Souvenir Online.html">Fashion</a></h5>
                                 <p class="text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                    been the industrys standard dummy text ever since the 1500s, when ...
+                                    Đây là mô tả ngắn
                                 </p>
-                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/page-singleblog'/>">Read More</a>
+                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/chi-tiet-bai-viet'/>">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6  col-md-6 col-lg-4 col-xl-4 mb-30">
                 <div class="single-blog">
-                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/page-singleblog'/>">
+                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/chi-tiet-bai-viet'/>">
                         <img src="<c:url value='/template/web/assets/img/blog-post/2.jpg'/>" alt="blog-thumb-naile">
                     </a>
                     <div class="blog-post-content">
-                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/page-singleblog'/>">This is first
-                                Post For XipBlog</a></h3>
-                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
+                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/chi-tiet-bai-viet'/>">Đây là tiêu đề</a></h3>
+                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="../../user/Souvenir Online.html">Souvenir Online</a>11/2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/Souvenir Online.html">Fashion</a></h5>
                                 <p class="text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                    been the industrys standard dummy text ever since the 1500s, when ...
+                                    Đây là mô tả ngắn
                                 </p>
-                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/page-singleblog'/>">Read More</a>
+                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/chi-tiet-bai-viet'/>">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6  col-md-6 col-lg-4 col-xl-4 mb-30">
                 <div class="single-blog">
-                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/page-singleblog'/>">
+                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/chi-tiet-bai-viet'/>">
                         <img src="<c:url value='/template/web/assets/img/blog-post/2.jpg'/>" alt="blog-thumb-naile">
                     </a>
                     <div class="blog-post-content">
-                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/page-singleblog'/>">This is first
-                                Post For XipBlog</a></h3>
-                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
+                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/chi-tiet-bai-viet'/>">Đây là tiêu đề</a></h3>
+                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="../../user/Souvenir Online.html">Souvenir Online</a>11/2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/Souvenir Online.html">Fashion</a></h5>
                                 <p class="text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                    been the industrys standard dummy text ever since the 1500s, when ...
+                                    Đây là mô tả ngắn
                                 </p>
-                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/page-singleblog'/>">Read More</a>
+                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/chi-tiet-bai-viet'/>">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6  col-md-6 col-lg-4 col-xl-4 mb-30">
                 <div class="single-blog">
-                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/page-singleblog'/>">
+                    <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden" href="<c:url value='/chi-tiet-bai-viet'/>">
                         <img src="<c:url value='/template/web/assets/img/blog-post/2.jpg'/>" alt="blog-thumb-naile">
                     </a>
                     <div class="blog-post-content">
-                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/page-singleblog'/>">This is first
-                                Post For XipBlog</a></h3>
-                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">HasTech</a>Oct 14TH, 2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/hastech.html">Fashion</a></h5>
+                        <h3 class="title text-capitalize mb-15"><a href="<c:url value='/chi-tiet-bai-viet'/>">Đây là tiêu đề</a></h3>
+                        <h5 class="sub-title mb-10 text-capitalize"> Posted by <a class="blog-link theme-color d-inline-block mx-1" href="../../user/Souvenir Online.html">Souvenir Online</a>11/2020 <a class="blog-link theme-color d-inline-block mx-1" href="../../user/Souvenir Online.html">Fashion</a></h5>
                                 <p class="text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                    been the industrys standard dummy text ever since the 1500s, when ...
+                                    Đây là mô tả ngắn
                                 </p>
-                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/page-singleblog'/>">Read More</a>
+                        <a class="btn read-more text-capitalize mt-20" href="<c:url value='/chi-tiet-bai-viet'/>">Read More</a>
                     </div>
                 </div>
             </div>

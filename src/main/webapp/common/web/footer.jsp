@@ -78,9 +78,9 @@
               <!-- footer-menu start -->
               <ul class="footer-menu">
                 <li><a href="#">Giao hàng</a></li>
-                <li><a href="<c:url value='/page-about'/>">Thông tin về chúng tôi</a></li>
+                <li><a href="<c:url value='/thong-tin'/>">Thông tin về chúng tôi</a></li>
                 <li><a href="#">Phương thức thanh toán</a></li>
-                <li><a href="<c:url value='/page-contact'/>">Liên hệ</a></li>
+                <li><a href="<c:url value='/lien-he'/>">Liên hệ</a></li>
                 <li><a href="#">Bản đồ</a></li>
                 <li><a href="#">Chi nhánh</a></li>
               </ul>

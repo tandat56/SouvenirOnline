@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Thanh toán</title>
 </head>
 <body>
 <nav class="breadcrumb-section theme1 breadcrumb-bg1">
@@ -47,7 +47,7 @@
                                 <form action="<c:url value='/template/web/assets/php/mail.php'/>" class="personal-information">
                                     <div class="order-asguest mt-2 mb-4">
                                         <a href="#">Đặt hàng với tư cách khách</a> <span class="separator"></span>
-                                        <a class="gray" href="<c:url value='/page-login'/>">Đăng nhập</a>
+                                        <a class="gray" href="<c:url value='/dang-nhap'/>">Đăng nhập</a>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-md-3 col-form-label">
