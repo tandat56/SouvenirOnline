@@ -8,6 +8,7 @@ import com.souvenironline.repository.CategoryBlogRepository;
 import com.souvenironline.service.ICategoryBlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,10 +25,10 @@ public class CategoryBlogService implements ICategoryBlogService {
     private CategoryBlogConverter categoryBlogConverter;
 
     @Override
-    public Map<String,String> findAll() {
-        Map<String,String> result = new HashMap<>();
+    public Map<String, String> findAll() {
+        Map<String, String> result = new HashMap<>();
         List<CategoryBlogEntity> entities = categoryBlogRepository.findAll();
-        for (CategoryBlogEntity item: entities){
+        for (CategoryBlogEntity item : entities) {
 
             result.put(item.getCode(), item.getName());
         }
@@ -35,11 +36,12 @@ public class CategoryBlogService implements ICategoryBlogService {
     }
 
     @Override
+    @Transactional
     public CategoryBlogDTO save(CategoryBlogDTO dto) {
         CategoryBlogEntity categoryBlogEntity = new CategoryBlogEntity();
         if (dto.getId() != null) {
             CategoryBlogEntity oldCategoryBlog = categoryBlogRepository.findOne(dto.getId());
-            categoryBlogEntity = categoryBlogConverter.toEntity(oldCategoryBlog,dto);
+            categoryBlogEntity = categoryBlogConverter.toEntity(oldCategoryBlog, dto);
         } else {
             categoryBlogEntity = categoryBlogConverter.toEntity(dto);
         }
@@ -47,9 +49,21 @@ public class CategoryBlogService implements ICategoryBlogService {
     }
 
     @Override
+    @Transactional
     public void delete(long[] ids) {
         for (long id : ids) {
             categoryBlogRepository.delete(id);
         }
+    }
+
+    @Override
+    public List<CategoryBlogDTO> findAllBlog() {
+        List<CategoryBlogDTO> models = new ArrayList<>();
+        List<CategoryBlogEntity> entities = categoryBlogRepository.findAll();
+        for (CategoryBlogEntity item : entities) {
+            CategoryBlogDTO categoryBlogDTO = categoryBlogConverter.toDTO(item);
+            models.add(categoryBlogDTO);
+        }
+        return models;
     }
 }

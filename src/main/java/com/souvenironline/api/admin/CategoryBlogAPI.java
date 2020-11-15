@@ -1,10 +1,10 @@
-package com.souvenironline.api;
+package com.souvenironline.api.admin;
 
 import com.souvenironline.dto.CategoryBlogDTO;
+import com.souvenironline.repository.CategoryBlogRepository;
 import com.souvenironline.service.ICategoryBlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.Map;
 
 @RestController(value = "categoryBlogAPI")
@@ -27,7 +27,7 @@ public class CategoryBlogAPI {
         categoryBlogService.delete(ids);
     }
     @GetMapping("/api/category-blog")
-    public Map<String,String> getCategoryBlog(){
+    public Map<String,String > getCategoryBlog(){
         return categoryBlogService.findAll();
     }
 }

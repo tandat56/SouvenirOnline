@@ -1,8 +1,6 @@
 package com.souvenironline.converter;
 
-import com.souvenironline.dto.BlogDTO;
 import com.souvenironline.dto.CategoryBlogDTO;
-import com.souvenironline.entity.BlogEntity;
 import com.souvenironline.entity.CategoryBlogEntity;
 import org.springframework.stereotype.Component;
 

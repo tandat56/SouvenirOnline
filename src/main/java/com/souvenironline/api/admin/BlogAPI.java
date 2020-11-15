@@ -1,4 +1,4 @@
-package com.souvenironline.api;
+package com.souvenironline.api.admin;
 
 import com.souvenironline.dto.BlogDTO;
 import com.souvenironline.service.IBlogService;
@@ -14,18 +14,20 @@ public class BlogAPI {
     private IBlogService blogService;
 
     @PostMapping("/api/blog")
-    public BlogDTO createBlog(@RequestBody BlogDTO blogDTO){
+    public BlogDTO createBlog(@RequestBody BlogDTO blogDTO) {
         return blogService.save(blogDTO);
     }
+
     @PutMapping("/api/blog")
-    public BlogDTO updateBlog(@RequestBody BlogDTO updateBlog){
+    public BlogDTO updateBlog(@RequestBody BlogDTO updateBlog) {
         return blogService.save(updateBlog);
     }
 
     @DeleteMapping("/api/blog")
-    public void deleteBlog(long[] ids){
+    public void deleteBlog(long[] ids) {
         blogService.delete(ids);
     }
+
     @GetMapping("/api/blog")
     public List<BlogDTO> getBlog() {
         return blogService.findAll();

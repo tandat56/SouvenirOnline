@@ -383,7 +383,7 @@
                         </ul>
                     </li>
                     <li class="list-group-item text-center">
-                        <button class="btn theme-btn--dark1 btn--md">Tiến hành kiểm tra</button>
+                        <button class="btn theme-btn--dark1 btn--md">Thanh toán</button>
                     </li>
                 </ul>
 
