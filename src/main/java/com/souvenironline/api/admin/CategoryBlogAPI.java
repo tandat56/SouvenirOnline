@@ -22,7 +22,7 @@ public class CategoryBlogAPI {
     }
 
     @DeleteMapping("/api/category-blog")
-    public void deleteCategoryBlog(long[] ids){
+    public void deleteCategoryBlog(@RequestBody long[] ids){
         categoryBlogService.delete(ids);
     }
     @GetMapping("/api/category-blog")

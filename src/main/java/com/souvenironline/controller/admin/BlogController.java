@@ -30,7 +30,7 @@ public class BlogController {
 
     @RequestMapping(value = "/quan-tri/bai-viet/danh-sach", method = RequestMethod.GET)
     public ModelAndView showList(@RequestParam("page") int page,
-                                 @RequestParam("limit") int limit, HttpServletRequest request) {
+                                 @RequestParam("limit") int limit) {
         BlogDTO model = new BlogDTO();
         model.setPage(page);
         model.setLimit(limit);

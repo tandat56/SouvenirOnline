@@ -31,7 +31,7 @@ public class BlogService implements IBlogService {
     @Override
     public List<BlogDTO> findAll(Pageable pageable) {
         List<BlogDTO> models = new ArrayList<>();
-        List<BlogEntity> entities = blogRepository.findAll();
+        List<BlogEntity> entities = blogRepository.findAll(pageable).getContent();
         for (BlogEntity item : entities) {
             BlogDTO blogDTO = blogConverter.toDTO(item);
             models.add(blogDTO);

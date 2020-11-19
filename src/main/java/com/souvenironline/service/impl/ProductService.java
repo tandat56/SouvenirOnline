@@ -8,6 +8,7 @@ import com.souvenironline.repository.CategoryProductRepository;
 import com.souvenironline.repository.ProductRepository;
 import com.souvenironline.service.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -27,9 +28,9 @@ public class ProductService implements IProductService {
     private CategoryProductRepository categoryProductRepository;
 
     @Override
-    public List<ProductDTO> findAll() {
+    public List<ProductDTO> findAll(Pageable pageable) {
         List<ProductDTO> models = new ArrayList<>();
-        List<ProductEntity> entities = productRepository.findAll();
+        List<ProductEntity> entities = productRepository.findAll(pageable).getContent();
 
         for (ProductEntity item : entities) {
             ProductDTO productDTO = productConverter.toDTO(item);
@@ -61,6 +62,11 @@ public class ProductService implements IProductService {
         for (long id : ids) {
             productRepository.delete(id);
         }
+    }
+
+    @Override
+    public int getTotalItem() {
+        return (int) productRepository.count();
     }
 
     @Override

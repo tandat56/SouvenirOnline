@@ -36,17 +36,39 @@
     <ul class="nav nav-list">
         <li >
             <a href="#" class="dropdown-toggle">
-                <i class="menu-icon fa fa-list"></i>
+             <i class="menu-icon fa fa-list"></i>    
                 <span class="menu-text"></span>
                 Quản lý bài viết
                 <b class="arrow fa fa-angle-down"></b>
             </a>
+
             <b class="arrow"></b>
             <ul class="submenu">
                 <li>
-                    <a href="<c:url value='/quan-tri/bai-viet/danh-sach?page=1&limit=2'/>">
+                    <a href="<c:url value='/quan-tri/bai-viet/danh-sach?page=1&limit=10'/>">
                         <i class="menu-icon fa fa-caret-right"></i>
-                        DS bài viết
+                        Danh sách bài viết
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+
+
+        <li >
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-list"></i>
+                <span class="menu-text"></span>
+                Quản lý sản phẩm 
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+            <ul class="submenu">
+                <li>
+                    <a href="<c:url value='/quan-tri/san-pham/danh-sach?page=1&limit=10'/>">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Danh sách sản phẩm
                     </a>
                     <b class="arrow"></b>
                 </li>

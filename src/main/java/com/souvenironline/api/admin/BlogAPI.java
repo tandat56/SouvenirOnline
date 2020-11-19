@@ -25,7 +25,7 @@ public class BlogAPI {
     }
 
     @DeleteMapping("/api/blog")
-    public void deleteBlog(long[] ids) {
+    public void deleteBlog(@RequestBody long[] ids) {
         blogService.delete(ids);
     }
 }

@@ -1,19 +1,19 @@
 <%@include file="/common/taglib.jsp"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<c:url var="blogAPI" value="/api/blog"/>
-<c:url var="blogURL" value="/quan-tri/bai-viet/danh-sach"/>
+<c:url var="productAPI" value="/api/product"/>
+<c:url var="productURL" value="/quan-tri/san-pham/danh-sach"/>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Danh sách bài viết</title>
+		<title>Danh sách sản phẩm</title>
 	</head>
 
 	<body>
 		<div class="main-content">
-		<form action="<c:url value='/quan-tri/bai-viet/danh-sach'/>" id="formSubmit" method="get">
+		<form action="<c:url value='/quan-tri/san-pham/danh-sach'/>" id="formSubmit" method="get">
 			
 				<div class="main-content-inner">
 					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
@@ -37,10 +37,10 @@
 									<div class="table-btn-controls">
 										<div class="pull-right tableTools-container">
 											<div class="dt-buttons btn-overlap btn-group">
-												<c:url var="createBlogURL" value="/quan-tri/bai-viet/chinh-sua"/>
+												<c:url var="createProductURL" value="/quan-tri/san-pham/chinh-sua"/>
 												<a flag="info"
 												   class="dt-button buttons-colvis btn btn-white btn-primary btn-bold" data-toggle="tooltip"
-												   title='Thêm bài viết' href='${createBlogURL}'>
+												   title='Thêm bài viết' href='${createProductURL}'>
 															<span>
 																<i class="fa fa-plus-circle bigger-110 purple"></i>
 															</span>
@@ -62,23 +62,28 @@
 												<thead>
 													<tr>
 														<th><input type="checkbox" id="checkAll"></th>
-														<th>Tên bài viết</th>
-														<th>Mô tả ngắn</th>
-														<th>Thao tác</th>
+														<th>Tên sản phẩm</th>
+														<th>Giá</th>
+														<th>Giảm giá</th>
+														<th>Trạng thái</th>
+														<th>Chỉnh sửa</th>
+														
 													</tr>
 												</thead>
 												<tbody>
 													<c:forEach var="item" items="${model.listResult}">
 														<tr>
 															<td><input type="checkbox" id="checkbox_${item.id}" value="${item.id}"></td>
-															<td>${item.title}</td>
-															<td>${item.shortDescription}</td>
+															<td>${item.productName}</td>
+															<td>${item.price}</td>
+															<td>${item.discount}</td>
+															<td>${item.status}</td>
 															<td>
-																<c:url var="updateBlogURL" value="/quan-tri/bai-viet/chinh-sua">
+																<c:url var="updateProductgURL" value="/quan-tri/san-pham/chinh-sua">
 																	<c:param name="id" value="${item.id}"/>															
 																</c:url>																
 																<a class="btn btn-sm btn-primary btn-edit" data-toggle="tooltip"
-																   title="Cập nhật bài viết" href='${updateBlogURL}'><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+																   title="Cập nhật bài viết" href='${updateProductgURL}'><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 																</a>
 															</td>
 														</tr>
@@ -109,7 +114,7 @@
 		            startPage: currentPage,
 		            onPageClick: function (event, page) {
 		            	if (currentPage != page) {
-		            		$('#limit').val(2);
+		            		$('#limit').val(10);
 							$('#page').val(page);
 							$('#formSubmit').submit();
 						}

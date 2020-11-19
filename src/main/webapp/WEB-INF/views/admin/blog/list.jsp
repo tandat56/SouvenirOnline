@@ -85,7 +85,7 @@
 													</c:forEach>
 												</tbody>
 											</table>
-											<ul class="pagination" id="pagination"></ul>
+											<!-- <ul class="pagination" id="pagination"></ul> -->
 											<input type="hidden" value="" id="page" name="page"/>
 											<input type="hidden" value="" id="limit" name="limit"/>		
 									     									
@@ -96,6 +96,7 @@
 						</div>
 					</div>
 				</div>
+				<ul class="pagination" id="pagination"></ul>
 		</form>
 		</div>
 		<!-- /.main-content -->
@@ -109,7 +110,7 @@
 		            startPage: currentPage,
 		            onPageClick: function (event, page) {
 		            	if (currentPage != page) {
-		            		$('#limit').val(2);
+		            		$('#limit').val(10);
 							$('#page').val(page);
 							$('#formSubmit').submit();
 						}

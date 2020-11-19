@@ -24,12 +24,8 @@ public class ProductAPI {
     }
 
     @DeleteMapping("/api/product")
-    public void deleteProduct(long[] ids) {
+    public void deleteProduct(@RequestBody long[] ids) {
         productService.delete(ids);
     }
 
-    @GetMapping("/api/product")
-    public List<ProductDTO> getProduct() {
-        return productService.findAll();
-    }
 }
