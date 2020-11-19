@@ -20,7 +20,7 @@
 						<ul class="breadcrumb">
 							<li>
 								<i class="ace-icon fa fa-home home-icon"></i>
-								<a href="#">Trang chủ</a>
+								<a href="<c:url value='/trang-chu'/>">Trang chủ</a>
 							</li>
 						</ul>
 						<!-- /.breadcrumb -->
@@ -78,16 +78,17 @@
 																	<c:param name="id" value="${item.id}"/>															
 																</c:url>																
 																<a class="btn btn-sm btn-primary btn-edit" data-toggle="tooltip"
-																   title="Cập nhật bài viết" href='${updateNewURL}'><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+																   title="Cập nhật bài viết" href='${updateBlogURL}'><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 																</a>
 															</td>
 														</tr>
 													</c:forEach>
 												</tbody>
 											</table>
-											<ul class="pagination" id="pagination"></ul>	
+											<ul class="pagination" id="pagination"></ul>
 											<input type="hidden" value="" id="page" name="page"/>
-											<input type="hidden" value="" id="limit" name="limit"/>									
+											<input type="hidden" value="" id="limit" name="limit"/>		
+									     									
 										</div>
 									</div>
 								</div>
@@ -137,15 +138,15 @@
 			} 
 			function deleteNew(data) {
 		        $.ajax({
-		            url: '${newAPI}',
+		            url: '${blogAPI}',
 		            type: 'DELETE',
 		            contentType: 'application/json',
 		            data: JSON.stringify(data),
 		            success: function (result) {
-		                window.location.href = "${newURL}?page=1&limit=2&message=delete_success";
+		                window.location.href = "${blogURL}?page=1&limit=2&message=delete_success";
 		            },
 		            error: function (error) {
-		            	window.location.href = "${newURL}?page=1&limit=2&message=error_system";
+		            	window.location.href = "${blogURL}?page=1&limit=2&message=error_system";
 		            }
 		        });
 		    }

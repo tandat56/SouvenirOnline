@@ -3,6 +3,7 @@ package com.souvenironline.api.admin;
 import com.souvenironline.dto.BlogDTO;
 import com.souvenironline.service.IBlogService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -26,10 +27,5 @@ public class BlogAPI {
     @DeleteMapping("/api/blog")
     public void deleteBlog(long[] ids) {
         blogService.delete(ids);
-    }
-
-    @GetMapping("/api/blog")
-    public List<BlogDTO> getBlog() {
-        return blogService.findAll();
     }
 }

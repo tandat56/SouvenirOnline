@@ -9,6 +9,7 @@ import com.souvenironline.repository.BlogRepository;
 import com.souvenironline.repository.CategoryBlogRepository;
 import com.souvenironline.service.IBlogService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -28,7 +29,7 @@ public class BlogService implements IBlogService {
     private CategoryBlogRepository categoryBlogRepository;
 
     @Override
-    public List<BlogDTO> findAll() {
+    public List<BlogDTO> findAll(Pageable pageable) {
         List<BlogDTO> models = new ArrayList<>();
         List<BlogEntity> entities = blogRepository.findAll();
         for (BlogEntity item : entities) {
@@ -36,6 +37,11 @@ public class BlogService implements IBlogService {
             models.add(blogDTO);
         }
         return models;
+    }
+
+    @Override
+    public int getTotalItem() {
+        return (int) blogRepository.count();
     }
 
     @Override
