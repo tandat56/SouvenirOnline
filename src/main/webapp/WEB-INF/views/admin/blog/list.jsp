@@ -64,6 +64,7 @@
 														<th><input type="checkbox" id="checkAll"></th>
 														<th>Tên bài viết</th>
 														<th>Mô tả ngắn</th>
+														<th>Thể loại</th>
 														<th>Thao tác</th>
 													</tr>
 												</thead>
@@ -73,6 +74,7 @@
 															<td><input type="checkbox" id="checkbox_${item.id}" value="${item.id}"></td>
 															<td>${item.title}</td>
 															<td>${item.shortDescription}</td>
+															<td>${item.categoryCode}</td>
 															<td>
 																<c:url var="updateBlogURL" value="/quan-tri/bai-viet/chinh-sua">
 																	<c:param name="id" value="${item.id}"/>															
@@ -85,7 +87,7 @@
 													</c:forEach>
 												</tbody>
 											</table>
-											<!-- <ul class="pagination" id="pagination"></ul> -->
+											<ul class="pagination" id="pagination"></ul>
 											<input type="hidden" value="" id="page" name="page"/>
 											<input type="hidden" value="" id="limit" name="limit"/>		
 									     									
@@ -96,7 +98,7 @@
 						</div>
 					</div>
 				</div>
-				<ul class="pagination" id="pagination"></ul>
+				
 		</form>
 		</div>
 		<!-- /.main-content -->
@@ -144,10 +146,10 @@
 		            contentType: 'application/json',
 		            data: JSON.stringify(data),
 		            success: function (result) {
-		                window.location.href = "${blogURL}?page=1&limit=2&message=delete_success";
+		                window.location.href = "${blogURL}?page=1&limit=10&message=delete_success";
 		            },
 		            error: function (error) {
-		            	window.location.href = "${blogURL}?page=1&limit=2&message=error_system";
+		            	window.location.href = "${blogURL}?page=1&limit=10&message=error_system";
 		            }
 		        });
 		    }

@@ -19,7 +19,7 @@
 			</script>
 
 			<ul class="breadcrumb">
-				<li><i class="ace-icon fa fa-home home-icon"></i> <a href="#">Home</a>
+				<li><i class="ace-icon fa fa-home home-icon"></i> <a href="<c:url value='/trang-chu'/>">Trang chủ</a>
 				</li>
 
 				<li><a href="#">Forms</a></li>
@@ -69,7 +69,7 @@
 						  		<form:textarea path="content" rows="5" cols="10" cssClass="form-control" id="content"/>
 						  	</div>
 						</div>
-						<form:hidden path="id" id="newId"/>
+						<form:hidden path="id" id="blogId"/>
 						<div class="clearfix form-actions">
 							<div class="col-md-offset-3 col-md-9">
 											<c:if test="${not empty model.id}">
@@ -107,7 +107,7 @@
 	    $.each(formData, function (i, v) {
             data[""+v.name+""] = v.value;
         });
-	    var id = $('#newId').val();
+	    var id = $('#blogId').val();
 	    if (id == "") {
 	    	addNew(data);
 	    } else {
@@ -117,32 +117,32 @@
 	
 	function addNew(data) {
 		$.ajax({
-            url: '${newAPI}',
+            url: '${blogAPI}',
             type: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(data),
             dataType: 'json',
             success: function (result) {
-            	window.location.href = "${editNewURL}?id="+result.id+"&message=insert_success";
+            	window.location.href = "${editBlogURL}?id="+result.id+"&message=insert_success";
             },
             error: function (error) {
-            	window.location.href = "${newURL}?page=1&limit=2&message=error_system";
+            	window.location.href = "${blogURL}?page=1&limit=10&message=error_system";
             }
         });
 	}
 	
 	function updateNew(data) {
 		$.ajax({
-            url: '${newAPI}',
+            url: '${blogAPI}',
             type: 'PUT',
             contentType: 'application/json',
             data: JSON.stringify(data),
             dataType: 'json',
             success: function (result) {
-            	window.location.href = "${editNewURL}?id="+result.id+"&message=update_success";
+            	window.location.href = "${editBlogURL}?id="+result.id+"&message=update_success";
             },
             error: function (error) {
-            	window.location.href = "${editNewURL}?id="+result.id+"&message=error_system";
+            	window.location.href = "${editBlogURL}?id="+result.id+"&message=error_system";
             }
         });
 	}

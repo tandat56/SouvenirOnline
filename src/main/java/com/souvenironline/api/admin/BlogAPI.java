@@ -3,10 +3,8 @@ package com.souvenironline.api.admin;
 import com.souvenironline.dto.BlogDTO;
 import com.souvenironline.service.IBlogService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
 @RestController(value = "blogAPIOfAdmin")
 public class BlogAPI {
