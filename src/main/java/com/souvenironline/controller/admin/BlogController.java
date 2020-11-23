@@ -1,8 +1,8 @@
 package com.souvenironline.controller.admin;
 
 import com.souvenironline.dto.BlogDTO;
-import com.souvenironline.service.IBlogService;
-import com.souvenironline.service.ICategoryBlogService;
+import com.souvenironline.service.admin.IBlogAdminService;
+import com.souvenironline.service.admin.ICategoryBlogAdminService;
 import com.souvenironline.util.MessageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
@@ -20,17 +20,17 @@ import java.util.Map;
 public class BlogController {
 
     @Autowired
-    private IBlogService blogService;
+    private IBlogAdminService blogService;
 
     @Autowired
-    private ICategoryBlogService categoryBlogService;
+    private ICategoryBlogAdminService categoryBlogService;
 
     @Autowired
     private MessageUtil messageUtil;
 
     @RequestMapping(value = "/quan-tri/bai-viet/danh-sach", method = RequestMethod.GET)
     public ModelAndView showList(@RequestParam("page") int page,
-                                 @RequestParam("limit") int limit) {
+                                 @RequestParam("limit") int limit, HttpServletRequest request) {
         BlogDTO model = new BlogDTO();
         model.setPage(page);
         model.setLimit(limit);
@@ -39,21 +39,27 @@ public class BlogController {
         model.setListResult(blogService.findAll(pageable));
         model.setTotalItem(blogService.getTotalItem());
         model.setTotalPage((int) Math.ceil((double) model.getTotalItem() / model.getLimit()));
-        /*if (request.getParameter("message") != null) {
+
+        if (request.getParameter("message") != null) {
             Map<String, String> message = messageUtil.getMessage(request.getParameter("message"));
             mav.addObject("message", message.get("message"));
             mav.addObject("alert", message.get("alert"));
-        }*/
+        }
         mav.addObject("model", model);
         return mav;
     }
 
     @RequestMapping(value = "/quan-tri/bai-viet/chinh-sua", method = RequestMethod.GET)
-    public ModelAndView editList(@RequestParam(value = "id", required = false) Long id) {
+    public ModelAndView editList(@RequestParam(value = "id", required = false) Long id, HttpServletRequest request) {
         ModelAndView mav = new ModelAndView("admin/blog/edit");
         BlogDTO model = new BlogDTO();
         if (id != null) {
             model = blogService.findById(id);
+        }
+        if (request.getParameter("message") != null) {
+            Map<String, String> message = messageUtil.getMessage(request.getParameter("message"));
+            mav.addObject("message", message.get("message"));
+            mav.addObject("alert", message.get("alert"));
         }
         mav.addObject("categories", categoryBlogService.findAll());
         mav.addObject("model", model);

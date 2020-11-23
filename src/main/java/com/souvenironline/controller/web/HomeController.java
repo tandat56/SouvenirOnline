@@ -3,6 +3,13 @@ package com.souvenironline.controller.web;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.souvenironline.dto.CategoryProductDTO;
+import com.souvenironline.dto.ProductDTO;
+import com.souvenironline.service.admin.ICategoryProductAdminService;
+import com.souvenironline.service.admin.IProductAdminService;
+import com.souvenironline.service.web.ICategoryProductWebService;
+import com.souvenironline.util.MessageUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
@@ -12,12 +19,28 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller(value = "homeControllerOfWeb")
-public class HomeController {
+public class HomeController extends BaseController {
 
+    @Autowired
+    private IProductAdminService productService;
+
+    @Autowired
+    private ICategoryProductAdminService categoryProductService;
+
+    @Autowired
+    private MessageUtil messageUtil;
+
+    @Autowired
+    private ICategoryProductWebService categoryProductWebService;
 
     @RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
     public ModelAndView homePage() {
+
+        ProductDTO product = new ProductDTO();
+        CategoryProductDTO categoryProduct = new CategoryProductDTO();
         ModelAndView mav = new ModelAndView("web/home");
+        categoryProduct.setListResult(categoryProductWebService.findAll());
+        mav.addObject("categories", categoryProduct);
         return mav;
     }
 

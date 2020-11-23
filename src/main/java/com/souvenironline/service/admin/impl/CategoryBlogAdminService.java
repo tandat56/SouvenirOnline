@@ -1,11 +1,10 @@
-package com.souvenironline.service.impl;
+package com.souvenironline.service.admin.impl;
 
 import com.souvenironline.converter.CategoryBlogConverter;
 import com.souvenironline.dto.CategoryBlogDTO;
-import com.souvenironline.entity.BlogEntity;
 import com.souvenironline.entity.CategoryBlogEntity;
 import com.souvenironline.repository.CategoryBlogRepository;
-import com.souvenironline.service.ICategoryBlogService;
+import com.souvenironline.service.admin.ICategoryBlogAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class CategoryBlogService implements ICategoryBlogService {
+public class CategoryBlogAdminService implements ICategoryBlogAdminService {
 
     @Autowired
     private CategoryBlogRepository categoryBlogRepository;

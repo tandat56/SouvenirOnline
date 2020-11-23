@@ -1,7 +1,7 @@
 package com.souvenironline.api.admin;
 
 import com.souvenironline.dto.CategoryBlogDTO;
-import com.souvenironline.service.ICategoryBlogService;
+import com.souvenironline.service.admin.ICategoryBlogAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.Map;
@@ -10,7 +10,7 @@ import java.util.Map;
 public class CategoryBlogAPI {
 
     @Autowired
-    private ICategoryBlogService categoryBlogService;
+    private ICategoryBlogAdminService categoryBlogService;
 
     @PostMapping("/api/category-blog")
     public CategoryBlogDTO createCategoryBlog(@RequestBody CategoryBlogDTO categoryBlogDTO){

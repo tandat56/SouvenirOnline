@@ -13,6 +13,9 @@
 		<class>com.souvenironline.entity.CategoryProductEntity</class>
 		<class>com.souvenironline.entity.ProductEntity</class>
 		<class>com.souvenironline.entity.CommentEntity</class>
+		<class>com.souvenironline.entity.ColorsEntity</class>
+		<class>com.souvenironline.entity.SildeEntity</class>
+
 	</persistence-unit>
 </persistence>
 

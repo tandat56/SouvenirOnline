@@ -28,7 +28,7 @@
 			<!-- /.breadcrumb -->
 		</div>
 		<div class="page-content">
-			<!-- <div class="row"> -->
+			 <div class="row"> 
 				<div class="col-xs-12">
 					<c:if test="${not empty message}">
 						<div class="alert alert-${alert}">
@@ -59,10 +59,20 @@
 							</div>
 					</div>
 						<div class="form-group">
-								<label class="col-sm-3 control-label no-padding-right" for="form-field-1">Hình ảnh </label>
-								<div class="col-sm-9">
-									<input type="file" class="col-xs-10 col-sm-5" id="image" name="image"/>
-								</div>
+							<label class="col-sm-3 control-label no-padding-right">Ảnh sản phẩm:</label>
+							<div class="col-sm-4">
+								<input type="file" id="uploadImage"/>
+							</div>
+							<div class="col-sm-5" style="margin-bottom: 10px">
+								<c:if test="${not empty model.image}">
+									<c:set var="image" value="/repository/${model.image}"/>
+									<img src="${image}" id="viewImage" width="300px" height="300px">
+								</c:if>
+								<c:if test="${empty model.image}">
+									<img src="<c:url value='/template/image/default.png'/>" id="viewImage" width="300px" height="300px">
+								</c:if>
+							</div>
+							<br/>
 						</div>
 						<div class="form-group">
 						  	<label for="detail" class="col-sm-3 control-label no-padding-right">Chi tiết:</label>
@@ -101,7 +111,7 @@
 						</div>
 					</form:form>
 				</div>
-			<!-- </div> -->
+		 </div> 
 		</div>
 	</div>
 </div>	
@@ -114,6 +124,10 @@
 	    $.each(formData, function (i, v) {
             data[""+v.name+""] = v.value;
         });
+		if (photoBase64 != '') {
+			data['photoBase64'] = photoBase64;
+			data['photoName'] = photoName;
+		}
 	    var id = $('#productId').val();
 	    if (id == "") {
 	    	addNew(data);
@@ -152,6 +166,26 @@
             	window.location.href = "${editProductURL}?id="+result.id+"&message=error_system";
             }
         });
+	}
+	$('#uploadImage').change(function (event) {
+		var reader = new FileReader();
+		var file = $(this)[0].files[0];
+		reader.onload = function(e){
+			photoBase64 = e.target.result;
+			photoName = file.name;
+		};
+		reader.readAsDataURL(file);
+		openImage(this, "viewImage");
+	});
+
+	function openImage(input, imageView) {
+		if (input.files && input.files[0]) {
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				$('#' +imageView).attr('src', reader.result);
+			}
+			reader.readAsDataURL(input.files[0]);
+		}
 	}
 </script>
 </body>

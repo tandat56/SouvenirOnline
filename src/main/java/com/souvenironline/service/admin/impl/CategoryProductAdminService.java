@@ -1,10 +1,10 @@
-package com.souvenironline.service.impl;
+package com.souvenironline.service.admin.impl;
 
 import com.souvenironline.converter.CategoryProductConverter;
 import com.souvenironline.dto.CategoryProductDTO;
 import com.souvenironline.entity.CategoryProductEntity;
 import com.souvenironline.repository.CategoryProductRepository;
-import com.souvenironline.service.ICategoryProductService;
+import com.souvenironline.service.admin.ICategoryProductAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class CategoryProductService implements ICategoryProductService {
+public class CategoryProductAdminService implements ICategoryProductAdminService {
 
     @Autowired
     private CategoryProductRepository categoryProductRepository;

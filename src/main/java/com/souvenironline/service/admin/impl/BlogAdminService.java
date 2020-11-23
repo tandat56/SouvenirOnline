@@ -1,23 +1,25 @@
-package com.souvenironline.service.impl;
+package com.souvenironline.service.admin.impl;
 
 import com.souvenironline.converter.BlogConverter;
 import com.souvenironline.dto.BlogDTO;
-import com.souvenironline.dto.CategoryBlogDTO;
 import com.souvenironline.entity.BlogEntity;
 import com.souvenironline.entity.CategoryBlogEntity;
 import com.souvenironline.repository.BlogRepository;
 import com.souvenironline.repository.CategoryBlogRepository;
-import com.souvenironline.service.IBlogService;
+import com.souvenironline.service.admin.IBlogAdminService;
+import com.souvenironline.util.UploadFileUtils;
+import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class BlogService implements IBlogService {
+public class BlogAdminService implements IBlogAdminService {
 
     @Autowired
     private BlogRepository blogRepository;
@@ -27,6 +29,9 @@ public class BlogService implements IBlogService {
 
     @Autowired
     private CategoryBlogRepository categoryBlogRepository;
+
+    @Autowired
+    private UploadFileUtils uploadFileUtils;
 
     @Override
     public List<BlogDTO> findAll(Pageable pageable) {
@@ -59,11 +64,28 @@ public class BlogService implements IBlogService {
             BlogEntity oldBlog = blogRepository.findOne(dto.getId());
             oldBlog.setCategoryBlog(category);
             blogEntity = blogConverter.toEntity(oldBlog, dto);
+            blogEntity.setThumbnail(oldBlog.getThumbnail());
         } else {
             blogEntity = blogConverter.toEntity(dto);
             blogEntity.setCategoryBlog(category);
         }
+        savePhoto(dto, blogEntity);
+
         return blogConverter.toDTO(blogRepository.save(blogEntity));
+    }
+    private void savePhoto(BlogDTO dto, BlogEntity blogEntity) {
+        String path = "/photo/"+ dto.getPhotoName();
+        if (dto.getPhotoBase64() != null) {
+            if (blogEntity.getThumbnail() != null) {
+                if (!path.equals(blogEntity.getThumbnail())) {
+                    File file = new File("/home/asm/" + blogEntity.getThumbnail());
+                    file.delete();
+                }
+            }
+            byte[] bytes = Base64.decodeBase64(dto.getPhotoBase64().getBytes());
+            uploadFileUtils.writeOrUpdate(path, bytes);
+            blogEntity.setThumbnail(path);
+        }
     }
 
     @Override

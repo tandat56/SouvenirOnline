@@ -30,6 +30,6 @@
     
     <beans:bean id="bcryptEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
     <!-- authen  -->
-    <beans:bean id="customUserDetailsService" class="com.souvenironline.service.impl.CustomUserDetailsService" />
+    <beans:bean id="customUserDetailsService" class="com.souvenironline.service.admin.impl.CustomUserDetailsService" />
     <beans:bean id="customSuccessHandler" class="com.souvenironline.security.CustomSuccessHandler" />
 </beans:beans>

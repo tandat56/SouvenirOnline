@@ -1,8 +1,9 @@
 package com.souvenironline.controller.admin;
 
 import com.souvenironline.dto.ProductDTO;
-import com.souvenironline.service.ICategoryProductService;
-import com.souvenironline.service.IProductService;
+import com.souvenironline.service.admin.ICategoryProductAdminService;
+import com.souvenironline.service.admin.IProductAdminService;
+import com.souvenironline.util.MessageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -12,18 +13,24 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.Map;
+
 @Controller(value = "productControllerOfAdmin")
 public class ProductController {
 
     @Autowired
-    private IProductService productService;
+    private IProductAdminService productService;
 
     @Autowired
-    private ICategoryProductService categoryProductService;
+    private ICategoryProductAdminService categoryProductService;
+
+    @Autowired
+    private MessageUtil messageUtil;
 
     @RequestMapping(value = "/quan-tri/san-pham/danh-sach", method = RequestMethod.GET)
     public ModelAndView showList(@RequestParam("page") int page,
-                                 @RequestParam("limit") int limit) {
+                                 @RequestParam("limit") int limit, HttpServletRequest request) {
         ProductDTO model = new ProductDTO();
         model.setPage(page);
         model.setLimit(limit);
@@ -33,16 +40,27 @@ public class ProductController {
         model.setTotalItem(productService.getTotalItem());
         model.setTotalPage((int) Math.ceil((double) model.getTotalItem() / model.getLimit()));
 
+        if (request.getParameter("message") != null) {
+            Map<String, String> message = messageUtil.getMessage(request.getParameter("message"));
+            mav.addObject("message", message.get("message"));
+            mav.addObject("alert", message.get("alert"));
+        }
+
         mav.addObject("model", model);
         return mav;
     }
 
     @RequestMapping(value = "/quan-tri/san-pham/chinh-sua", method = RequestMethod.GET)
-    public ModelAndView editList(@RequestParam(value = "id", required = false) Long id) {
+    public ModelAndView editList(@RequestParam(value = "id", required = false) Long id, HttpServletRequest request) {
         ModelAndView mav = new ModelAndView("admin/product/edit");
         ProductDTO model = new ProductDTO();
         if (id != null) {
             model = productService.findById(id);
+        }
+        if (request.getParameter("message") != null) {
+            Map<String, String> message = messageUtil.getMessage(request.getParameter("message"));
+            mav.addObject("message", message.get("message"));
+            mav.addObject("alert", message.get("alert"));
         }
         mav.addObject("categories", categoryProductService.findAll());
         mav.addObject("model", model);

@@ -1,7 +1,7 @@
 package com.souvenironline.api.admin;
 
 import com.souvenironline.dto.BlogDTO;
-import com.souvenironline.service.IBlogService;
+import com.souvenironline.service.admin.IBlogAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 public class BlogAPI {
 
     @Autowired
-    private IBlogService blogService;
+    private IBlogAdminService blogService;
 
     @PostMapping("/api/blog")
     public BlogDTO createBlog(@RequestBody BlogDTO blogDTO) {

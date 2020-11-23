@@ -1,10 +1,6 @@
 package com.souvenironline.entity;
 
 import javax.persistence.*;
-
-import lombok.Getter;
-import lombok.Setter;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +11,9 @@ public class ProductEntity extends BaseEntity {
 	@Column(name = "product_name")
 	private String productName;
 
+	@Column(name = "title")
+	private String title;
+
 	@Column(name = "image")
 	private String image;
 
@@ -23,6 +22,9 @@ public class ProductEntity extends BaseEntity {
 
 	@Column(name = "detail")
 	private String detail;
+
+	@Column(name = "sale")
+	private Integer sale;
 
 	@Column(name = "view_count")
 	private Long viewCount;
@@ -50,6 +52,34 @@ public class ProductEntity extends BaseEntity {
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "productwarehouseid")
 	private WarehouseEntity warehouse;
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "colorsid")
+	private ColorsEntity colors;
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public Integer getSale() {
+		return sale;
+	}
+
+	public void setSale(Integer sale) {
+		this.sale = sale;
+	}
+
+	public ColorsEntity getColors() {
+		return colors;
+	}
+
+	public void setColors(ColorsEntity colors) {
+		this.colors = colors;
+	}
 
 	public String getProductName() {
 		return productName;

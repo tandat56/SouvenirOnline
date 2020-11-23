@@ -27,12 +27,12 @@
 					</div>
 					<div class="page-content">
 						<div class="row">
-							<!-- <div class="col-xs-12">
+							 <div class="col-xs-12">
 								<c:if test="${not empty message}">
 									<div class="alert alert-${alert}">
 			  							${message}
 									</div>
-								</c:if> -->
+								</c:if> 
 								<div class="widget-box table-filter">
 									<div class="table-btn-controls">
 										<div class="pull-right tableTools-container">
@@ -65,7 +65,7 @@
 														<th>Tên sản phẩm</th>
 														<th>Giá</th>
 														<th>Giảm giá</th>
-														<th>Trạng thái</th>
+														<th>Thể loại</th>
 														<th>Chỉnh sửa</th>
 														
 													</tr>
@@ -77,7 +77,7 @@
 															<td>${item.productName}</td>
 															<td>${item.price}</td>
 															<td>${item.discount}</td>
-															<td>${item.status}</td>
+															<td>${item.categoryProduct}</td>
 															<td>
 																<c:url var="updateProductgURL" value="/quan-tri/san-pham/chinh-sua">
 																	<c:param name="id" value="${item.id}"/>															
@@ -137,21 +137,21 @@
 							var ids = $('tbody input[type=checkbox]:checked').map(function () {
 					            return $(this).val();
 					        }).get();
-							deleteNew(ids);
+							deleteProduct(ids);
 					  }
 					});
 			} 
-			function deleteNew(data) {
+			function deleteProduct(data) {
 		        $.ajax({
-		            url: '${blogAPI}',
+		            url: '${productAPI}',
 		            type: 'DELETE',
 		            contentType: 'application/json',
 		            data: JSON.stringify(data),
 		            success: function (result) {
-		                window.location.href = "${blogURL}?page=1&limit=2&message=delete_success";
+		                window.location.href = "${productURL}?page=1&limit=10&message=delete_success";
 		            },
 		            error: function (error) {
-		            	window.location.href = "${blogURL}?page=1&limit=2&message=error_system";
+		            	window.location.href = "${productURL}?page=1&limit=10&message=error_system";
 		            }
 		        });
 		    }

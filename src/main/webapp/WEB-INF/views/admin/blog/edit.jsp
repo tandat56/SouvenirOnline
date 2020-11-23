@@ -51,12 +51,27 @@
 									<form:input path="title" cssClass="col-xs-10 col-sm-5"/>
 								</div>
 						</div>
+
 						<div class="form-group">
-								<label class="col-sm-3 control-label no-padding-right" for="form-field-1">Ảnh đại diện</label>
-								<div class="col-sm-9">
-									<input type="file" class="col-xs-10 col-sm-5" id="thumbnail" name="thumbnail"/>
-								</div>
+							<label class="col-sm-3 control-label no-padding-right">Ảnh đại diện:</label>
+							<div class="col-sm-4">
+								<input type="file" id="uploadImage"/>
+							</div>
+							<div class="col-sm-5" style="margin-bottom: 10px">
+								<c:if test="${not empty model.thumbnail}">
+									<c:set var="image" value="/repository/${model.thumbnail}"/>
+									<img src="${image}" id="viewImage" width="300px" height="300px">
+								</c:if>
+								<c:if test="${empty model.thumbnail}">
+									<img src="<c:url value='/template/image/default.png'/>" id="viewImage" width="300px" height="300px">
+								</c:if>
+							</div>
+							<br/>
 						</div>
+
+
+
+
 						<div class="form-group">
 						  	<label for="shortDescription" class="col-sm-3 control-label no-padding-right">Mô tả ngắn:</label>
 						  	<div class="col-sm-9">
@@ -100,6 +115,9 @@
 </div>	
 
 <script>
+	var photoBase64 = '';
+    var photoName = '';
+	
 	$('#btnAddOrUpdateNew').click(function (e) {
 	    e.preventDefault();
 	    var data = {};
@@ -107,6 +125,10 @@
 	    $.each(formData, function (i, v) {
             data[""+v.name+""] = v.value;
         });
+		if (photoBase64 != '') {
+             data['photoBase64'] = photoBase64;
+             data['photoName'] = photoName;
+         }
 	    var id = $('#blogId').val();
 	    if (id == "") {
 	    	addNew(data);
@@ -146,6 +168,26 @@
             }
         });
 	}
+	$('#uploadImage').change(function (event) {
+        var reader = new FileReader();
+        var file = $(this)[0].files[0];
+        reader.onload = function(e){
+            photoBase64 = e.target.result;
+            photoName = file.name;
+        };
+        reader.readAsDataURL(file);
+        openImage(this, "viewImage");
+    });
+
+    function openImage(input, imageView) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#' +imageView).attr('src', reader.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
 </script>
 </body>
 </html>

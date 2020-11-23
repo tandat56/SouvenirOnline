@@ -1,12 +1,11 @@
-package com.souvenironline.service;
+package com.souvenironline.service.admin;
 
-import com.souvenironline.dto.BlogDTO;
 import com.souvenironline.dto.ProductDTO;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
-public interface IProductService {
+public interface IProductAdminService {
 
     List<ProductDTO> findAll(Pageable pageable);
 

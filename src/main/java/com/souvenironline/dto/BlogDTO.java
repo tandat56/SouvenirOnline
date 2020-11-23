@@ -8,6 +8,27 @@ public class BlogDTO extends AbstractDTO<BlogDTO> {
     private String content;
     private Long categoryId;
     private String categoryCode;
+    private String photoBase64;
+    private String photoName;
+
+    public String getPhotoBase64() {
+        if (photoBase64 != null) {
+            return photoBase64.split(",")[1];
+        }
+        return photoBase64;
+    }
+
+    public void setPhotoBase64(String photoBase64) {
+        this.photoBase64 = photoBase64;
+    }
+
+    public String getPhotoName() {
+        return photoName;
+    }
+
+    public void setPhotoName(String photoName) {
+        this.photoName = photoName;
+    }
 
     public String getTitle() {
         return title;

@@ -1,9 +1,9 @@
-package com.souvenironline.service;
+package com.souvenironline.service.admin;
 import com.souvenironline.dto.CategoryProductDTO;
 
 import java.util.Map;
 
-public interface ICategoryProductService {
+public interface ICategoryProductAdminService {
 
     Map<String,String> findAll();
     CategoryProductDTO save(CategoryProductDTO dto);

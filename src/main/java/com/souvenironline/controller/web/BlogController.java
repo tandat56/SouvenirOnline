@@ -2,9 +2,8 @@ package com.souvenironline.controller.web;
 
 
 import com.souvenironline.dto.BlogDTO;
-import com.souvenironline.service.IBlogService;
+import com.souvenironline.service.admin.IBlogAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class BlogController {
 
     @Autowired
-    private IBlogService blogService;
+    private IBlogAdminService blogService;
 
     @RequestMapping(value = "/tin-tuc", method = RequestMethod.GET)
     public ModelAndView blogGridPage() {

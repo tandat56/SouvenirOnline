@@ -135,11 +135,11 @@
 							var ids = $('tbody input[type=checkbox]:checked').map(function () {
 					            return $(this).val();
 					        }).get();
-							deleteNew(ids);
+							deleteBlog(ids);
 					  }
 					});
 			} 
-			function deleteNew(data) {
+			function deleteBlog(data) {
 		        $.ajax({
 		            url: '${blogAPI}',
 		            type: 'DELETE',

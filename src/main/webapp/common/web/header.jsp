@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@include file="/common/taglib.jsp"%>
 <div class="offcanvas-overlay"></div>
 <!-- offcanvas-overlay end -->
 
@@ -292,10 +293,10 @@
                                     <li class="col-3">
                                         <ul class="border-right h-100 pr-20">
                                             <li class="mega-menu-title"><a href="#">Áo</a></li>
-                                            <li><a href="#">Áo thun trắng lưu niệm</a></li>
-                                            <li><a href="#">Áo thun đen lưu niệm</a></li>
-                                            
-                                            
+
+<%--                                            <c:forEach var="item" items="categories">--%>
+<%--                                                <li><a href="<c:url value='/trang-chu'/>">${item.name} </a></li>--%>
+<%--                                            </c:forEach>--%>
                                         </ul>
                                     </li>
                                     <li class="col-3">
