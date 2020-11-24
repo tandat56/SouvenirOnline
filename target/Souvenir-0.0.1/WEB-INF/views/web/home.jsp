@@ -13,50 +13,33 @@
 
     <section class="bg-light position-relative">
         <div class="main-slider dots-style theme1">
-            <!-- <div class="slider-item bg-img bg-img1">
-                <div class="container">
-                    <div class="row align-items-center slider-height">
-                        <div class="col-12">
-                            <div class="slider-content">
-                                <p class="text text-dark text-uppercase animated mb-25" data-animation-in="fadeInDown">
-                                    Wow skin Science</p>
-                                <h4 class="title text-dark animated text-capitalize mb-20"
-                                    data-animation-in="fadeInLeft" data-delay-in="1">Charcoal & Keratin</h4>
-                                <h2 class="sub-title text-dark animated" data-animation-in="fadeInRight"
-                                    data-delay-in="2">
-                                    Shampoo 300ml</h2>
-                                <a href="<c:url value='/page-shopgrid4'/>"
-                                    class="btn theme--btn1 btn--lg text-uppercase  animated mt-45 mt-sm-25"
-                                    data-animation-in="zoomIn" data-delay-in="3">Mua ngay</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
             <!-- slider-item end -->
-            <div class="slider-item bg-img">
+            <c:forEach var="item" items="${silde}">
+            <div class="slider-item bg-img bg-img2">
                 <div class="container">
                     <div class="row align-items-center slider-height">
                         <div class="col-12">
+                            
                             <div class="slider-content">
+                                
                                 <p class="text text-dark text-uppercase animated mb-25" data-animation-in="fadeInLeft">
-                                    cleanse and refresh</p>
+                                    ${item.name}</p>
                                 <h4 class="title text-dark animated text-capitalize mb-20"
-                                    data-animation-in="fadeInRight" data-delay-in="1">Sisley Pre-Shampoo</h4>
+                                    data-animation-in="fadeInRight" data-delay-in="1"> ${item.content}</h4>
 
                                 <h2 class="sub-title text-dark animated" data-animation-in="fadeInUp" data-delay-in="2">
-                                    Up
-                                    Purifying Mask</h2>
-                                    
+                                        ${item.caption}</h2>
                                 <a href="<c:url value='/page-shopgrid4'/>"
-                                    class="btn theme--btn1 btn--lg text-uppercase animated mt-45 mt-sm-25"
-                                    data-animation-in="zoomIn" data-delay-in="3">Mua ngay</a>
-                            </div>
+                                   class="btn theme--btn1 btn--lg text-uppercase animated mt-45 mt-sm-25"
+                                   data-animation-in="zoomIn" data-delay-in="3">Mua ngay</a>
+                                </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
+        </c:forEach>
             <!-- slider-item end -->
         </div>
         <!-- slick-progress -->

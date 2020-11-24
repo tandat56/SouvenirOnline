@@ -12,11 +12,22 @@ public class SildeEntity extends BaseEntity {
     @Column(name = "image")
     private String image;
 
+    @Column(name = "name")
+    private String name;
+
     @Column(name = "caption")
     private String caption;
 
     @Column(name = "content")
     private String content;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public String getImage() {
         return image;

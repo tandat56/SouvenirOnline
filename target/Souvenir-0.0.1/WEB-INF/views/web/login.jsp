@@ -50,7 +50,7 @@
               <div class="input-group mb-2 mr-sm-2">
                 <input name="j_password" type="password" class="form-control" id="inputPassword" placeholder="Password">
                 <div class="input-group-prepend">
-                  <button type="button" class="input-group-text  theme-btn--dark1 btn--md show-password">hiển thị</button>
+                  <button type="button" onclick="myFunction()" class="input-group-text  theme-btn--dark1 btn--md show-password" >Hiển thị</button>
                 </div>
               </div>
 
@@ -63,7 +63,7 @@
                 <a href="#" class="for-get">Quên mật khẩu?</a>
                 <div class="sign-btn">
                  <!-- <a href="#" type="submit" class="btn theme-btn--dark1 btn--md">Sign in</a> -->
-                  <button type="submit" class="btn theme-btn--dark1 btn--md">Đăng ký</button>
+                  <button type="submit" class="btn theme-btn--dark1 btn--md">Đăng nhập</button>
                 </div>
               </div>
             </div>
@@ -81,30 +81,15 @@
   </div>
 </div>
 <!-- product tab end -->
-
-<!-- news-letter start -->
-<section class="news-letter-section theme1 bg-white">
-  <div class="container">
-    <div class="news-letter-wrapper pt-65 pb-65">
-      <div class="row">
-        <div class="col-12">
-          <div class="form-title mb-30 text-center">
-            <p class="text mb-10">Special Ofers For Subscribers</p>
-            <h4 class="title text text-capitalize">
-              Ten Percent Member Discount
-            </h4>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- news-letter end -->
-
-
+<script>
+  function myFunction() {
+    var x = document.getElementById("inputPassword");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+  </script>
 </body>
 </html>

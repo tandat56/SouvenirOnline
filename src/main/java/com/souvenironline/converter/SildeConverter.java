@@ -10,6 +10,7 @@ public class SildeConverter {
         SildeDTO result = new SildeDTO();
         result.setId(entity.getId());
         result.setImage(entity.getImage());
+        result.setName(entity.getName());
         result.setCaption(entity.getCaption());
         result.setContent(entity.getContent());
         return result;
@@ -18,12 +19,14 @@ public class SildeConverter {
     public SildeEntity toEntity(SildeDTO dto) {
         SildeEntity result = new SildeEntity();
         result.setImage(dto.getImage());
+        result.setName(dto.getName());
         result.setCaption(dto.getCaption());
         result.setContent(dto.getContent());
         return result;
     }
     public SildeEntity toEntity(SildeEntity result, SildeDTO dto){
         result.setImage(dto.getImage());
+        result.setName(dto.getName());
         result.setCaption(dto.getCaption());
         result.setContent(dto.getContent());
         return result;

@@ -5,9 +5,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.souvenironline.dto.CategoryProductDTO;
 import com.souvenironline.dto.ProductDTO;
+import com.souvenironline.dto.SildeDTO;
 import com.souvenironline.service.admin.ICategoryProductAdminService;
 import com.souvenironline.service.admin.IProductAdminService;
 import com.souvenironline.service.web.ICategoryProductWebService;
+import com.souvenironline.service.web.impl.SildeWebService;
 import com.souvenironline.util.MessageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -17,6 +19,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.List;
 
 @Controller(value = "homeControllerOfWeb")
 public class HomeController extends BaseController {
@@ -31,16 +35,16 @@ public class HomeController extends BaseController {
     private MessageUtil messageUtil;
 
     @Autowired
+    private SildeWebService sildeWebService;
+
+    @Autowired
     private ICategoryProductWebService categoryProductWebService;
 
     @RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
     public ModelAndView homePage() {
-
-        ProductDTO product = new ProductDTO();
-        CategoryProductDTO categoryProduct = new CategoryProductDTO();
         ModelAndView mav = new ModelAndView("web/home");
-        categoryProduct.setListResult(categoryProductWebService.findAll());
-        mav.addObject("categories", categoryProduct);
+        List<SildeDTO> silde  = sildeWebService.findAll();
+        mav.addObject("silde", silde);
         return mav;
     }
 
