@@ -182,35 +182,13 @@
             <span class="title">Cart</span>
             <button class="offcanvas-close">×</button>
         </div>
-        <ul class="minicart-product-list">
-            <li>
-                <a href="<c:url value='/chi-tiet-bai-viet'/>" class="image"><img src="<c:url value='/template/web/assets/img/product/4.jpg'/>" alt="Cart product Image"></a>
-                <div class="content">
-                    <a href="<c:url value='/chi-tiet-bai-viet'/>" class="title">Walnut Cutting Board</a>
-                    <span class="quantity-price">1 x <span class="amount">$100.00</span></span>
-                    <a href="#" class="remove">×</a>
-                </div>
-            </li>
-            <li>
-                <a href="<c:url value='/chi-tiet-bai-viet'/>" class="image"><img src="<c:url value='/template/web/assets/img/product/4.jpg'/>" alt="Cart product Image"></a>
-                <div class="content">
-                    <a href="<c:url value='/chi-tiet-bai-viet'/>" class="title">Lucky Wooden Elephant</a>
-                    <span class="quantity-price">1 x <span class="amount">$35.00</span></span>
-                    <a href="#" class="remove">×</a>
-                </div>
-            </li>
-            <li>
-                <a href="<c:url value='/chi-tiet-bai-viet'/>" class="image"><img src="<c:url value='/template/web/assets/img/product/4.jpg'/>" alt="Cart product Image"></a>
-                <div class="content">
-                    <a href="<c:url value='/chi-tiet-bai-viet'/>" class="title">Fish Cut Out Set</a>
-                    <span class="quantity-price">1 x <span class="amount">$9.00</span></span>
-                    <a href="#" class="remove">×</a>
-                </div>
-            </li>
-        </ul>
+
         <div class="sub-total d-flex flex-wrap justify-content-between">
+
             <strong>Subtotal :</strong>
-            <span class="amount">$144.00</span>
+            <span class="cart-cnt"></span>
+            <span class="amount cart-amt"></span>
+
         </div>
         <a href="<c:url  value='/gio-hang'/>" class="btn theme--btn1 btn--lg text-uppercase  d-block d-sm-inline-block mr-sm-2">view
             cart</a>
@@ -374,12 +352,14 @@
                                         <span class="badge cbdg1">4</span>
                                     </a>
                                 </li>
+
                                 <li class="cart-block position-relative d-none d-sm-block">
                                     <a class="offcanvas-toggle" href="#offcanvas-cart">
                                         <i class="ion-bag"></i>
-                                        <span class="badge cbdg1">5</span>
+                                        <span class="badge cbdg1 cart-cnt">0</span>
                                     </a>
                                 </li>
+
                                 <li class="mr-0 cart-block">
                                     <a class="offcanvas-toggle" href="#offcanvas-setting">
                                         <i class="ion-android-settings"></i>

@@ -3,12 +3,12 @@ package com.souvenironline.controller.web;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.souvenironline.dto.BlogDTO;
 import com.souvenironline.dto.CategoryProductDTO;
 import com.souvenironline.dto.ProductDTO;
 import com.souvenironline.dto.SildeDTO;
-import com.souvenironline.service.admin.ICategoryProductAdminService;
-import com.souvenironline.service.admin.IProductAdminService;
 import com.souvenironline.service.web.ICategoryProductWebService;
+import com.souvenironline.service.web.IProductWebService;
 import com.souvenironline.service.web.impl.SildeWebService;
 import com.souvenironline.util.MessageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,10 +26,7 @@ import java.util.List;
 public class HomeController extends BaseController {
 
     @Autowired
-    private IProductAdminService productService;
-
-    @Autowired
-    private ICategoryProductAdminService categoryProductService;
+    private IProductWebService productWebService;
 
     @Autowired
     private MessageUtil messageUtil;
@@ -40,10 +37,17 @@ public class HomeController extends BaseController {
     @Autowired
     private ICategoryProductWebService categoryProductWebService;
 
+
     @RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
     public ModelAndView homePage() {
+        CategoryProductDTO cates = new CategoryProductDTO();
+        ProductDTO model = new ProductDTO();
         ModelAndView mav = new ModelAndView("web/home");
-        List<SildeDTO> silde  = sildeWebService.findAll();
+        cates.setListResult(categoryProductWebService.findAll());
+        model.setListResult(productWebService.findAll());
+        List<SildeDTO> silde = sildeWebService.findAll();
+        mav.addObject("cates", cates);
+        mav.addObject("model", model);
         mav.addObject("silde", silde);
         return mav;
     }

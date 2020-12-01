@@ -409,7 +409,9 @@
 </section>
 <!-- product tab end -->
 
-
+$(function(){
+cart.read(); /*-- Đọc từ sessionStorage khi trang web chạy --*/
+})
 
 </body>
 </html>

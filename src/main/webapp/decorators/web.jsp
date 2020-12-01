@@ -9,6 +9,7 @@
 	
    
     <link rel="shortcut icon" type="image/x-icon" href="<c:url value='/template/web/assets/img/logo/favicon.png'/>">
+    <script src="<c:url value='/template/web/assets/js/Poly.js'/>"></script>
     <link href="<c:url value='/template/web/assets/css/vendor/vendor.min.css'/>" rel="stylesheet" type="text/css">
     <link href="<c:url value='/template/web/assets/css/plugins/plugins.min.css'/>" rel="stylesheet" type="text/css">
     <link href="<c:url value='/template/web/assets/css/style.min.css'/>" rel="stylesheet" type="text/css">

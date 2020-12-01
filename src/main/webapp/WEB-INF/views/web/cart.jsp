@@ -40,119 +40,30 @@
                     <table class="table mb-0">
                         <thead class="thead-light">
                             <tr>
-                                <th class="text-center" scope="col">Hình ảnh sản phẩm</th>
-                                <th class="text-center" scope="col">Tên sản phẩm</th>
-                                <th class="text-center" scope="col">Tình trạng tồn kho</th>
-                                <th class="text-center" scope="col">Qty</th>
-                                <th class="text-center" scope="col">Giá</th>
-                                <th class="text-center" scope="col">Hành động</th>
-                                <th class="text-center" scope="col">Thủ tục thanh toán</th>
+                                <th class="text-center" >ID</th>
+                                <th class="text-center" >Tên sản phẩm</th>
+                                <th class="text-center" >Giá</th>
+                                <th class="text-center" >Số lượng</th>
+                                <th class="text-center" >Tổng tiền</th>
+                                <th class="text-center" ></th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <th class="text-center" scope="row">
-                                    <img src="<c:url value='/template/web/assets/img/product/2.jpg'/>" alt="img">
-                                </th>
-                                <td class="text-center">
-                                    <span class="whish-title">Chống nước và gió</span>
-                                </td>
-                                <td class="text-center">
-                                    <span class="badge badge-danger position-static my-badge">Kho</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="product-count style">
-                                        <div class="count d-flex justify-content-center">
-                                            <input type="number" min="1" max="10" step="1" value="1">
-                                            <div class="button-group">
-                                                <button class="count-btn increment"><i class="fas fa-chevron-up"></i></button>
-                                                <button class="count-btn decrement"><i class="fas fa-chevron-down"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <span class="whish-list-price">
-                                        $38.24
-                                    </span></td>
-
-                                <td class="text-center">
-                                    <a href="#"> <span class="trash"><i class="fas fa-trash-alt"></i> </span></a>
-                                </td>
-                                <td class="text-center">
-                                    <a href="#" class="btn theme-btn--dark1 btn--xl text-uppercase">Mua ngay</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="text-center" scope="row">
-                                    <img src="<c:url value='/template/web/assets/img/product/4.jpg'/>" alt="img">
-                                </th>
-                                <td class="text-center">
-                                    <span class="whish-title">Originals Kaval Windbreaker</span>
-                                </td>
-                                <td class="text-center">
-                                    <span class="badge badge-danger position-static my-badge">Kho</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="product-count style">
-                                        <div class="count d-flex justify-content-center">
-                                            <input type="number" min="1" max="10" step="1" value="1">
-                                            <div class="button-group">
-                                                <button class="count-btn increment"><i class="fas fa-chevron-up"></i></button>
-                                                <button class="count-btn decrement"><i class="fas fa-chevron-down"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <span class="whish-list-price">
-                                        $38.24
-                                    </span>
-                                </td>
-
-                                <td class="text-center">
-                                    <a href="#"> <span class="trash"><i class="fas fa-trash-alt"></i> </span></a>
-                                </td>
-                                <td class="text-center">
-                                    <a href="#" class="btn theme-btn--dark1 btn--xl text-uppercase">Mua ngay</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="text-center" scope="row">
-                                    <img src="<c:url value='/template/web/assets/img/product/6.jpg'/>" alt="img">
-
-                                </th>
-                                <td class="text-center">
-                                    <span class="whish-title">New Balance Arishi</span>
-                                </td>
-                                <td class="text-center">
-                                    <span class="badge badge-danger position-static my-badge">Kho</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="product-count style">
-                                        <div class="count d-flex justify-content-center">
-                                            <input type="number" min="1" max="10" step="1" value="1">
-                                            <div class="button-group">
-                                                <button class="count-btn increment"><i class="fas fa-chevron-up"></i></button>
-                                                <button class="count-btn decrement"><i class="fas fa-chevron-down"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <span class="whish-list-price">
-                                        $38.24
-                                    </span></td>
-
-                                <td class="text-center">
-                                    <a href="#"> <span class="trash"><i class="fas fa-trash-alt"></i> </span></a>
-                                </td>
-                                <td class="text-center">
-                                    <a href="#" class="btn theme-btn--dark1 btn--xl text-uppercase">Mua ngay</a>
-                                </td>
-                            </tr>
-                        </tbody>
+                        <tbody class="cart-items"></tbody>
                     </table>
+                    <div class="panel-footer">
+                        <a onclick="cart.clear()" href="" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-trash"></span> Clear
+                        </a>
+                        <a href="/thanh-toan" class="btn btn-success">
+                            <span class="glyphicon glyphicon-check"></span> Checkout
+                        </a>
+                    </div>
+                </div>
+                <script>
+                    $(function(){
+                        cart.show_all();
+                    });
+                </script>
                 </div>
             </div>
         </div>
