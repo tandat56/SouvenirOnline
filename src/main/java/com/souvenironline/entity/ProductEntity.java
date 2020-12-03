@@ -1,5 +1,7 @@
 package com.souvenironline.entity;
 
+import org.hibernate.annotations.Type;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +31,12 @@ public class ProductEntity extends BaseEntity {
 	@Column(name = "view_count")
 	private Long viewCount;
 
+	@Column (name = "highlight", columnDefinition = "BOOLEAN")
+	private Boolean highlight;
+
+	@Column (name = "new_product", columnDefinition = "BOOLEAN")
+	private Boolean newProduct;
+
 	@Column(name = "discount")
 	private String discount;
 
@@ -56,6 +64,22 @@ public class ProductEntity extends BaseEntity {
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "colorsid")
 	private ColorsEntity colors;
+
+	public Boolean getHighlight() {
+		return highlight;
+	}
+
+	public void setHighlight(Boolean highlight) {
+		this.highlight = highlight;
+	}
+
+	public Boolean getNewProduct() {
+		return newProduct;
+	}
+
+	public void setNewProduct(Boolean newProduct) {
+		this.newProduct = newProduct;
+	}
 
 	public String getTitle() {
 		return title;

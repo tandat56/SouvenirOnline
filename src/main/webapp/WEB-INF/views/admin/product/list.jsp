@@ -64,7 +64,7 @@
 														<th><input type="checkbox" id="checkAll"></th>
 														<th>Tên sản phẩm</th>
 														<th>Giá</th>
-														<th>Giảm giá</th>
+														<th>Lượt xem</th>
 														<th>Thể loại</th>
 														<th>Chỉnh sửa</th>
 														
@@ -76,7 +76,7 @@
 															<td><input type="checkbox" id="checkbox_${item.id}" value="${item.id}"></td>
 															<td>${item.productName}</td>
 															<td>${item.price}</td>
-															<td>${item.discount}</td>
+															<td>${item.viewCount}</td>
 															<td>${item.categoryProduct}</td>
 															<td>
 																<c:url var="updateProductgURL" value="/quan-tri/san-pham/chinh-sua">
