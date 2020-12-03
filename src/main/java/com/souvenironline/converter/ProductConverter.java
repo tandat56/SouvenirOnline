@@ -13,6 +13,8 @@ public class ProductConverter {
         result.setImage(entity.getImage());
         result.setMoreImage(entity.getMoreImage());
         result.setDetail(entity.getDetail());
+        result.setHightlight(entity.getHighlight());
+        result.setNewProduct(entity.getNewProduct());
         result.setViewCount(entity.getViewCount());
         result.setDiscount(entity.getDiscount());
         result.setPrice(entity.getPrice());
@@ -28,6 +30,8 @@ public class ProductConverter {
         result.setImage(dto.getImage());
         result.setMoreImage(dto.getMoreImage());
         result.setDetail(dto.getDetail());
+        result.setHighlight(dto.getHightlight());
+        result.setNewProduct(dto.getNewProduct());
         result.setViewCount(dto.getViewCount());
         result.setDiscount(dto.getDiscount());
         result.setPrice(dto.getPrice());
@@ -39,6 +43,8 @@ public class ProductConverter {
         result.setImage(dto.getImage());
         result.setMoreImage(dto.getMoreImage());
         result.setDetail(dto.getDetail());
+        result.setHighlight(dto.getHightlight());
+        result.setNewProduct(dto.getNewProduct());
         result.setViewCount(dto.getViewCount());
         result.setDiscount(dto.getDiscount());
         result.setPrice(dto.getPrice());

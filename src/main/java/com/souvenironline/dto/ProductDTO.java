@@ -10,6 +10,8 @@ public class ProductDTO extends AbstractDTO<ProductDTO> {
     private String detail;
     private Long viewCount;
     private String discount;
+    private Boolean hightlight;
+    private Boolean newProduct;
     private Double price;
     private Integer status;
     private String categoryProduct;
@@ -33,6 +35,22 @@ public class ProductDTO extends AbstractDTO<ProductDTO> {
 
     public void setPhotoName(String photoName) {
         this.photoName = photoName;
+    }
+
+    public Boolean getHightlight() {
+        return hightlight;
+    }
+
+    public void setHightlight(Boolean hightlight) {
+        this.hightlight = hightlight;
+    }
+
+    public Boolean getNewProduct() {
+        return newProduct;
+    }
+
+    public void setNewProduct(Boolean newProduct) {
+        this.newProduct = newProduct;
     }
 
     public String getTitle() {

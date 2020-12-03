@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Insert title here</title>
+    <title>Sản phẩm</title>
 </head>
 <body>
 
@@ -14,13 +14,13 @@
         <div class="row">
             <div class="col-12">
                 <div class="breadcrumb-title text-center my-20">
-                    <h2 class="title text-dark text-capitalize">Hair Care</h2>
+                    <h2 class="title text-dark text-capitalize">Sản phẩm</h2>
                 </div>
             </div>
             <div class="col-12">
                 <ol class="breadcrumb bg-transparent m-0 p-0 align-items-center justify-content-center">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Hair Care</li>
+                    <li class="breadcrumb-item"><a href="<c:url value='/trang-chu'/> ">Trang chủ</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Sản phẩm</li>
                 </ol>
             </div>
         </div>
@@ -91,9 +91,10 @@
                                             <div class="product-thumbnail position-relative">
                                                 <span class="badge badge-danger top-left">Mới</span>
                                                 <a href="<c:url value="/chi-tiet-san-pham" />" />
+                                                <c:set var="image" value="/repository/${item.image}"/>
                                                 <img class="first-img"
-                                                     src="<c:url value='/template/web/assets/img/product/1.jpg'/>"
-                                                     alt="thumbnail">
+                                                     src="${image}"
+                                                     alt="thumbnail" height="300px" width="300px">
                                                 </a>
                                                 <!-- product links -->
                                                 <div class="product-links d-flex d-flex justify-content-between">
@@ -139,7 +140,7 @@
                                                     <span class="ion-ios-star"></span>
                                                     <span class="ion-ios-star de-selected"></span>
                                                 </div>
-                                                <h6 class="product-price">${item.price}</h6>
+                                                <h6 class="product-price"><fmt:formatNumber type="number" groupingUsed="true" value="${item.price}" /> ₫</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -1270,50 +1271,42 @@
 
                     <ul id="offcanvas-menu2" class="blog-ctry-menu">
                         <li><a href="<c:url value='/san-pham/${item.id}'/>">${item.name}</a>
-                                <%--                                <ul class="category-sub-menu">
-                                                                    <li><a href="#">Women Shoes</a></li>
-                                                                    <li><a href="#">Men Shoes</a></li>
-                                                                    <li><a href="#">Boots</a></li>
-                                                                    <li><a href="#">Casual Shoes</a></li>
-                                                                    <li><a href="#">Flip Flops</a></li>
+                                                              <ul class="category-sub-menu">
+                                                                    <li><a href="#">Con cặc tao nè</a></li>
+                                                                    <li><a href="#">Con cặc tao nè</a></li>
+                                                                    <li><a href="#">Con cặc tao nè</a></li>
+                                                                    <li><a href="#">Con cặc tao nè</a></li>
+                                                                    <li><a href="#">Con cặc tao nè</a></li>
                                                                 </ul>
-                                                        </ul>--%>
+                                                        </ul>
                             </c:forEach>
 
 
                             <div class="search-filter border-top mt-45 pt-45">
                                 <form action="#">
                                     <div class="check-box-inner pt-0">
-                                        <h4 class="title">Filter By</h4>
-                                        <h4 class="sub-title pt-10">Categories</h4>
+                                        <h4 class="title">Sắp xếp theo</h4>
+                                        <h4 class="sub-title pt-10">Thể loại</h4>
                                         <div class="filter-check-box">
                                             <input type="checkbox" id="20820">
-                                            <label for="20820">Hot Categories<span>(13)</span></label>
+                                            <label for="20820">Thời trang<span>(13)</span></label>
                                         </div>
                                         <div class="filter-check-box">
                                             <input type="checkbox" id="20821">
-                                            <label for="20821">Outerwear & Jackets<span>(13)</span></label>
+                                            <label for="20821">Lưu niệm<span>(20)</span></label>
                                         </div>
                                         <div class="filter-check-box">
                                             <input type="checkbox" id="20822">
-                                            <label for="20822">Weddings & Events<span>(13)</span></label>
+                                            <label for="20822">Đồ chơi<span>(13)</span></label>
                                         </div>
                                         <div class="filter-check-box">
                                             <input type="checkbox" id="20823">
-                                            <label for="20822">Bottoms<span>(13)</span></label>
-                                        </div>
-                                        <div class="filter-check-box">
-                                            <input type="checkbox" id="208210">
-                                            <label for="20822">Tops & Sets<span>(13)</span></label>
-                                        </div>
-                                        <div class="filter-check-box">
-                                            <input type="checkbox" id="208211">
-                                            <label for="20822">Accessories<span>(13)</span></label>
+                                            <label for="20822">Linh tinh<span>(11)</span></label>
                                         </div>
                                     </div>
                                     <!-- check-box-inner -->
                                     <div class="check-box-inner mt-10">
-                                        <h4 class="sub-title">Price</h4>
+                                        <h4 class="sub-title">Giá</h4>
                                         <div class="price-filter mt-10">
                                             <div class="price-slider-amount">
                                                 <input type="text" id="amount" name="price" readonly=""
@@ -1343,18 +1336,18 @@
                                     </div>
                                     <!-- check-box-inner -->
                                     <div class="check-box-inner mt-10">
-                                        <h4 class="sub-title">color</h4>
+                                        <h4 class="sub-title">Màu sắc</h4>
                                         <div class="filter-check-box color-grey">
                                             <input type="checkbox" id="20826">
-                                            <label for="20826">grey <span>(4)</span></label>
+                                            <label for="20826">Xám <span>(4)</span></label>
                                         </div>
                                         <div class="filter-check-box color-white">
                                             <input type="checkbox" id="20827">
-                                            <label for="20827">white <span>(3)</span></label>
+                                            <label for="20827">Trắng <span>(3)</span></label>
                                         </div>
                                         <div class="filter-check-box color-black">
                                             <input type="checkbox" id="20828">
-                                            <label for="20828">black <span>(6)</span></label>
+                                            <label for="20828">Đen <span>(6)</span></label>
                                         </div>
                                         <div class="filter-check-box color-camel">
                                             <input type="checkbox" id="20829">

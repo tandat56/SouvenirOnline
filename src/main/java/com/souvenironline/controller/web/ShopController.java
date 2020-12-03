@@ -1,6 +1,5 @@
 package com.souvenironline.controller.web;
 
-import com.souvenironline.dto.ProductDTO;
 import com.souvenironline.service.web.ICategoryProductWebService;
 import com.souvenironline.service.web.IProductWebService;
 import org.springframework.beans.factory.annotation.Autowired;

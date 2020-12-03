@@ -67,6 +67,13 @@
 			<artifactId>spring-context-support</artifactId>
 			<version>${springframework.version}</version>
 		</dependency>
+		<!-- spring-boot-devtools -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<version>2.3.3.RELEASE</version>
+		</dependency>
+
 
 		<!-- spring aspects -->
 		<dependency>
