@@ -39,7 +39,7 @@
                 <div class="table-responsive">
                     <table class="table mb-0">
                         <thead class="thead-light">
-                            <tr>
+                            <tr class="text-center">
                                 <th class="text-center" >ID</th>
                                 <th class="text-center" >Tên sản phẩm</th>
                                 <th class="text-center" >Giá</th>
@@ -59,11 +59,6 @@
                         </a>
                     </div>
                 </div>
-                <script>
-                    $(function(){
-                        cart.show_all();
-                    });
-                </script>
                 </div>
             </div>
         </div>

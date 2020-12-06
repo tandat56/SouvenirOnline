@@ -41,5 +41,4 @@ public class BillEntity extends BaseEntity {
 	@OneToMany(mappedBy = "bill")
 	private List<BillDetailEntity> billDetails = new ArrayList<>();
 
-
 }

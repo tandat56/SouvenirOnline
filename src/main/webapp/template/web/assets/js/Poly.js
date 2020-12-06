@@ -59,7 +59,7 @@ cart = {
         for(var id in this.items){
             var item = this.items[id];
             var tr = `
-					<tr>
+					<tr class="text-center">
 						<td>${item.id}</td>
 						<td>${item.name}</td>
 						<td>${item.price}</td>
@@ -69,7 +69,7 @@ cart = {
 						<td>${Math.round(item.price*item.quantity*100)/100}</td>
 						<td>
 					    	<button onclick="cart.remove(${item.id})" class="btn btn-sm btn-danger">
-					    		<span class="glyphicon glyphicon-trash"></span>
+					    		<i class="fas fa-minus"></i>
 					    	</button>
 					    </td>							
 					</tr>
@@ -90,9 +90,17 @@ cart = {
         this.save();
         this.show_info();
         this.show_all();
+    },
+    get details(){
+        var details = {};
+        for(var id in this.items){
+            details[id] = this.items[id].quantity;
+        }
+        return JSON.stringify(details);
     }
 }
 
 $(function(){
     cart.read(); /*-- Đọc từ sessionStorage khi trang web chạy --*/
+    cart.show_all();
 })
