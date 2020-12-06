@@ -40,9 +40,11 @@ public class HomeController extends BaseController {
 
     @RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
     public ModelAndView homePage() {
-        CategoryProductDTO cates = new CategoryProductDTO();
-        ProductDTO model = new ProductDTO();
+
         ModelAndView mav = new ModelAndView("web/home");
+        ProductDTO model = new ProductDTO();
+        CategoryProductDTO cates = new CategoryProductDTO();
+
         cates.setListResult(categoryProductWebService.findAll());
         model.setListResult(productWebService.findAll());
         List<SildeDTO> silde = sildeWebService.findAll();

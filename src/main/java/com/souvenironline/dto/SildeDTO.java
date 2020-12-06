@@ -1,5 +1,10 @@
 package com.souvenironline.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class SildeDTO extends AbstractDTO<SildeDTO> {
 
     private String image;
@@ -20,43 +25,5 @@ public class SildeDTO extends AbstractDTO<SildeDTO> {
         this.photoBase64 = photoBase64;
     }
 
-    public String getPhotoName() {
-        return photoName;
-    }
 
-    public void setPhotoName(String photoName) {
-        this.photoName = photoName;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public String getCaption() {
-        return caption;
-    }
-
-    public void setCaption(String caption) {
-        this.caption = caption;
-    }
 }

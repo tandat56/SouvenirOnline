@@ -6,7 +6,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Insert title here</title>
+    <title>Trang chủ</title>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
 
                                 <h2 class="sub-title text-dark animated" data-animation-in="fadeInUp" data-delay-in="2">
                                         ${item.caption}</h2>
-                                <a href="<c:url value='/page-shopgrid4'/>"
+                                <a href="<c:url value='/san-pham'/>"
                                    class="btn theme--btn1 btn--lg text-uppercase animated mt-45 mt-sm-25"
                                    data-animation-in="zoomIn" data-delay-in="3">Mua ngay</a>
                             </div>
@@ -59,7 +59,7 @@
                 <div class="col-12">
                     <c:forEach var="cate" items="${cates.listResult}">
                     <div class="section-title text-center mb-30">
-                        <h2 class="title text-dark text-capitalize mb-20"> ${cate.name}</h2>
+                        <h2 class="title text-dark text-capitalize mb-20">Danh sách sản phẩm đang giảm giá hot</h2>
                     </div>
                 </div>
             </div>
@@ -79,12 +79,19 @@
                                         <div class="card-body p-0">
                                             <div class="media flex-column">
                                                 <div class="product-thumbnail w-100 position-relative">
-                                                    <span class="badge badge-success top-left">-20%</span>
+                                                    <span class="badge badge-success top-left">- ${item.discount}%</span>
+
                                                     <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
-                                                        <img class="first-img"
-                                                             src="<c:url value='/template/web/assets/img/product/${item.image}'/>"
-                                                             alt="thumbnail">
+
+                                                        <c:if test="${not empty item.image}">
+                                                            <c:set var="image" value="/repository/${item.image}"/>
+                                                            <img src="${image}" id="viewImage" width="300px" height="300px">
+                                                        </c:if>
+                                                        <c:if test="${empty item.image}">
+                                                            <img src="<c:url value='/template/image/default.png'/>" id="image" width="300px" height="300px">
+                                                        </c:if>
                                                     </a>
+
                                                     <!-- product links -->
 
                                                     <div class="product-links d-flex d-flex justify-content-between">
@@ -109,7 +116,7 @@
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href="<c:url value='/page-shopgrid4'/>">
+                                                                <a href="<c:url value='/san-pham'/>">
                                                                     <span data-toggle="tooltip" data-placement="bottom"
                                                                           title="add to wishlist"
                                                                           class="ion-android-favorite-outline"> </span>
@@ -134,7 +141,9 @@
                                                                 ${item.productName}</a></h3>
                                                         <h6 class="product-price">
                                                             <del class="del">${item.price}</del>
-                                                            <span class="onsale">${item.price}</span></h6>
+                                                            <span class="onsale"><fmt:formatNumber type="number" groupingUsed="true" value="${item.price * (1 - item.discount / 100 )}" /> ₫</span></h6>
+
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -318,7 +327,7 @@
 <%--                                                    <span class="ion-ios-star"></span>--%>
 <%--                                                    <span class="ion-android-star-half"></span>--%>
 <%--                                                </div>--%>
-<%--                                                <h3 class="title my-10"><a href="<c:url value='/page-shopgrid4'/>"> ${item.productName}</a></h3>--%>
+<%--                                                <h3 class="title my-10"><a href="<c:url value='/san-pham'/>"> ${item.productName}</a></h3>--%>
 <%--                                                <h6 class="product-price">--%>
 <%--                                                    <span class="onsale">${item.price}</span></h6>--%>
 <%--                                            </div>--%>
@@ -343,10 +352,16 @@
             <div class="col-12">
                 <div class="position-relative zoom-in overflow-hidden">
                     <div class="banner-thumb banner-lagre">
-                        <img src="<c:url value='/template/web/assets/img/banner/banner3.jpg'/>"
+                        <img src="<c:url value='/template/web/assets/img/banner/silde2.jpg'/>"
                              alt="banner-thumb-naile">
                     </div>
+
                     <div class="banner-content banner-content-large">
+                        <p class="text text-uppercase text-dark mb-10">Black Friday</p>
+                        <h4 class="title text-capitalize text-dark">Save Up To
+                            <span class="d-block d-inline-sm-block mt-10 mt-md-20">50% Off</span> </h4>
+                        <a class="view-link text-capitalize mt-25" href="<c:url value='/san-pham' /> ">Xem bộ sưu tập
+                            <span class="ion-android-arrow-dropright-circle theme-color"></span></a>
 
                     </div>
                 </div>
@@ -362,9 +377,9 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title text-center mb-30">
-                    <h2 class="title text-dark text-capitalize">CỬA HÀNG CHÚNG TỚ</h2>
-                    <p class="text mt-20"> Hiện tại cửa hàng chúng tớ luôn đón mời các cậu tới tham quan và mua sắm
-                        !
+                    <h2 class="title text-dark text-capitalize">Có thể bạn muốn xem</h2>
+                    <p class="text mt-20">
+                        Click vào thể loại bạn muốn tìm để hiển thị danh sách!
                     </p>
                 </div>
             </div>

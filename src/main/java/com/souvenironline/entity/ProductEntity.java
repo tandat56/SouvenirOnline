@@ -1,11 +1,15 @@
 package com.souvenironline.entity;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "Product")
 public class ProductEntity extends BaseEntity {
@@ -65,139 +69,4 @@ public class ProductEntity extends BaseEntity {
 	@JoinColumn(name = "colorsid")
 	private ColorsEntity colors;
 
-	public Boolean getHighlight() {
-		return highlight;
 	}
-
-	public void setHighlight(Boolean highlight) {
-		this.highlight = highlight;
-	}
-
-	public Boolean getNewProduct() {
-		return newProduct;
-	}
-
-	public void setNewProduct(Boolean newProduct) {
-		this.newProduct = newProduct;
-	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	public Integer getSale() {
-		return sale;
-	}
-
-	public void setSale(Integer sale) {
-		this.sale = sale;
-	}
-
-	public ColorsEntity getColors() {
-		return colors;
-	}
-
-	public void setColors(ColorsEntity colors) {
-		this.colors = colors;
-	}
-
-	public String getProductName() {
-		return productName;
-	}
-
-	public void setProductName(String productName) {
-		this.productName = productName;
-	}
-
-	public String getImage() {
-		return image;
-	}
-
-	public void setImage(String image) {
-		this.image = image;
-	}
-
-	public String getMoreImage() {
-		return moreImage;
-	}
-
-	public void setMoreImage(String moreImage) {
-		this.moreImage = moreImage;
-	}
-
-	public String getDetail() {
-		return detail;
-	}
-
-	public void setDetail(String detail) {
-		this.detail = detail;
-	}
-
-	public Long getViewCount() {
-		return viewCount;
-	}
-
-	public void setViewCount(Long viewCount) {
-		this.viewCount = viewCount;
-	}
-
-	public String getDiscount() {
-		return discount;
-	}
-
-	public void setDiscount(String discount) {
-		this.discount = discount;
-	}
-
-	public Double getPrice() {
-		return price;
-	}
-
-	public void setPrice(Double price) {
-		this.price = price;
-	}
-
-	public Integer getStatus() {
-		return status;
-	}
-
-	public void setStatus(Integer status) {
-		this.status = status;
-	}
-
-	public List<CommentEntity> getComments() {
-		return comments;
-	}
-
-	public void setComments(List<CommentEntity> comments) {
-		this.comments = comments;
-	}
-
-	public CategoryProductEntity getCategoryProduct() {
-		return categoryProduct;
-	}
-
-	public void setCategoryProduct(CategoryProductEntity categoryProduct) {
-		this.categoryProduct = categoryProduct;
-	}
-
-	public List<BillDetailEntity> getBillDetails() {
-		return billDetails;
-	}
-
-	public void setBillDetails(List<BillDetailEntity> billDetails) {
-		this.billDetails = billDetails;
-	}
-
-	public WarehouseEntity getWarehouse() {
-		return warehouse;
-	}
-
-	public void setWarehouse(WarehouseEntity warehouse) {
-		this.warehouse = warehouse;
-	}
-}

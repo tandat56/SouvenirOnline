@@ -11,6 +11,8 @@ import javax.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "Role")
 public class RoleEntity extends BaseEntity {
@@ -20,30 +22,6 @@ public class RoleEntity extends BaseEntity {
 	
 	@Column(name = "code")
 	private String code;
-
-	public List<UserEntity> getUsers() {
-		return users;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getCode() {
-		return code;
-	}
-
-	public void setCode(String code) {
-		this.code = code;
-	}
-
-	public void setUsers(List<UserEntity> users) {
-		this.users = users;
-	}
 
 	@ManyToMany(mappedBy = "Role")
     private List<UserEntity> users = new ArrayList<>();

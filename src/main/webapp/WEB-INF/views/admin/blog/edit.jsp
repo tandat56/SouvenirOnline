@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java"%>
+cc<%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <%@include file="/common/taglib.jsp"%>
 <c:url var="blogURL" value="/quan-tri/bai-viet/danh-sach"/>
 <c:url var="editBlogURL" value="/quan-tri/bai-viet/chinh-sua"/>
