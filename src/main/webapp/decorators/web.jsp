@@ -9,8 +9,9 @@
 	
    
     <link rel="shortcut icon" type="image/x-icon" href="<c:url value='/template/web/assets/img/logo/favicon.png'/>">
-    <script src="<c:url value='/template/web/assets/js/Poly.js'/>"></script>
+
     <link href="<c:url value='/template/web/assets/css/vendor/vendor.min.css'/>" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/2c4dbbb156.js" crossorigin="anonymous"></script>
     <link href="<c:url value='/template/web/assets/css/plugins/plugins.min.css'/>" rel="stylesheet" type="text/css">
     <link href="<c:url value='/template/web/assets/css/style.min.css'/>" rel="stylesheet" type="text/css">
     <script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
@@ -24,11 +25,11 @@
 <dec:body/>
 
 <%@ include file="/common/web/footer.jsp" %>
-    
-    <script src="<c:url value='/template/web/assets/js/vendor/vendor.min.js'/>"></script>  
+
     <script src="<c:url value='/template/web/assets/js/vendor/vendor.min.js'/>"></script>
     <script src="<c:url value='/template/web/assets/js/plugins/plugins.min.js'/>"></script>
     <script src="<c:url value='/template/web/assets/js/main.js'/>"></script>
+    <script src="<c:url value='/template/web/assets/js/Poly.js'/>"></script>
 
 </body>
 </html>
