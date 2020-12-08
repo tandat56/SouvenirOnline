@@ -10,5 +10,4 @@ public class CategoryProductDTO extends AbstractDTO<CategoryProductDTO> {
     private String name;
     private String code;
 
-
 }

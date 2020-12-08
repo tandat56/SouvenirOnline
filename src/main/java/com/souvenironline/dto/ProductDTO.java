@@ -15,11 +15,11 @@ public class ProductDTO extends AbstractDTO<ProductDTO> {
     private String detail;
     private Long viewCount;
     private String discount;
-    private Boolean hightlight;
-    private Boolean newProduct;
+    private int hightlight;
+    private int newProduct;
     private Double price;
     private Integer status;
-    private String categoryProduct;
+    private String categoryProductCode;
     private String photoBase64;
     private String photoName;
 

@@ -49,7 +49,25 @@
                 <li>
                     <a href="<c:url value='/quan-tri/san-pham/danh-sach?page=1&limit=10'/>">
                         <i class="menu-icon fa fa-caret-right"></i>
-                        Danh sách
+                        Danh sách All
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+            <ul class="submenu">
+                <li>
+                    <a href="<c:url value='/quan-tri/san-pham/danh-sach?page=1&limit=10'/>">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        QLSP nổi bật
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+            <ul class="submenu">
+                <li>
+                    <a href="<c:url value='/quan-tri/san-pham/danh-sach?page=1&limit=10'/>">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        QLSP mới
                     </a>
                     <b class="arrow"></b>
                 </li>

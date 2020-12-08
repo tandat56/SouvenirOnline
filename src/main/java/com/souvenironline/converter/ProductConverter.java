@@ -3,6 +3,8 @@ import com.souvenironline.dto.ProductDTO;
 import com.souvenironline.entity.ProductEntity;
 import org.springframework.stereotype.Component;
 
+import java.sql.Timestamp;
+
 @Component
 public class ProductConverter {
 
@@ -19,7 +21,9 @@ public class ProductConverter {
         result.setDiscount(entity.getDiscount());
         result.setPrice(entity.getPrice());
         result.setStatus(entity.getStatus());
-        result.setCategoryProduct(entity.getCategoryProduct().getCode());
+        result.setCategoryProductCode(entity.getCategoryProductCode());
+        result.setCreatedBy(entity.getCreatedBy());
+      /*  result.setCreatedDate((Timestamp) entity.getCreatedDate());*/
         return result;
     }
 
@@ -29,6 +33,7 @@ public class ProductConverter {
         result.setProductName(dto.getProductName());
         result.setImage(dto.getImage());
         result.setMoreImage(dto.getMoreImage());
+        result.setCategoryProductCode(dto.getCategoryProductCode());
         result.setDetail(dto.getDetail());
         result.setHighlight(dto.getHightlight());
         result.setNewProduct(dto.getNewProduct());
@@ -40,6 +45,7 @@ public class ProductConverter {
     }
     public ProductEntity toEntity(ProductEntity result, ProductDTO dto){
         result.setProductName(dto.getProductName());
+        result.setCategoryProductCode(dto.getCategoryProductCode());
         result.setImage(dto.getImage());
         result.setMoreImage(dto.getMoreImage());
         result.setDetail(dto.getDetail());

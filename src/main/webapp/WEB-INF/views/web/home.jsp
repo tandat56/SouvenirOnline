@@ -57,9 +57,8 @@
         <div class="product-tab-nav mb-30">
             <div class="row align-items-center">
                 <div class="col-12">
-                    <c:forEach var="cate" items="${cates.listResult}">
                     <div class="section-title text-center mb-30">
-                        <h2 class="title text-dark text-capitalize mb-20">Danh sách sản phẩm đang giảm giá hot</h2>
+                        <h2 class="title text-dark text-capitalize mb-20">Danh sách sản phẩm HOT!!!</h2>
                     </div>
                 </div>
             </div>
@@ -69,11 +68,12 @@
             <div class="col-12">
                 <div class="tab-content" id="pills-tabContent">
                     <!-- first tab-pane -->
+
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                          aria-labelledby="pills-home-tab">
                         <div class="product-slider-init theme1 slick-nav">
 
-                            <c:forEach var="item" items="${model.listResult}">
+                            <c:forEach var="item" items="${productHighlight.listResult}">
                                 <div class="slider-item">
                                     <div class="card product-card">
                                         <div class="card-body p-0">
@@ -156,7 +156,7 @@
                     <!-- second tab-pane -->
                 </div>
             </div>
-            </c:forEach>
+
         </div>
     </div>
     </div>
@@ -164,186 +164,135 @@
 </section>
 <!-- product tab end -->
 
-<!-- new arrival section start -->
-<%--<section class="theme1 bg-white pb-70">--%>
-<%--    <div class="container">--%>
-<%--        <div class="row">--%>
-<%--            <div class="col-12">--%>
-<%--                <div class="section-title text-center mb-30">--%>
-<%--                    <h2 class="title text-dark text-capitalize mb-20"> BALO PHƯỢT </h2>--%>
-<%--                    <p class="text"> Hãy xem qua các mẫu balo của chúng tớ nhé ! </p>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--            <div class="col-12">--%>
-<%--                <div class="product-slider-init theme1 slick-nav">--%>
-<%--                    <c:forEach var="item" items="${model.listResult}">--%>
-<%--                        <div class="slider-item">--%>
-<%--                            <div class="card product-card">--%>
-<%--                                <div class="card-body p-0">--%>
-<%--                                    <div class="media flex-column">--%>
-<%--                                        <div class="product-thumbnail w-100 position-relative">--%>
-<%--                                            <span class="badge badge-danger top-left">Mới</span>--%>
-<%--                                            <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">--%>
-<%--                                                <img class="first-img"--%>
-<%--                                                     src="<c:url value='/template/web/assets/img/product/${item.image}'/>"--%>
-<%--                                                     alt="thumbnail">--%>
-<%--                                            </a>--%>
-<%--                                            <!-- product links -->--%>
 
-<%--                                            <div class="product-links d-flex d-flex justify-content-between">--%>
-<%--                                                <button class="pro-btn" data-toggle="modal"--%>
-<%--                                                        data-target="#add-to-cart">Thêm vào giỏ hàng--%>
-<%--                                                </button>--%>
-<%--                                                <ul class="d-flex justify-content-center">--%>
-<%--                                                    <li>--%>
-<%--                                                        <a href="#" data-toggle="modal" data-target="#quick-view">--%>
-<%--                                                            <span data-toggle="tooltip" data-placement="bottom"--%>
-<%--                                                                  title="Quick view"--%>
-<%--                                                                  class="ion-ios-search-strong"></span>--%>
-<%--                                                        </a>--%>
-<%--                                                    </li>--%>
 
-<%--                                                    <li>--%>
-<%--                                                        <a href="#" data-toggle="modal" data-target="#compare">--%>
-<%--                                                            <span data-toggle="tooltip" data-placement="bottom"--%>
-<%--                                                                  title="Add to compare"--%>
-<%--                                                                  class="ion-ios-shuffle-strong"></span>--%>
-<%--                                                        </a>--%>
-<%--                                                    </li>--%>
-<%--                                                    <li>--%>
-<%--                                                        <a href="<c:url value='/danh-sach-yeu-thich'/>">--%>
-<%--                                                            <span data-toggle="tooltip" data-placement="bottom"--%>
-<%--                                                                  title="add to wishlist"--%>
-<%--                                                                  class="ion-android-favorite-outline"> </span>--%>
-<%--                                                        </a>--%>
-<%--                                                    </li>--%>
-<%--                                                </ul>--%>
-<%--                                                <!-- product links end-->--%>
-<%--                                            </div>--%>
+<!-- product tab start -->
+<section class="product-tab bg-white pt-40 pb-70">
+    <div class="container">
+        <div class="product-tab-nav mb-30">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-30">
+                        <h2 class="title text-dark text-capitalize mb-20">Danh sách sản phẩm MỚI!!!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- product-tab-nav end -->
+        <div class="row">
+            <div class="col-12">
+                <div class="tab-content" id="pills-tabContent">
+                    <!-- first tab-pane -->
 
-<%--                                        </div>--%>
-<%--                                        <div class="media-body">--%>
-<%--                                            <div class="product-desc">--%>
-<%--                                                <div class="star-rating">--%>
-<%--                                                    <span class="ion-ios-star"></span>--%>
-<%--                                                    <span class="ion-ios-star"></span>--%>
-<%--                                                    <span class="ion-ios-star"></span>--%>
-<%--                                                    <span class="ion-ios-star"></span>--%>
-<%--                                                    <span class="ion-android-star-half"></span>--%>
-<%--                                                </div>--%>
-<%--                                                <h3 class="title my-10"><a href="#">${item.productName}</a></h3>--%>
-<%--                                                <h6 class="product-price">--%>
-<%--                                                    <span class="onsale">${item.price}</span></h6>--%>
-<%--                                            </div>--%>
-<%--                                        </div>--%>
-<%--                                    </div>--%>
-<%--                                </div>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                        <!-- slider-item end -->--%>
-<%--                    </c:forEach>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--    </div>--%>
-<%--</section>--%>
-<%--<!-- new arrival section end -->--%>
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                         aria-labelledby="pills-home-tab">
+                        <div class="product-slider-init theme1 slick-nav">
 
-<%--<!-- testimonial-section start -->--%>
-<%--<section class="testimonial-section pb-70">--%>
-<%--    <div class="container">--%>
-<%--        <div class="row">--%>
-<%--            <!-- slider-item end -->--%>
-<%--        </div>--%>
-<%--    </div>--%>
-<%--    </div>--%>
-<%--    </div>--%>
-<%--</section>--%>
-<%--<!-- testimonial-section end -->--%>
-<%--<!-- new arrival section start -->--%>
-<%--<section class="theme1 bg-white pb-70">--%>
-<%--    <div class="container">--%>
-<%--        <div class="row">--%>
-<%--            <div class="col-12">--%>
-<%--                <div class="section-title text-center mb-30">--%>
-<%--                    <h2 class="title text-dark text-capitalize mb-20">TEE LƯU NIỆM </h2>--%>
-<%--                    <p class="text">Những items đang "CHÁY" tại cửa hàng !</p>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--            <div class="col-12">--%>
-<%--                <div class="popular-slider-init slick-nav">--%>
-<%--                    <c:forEach var="item" items="${model.listResult}">--%>
-<%--                        <div class="slider-item">--%>
-<%--                            <div class="card product-card">--%>
-<%--                                <div class="card-body p-0">--%>
-<%--                                    <div class="media flex-column">--%>
-<%--                                        <div class="product-thumbnail w-100 position-relative">--%>
-<%--                                            <span class="badge badge-danger top-left">Mới</span>--%>
-<%--                                            <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">--%>
-<%--                                                <img class="first-img"--%>
-<%--                                                     src="<c:url value='/template/web/assets/img/product/${item.image}'/>"--%>
-<%--                                                     alt="thumbnail">--%>
-<%--                                            </a>--%>
-<%--                                            <!-- product links -->--%>
+                            <c:forEach var="item" items="${newProduct.listResult}">
+                                <div class="slider-item">
+                                    <div class="card product-card">
+                                        <div class="card-body p-0">
+                                            <div class="media flex-column">
+                                                <div class="product-thumbnail w-100 position-relative">
+                                                    <span class="badge badge-success top-left">- ${item.discount}%</span>
 
-<%--                                            <div class="product-links d-flex d-flex justify-content-between">--%>
-<%--                                                <button class="pro-btn" data-toggle="modal"--%>
-<%--                                                        data-target="#add-to-cart">Thêm Vào Giỏ Hàng--%>
-<%--                                                </button>--%>
-<%--                                                <ul class="d-flex justify-content-center">--%>
-<%--                                                    <li>--%>
-<%--                                                        <a href="#" data-toggle="modal" data-target="#quick-view">--%>
-<%--                                                            <span data-toggle="tooltip" data-placement="bottom"--%>
-<%--                                                                  title="Quick view"--%>
-<%--                                                                  class="ion-ios-search-strong"></span>--%>
-<%--                                                        </a>--%>
-<%--                                                    </li>--%>
+                                                    <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
 
-<%--                                                    <li>--%>
-<%--                                                        <a href="#" data-toggle="modal" data-target="#compare">--%>
-<%--                                                            <span data-toggle="tooltip" data-placement="bottom"--%>
-<%--                                                                  title="Add to compare"--%>
-<%--                                                                  class="ion-ios-shuffle-strong"></span>--%>
-<%--                                                        </a>--%>
-<%--                                                    </li>--%>
-<%--                                                    <li>--%>
-<%--                                                        <a href="<c:url value='/danh-sach-yeu-thich'/>">--%>
-<%--                                                            <span data-toggle="tooltip" data-placement="bottom"--%>
-<%--                                                                  title="add to wishlist"--%>
-<%--                                                                  class="ion-android-favorite-outline"> </span>--%>
-<%--                                                        </a>--%>
-<%--                                                    </li>--%>
-<%--                                                </ul>--%>
-<%--                                                <!-- product links end-->--%>
-<%--                                            </div>--%>
+                                                        <c:if test="${not empty item.image}">
+                                                            <c:set var="image" value="/repository/${item.image}"/>
+                                                            <img src="${image}" id="viewImage" width="300px" height="300px">
+                                                        </c:if>
+                                                        <c:if test="${empty item.image}">
+                                                            <img src="<c:url value='/template/image/default.png'/>" id="image" width="300px" height="300px">
+                                                        </c:if>
+                                                    </a>
 
-<%--                                        </div>--%>
-<%--                                        <div class="media-body">--%>
-<%--                                            <div class="product-desc">--%>
-<%--                                                <div class="star-rating">--%>
-<%--                                                    <span class="ion-ios-star"></span>--%>
-<%--                                                    <span class="ion-ios-star"></span>--%>
-<%--                                                    <span class="ion-ios-star"></span>--%>
-<%--                                                    <span class="ion-ios-star"></span>--%>
-<%--                                                    <span class="ion-android-star-half"></span>--%>
-<%--                                                </div>--%>
-<%--                                                <h3 class="title my-10"><a href="<c:url value='/san-pham'/>"> ${item.productName}</a></h3>--%>
-<%--                                                <h6 class="product-price">--%>
-<%--                                                    <span class="onsale">${item.price}</span></h6>--%>
-<%--                                            </div>--%>
-<%--                                        </div>--%>
-<%--                                    </div>--%>
-<%--                                </div>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                    </c:forEach>--%>
-<%--                    <!-- slider-item end -->--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--    </div>--%>
-<%--</section>--%>
-<!-- new arrival section end -->
+                                                    <!-- product links -->
+
+                                                    <div class="product-links d-flex d-flex justify-content-between">
+                                                        <button class="pro-btn" data-toggle="modal"
+                                                                onclick="cart.add(${item.id}, `${item.productName}`, ${item.price})">Thêm vào giỏ hàng
+                                                        </button>
+                                                        <ul class="d-flex justify-content-center">
+                                                            <li>
+                                                                <a href="#" data-toggle="modal"
+                                                                   data-target="#quick-view">
+                                                                    <span data-toggle="tooltip" data-placement="bottom"
+                                                                          title="Quick view"
+                                                                          class="ion-ios-search-strong"></span>
+                                                                </a>
+                                                            </li>
+
+                                                            <li>
+                                                                <a href="#" data-toggle="modal" data-target="#compare">
+                                                                    <span data-toggle="tooltip" data-placement="bottom"
+                                                                          title="Add to compare"
+                                                                          class="ion-ios-shuffle-strong"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="<c:url value='/san-pham'/>">
+                                                                    <span data-toggle="tooltip" data-placement="bottom"
+                                                                          title="add to wishlist"
+                                                                          class="ion-android-favorite-outline"> </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        <!-- product links end-->
+                                                    </div>
+
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="product-desc">
+                                                        <div class="star-rating">
+                                                            <span class="ion-ios-star"></span>
+                                                            <span class="ion-ios-star"></span>
+                                                            <span class="ion-ios-star"></span>
+                                                            <span class="ion-ios-star"></span>
+                                                            <span class="ion-ios-star"></span>
+                                                        </div>
+                                                        <h3 class="title my-10"><a
+                                                                href="#">
+                                                                ${item.productName}</a></h3>
+                                                        <h6 class="product-price">
+                                                            <del class="del">${item.price}</del>
+                                                            <span class="onsale"><fmt:formatNumber type="number" groupingUsed="true" value="${item.price * (1 - item.discount / 100 )}" /> ₫</span></h6>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </c:forEach>
+                        </div>
+                    </div>
+                    <!-- second tab-pane -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+<!-- product tab end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- common-banner start -->
 <div class="common-banner pb-70 bg-white">
@@ -545,6 +494,9 @@
                             <!-- single-product end -->
                         </div>
                     </div>
+
+
+
                     <div class="col-md-6 mt-5 mt-md-0">
                         <div class="modal-product-info">
                             <div class="product-head">

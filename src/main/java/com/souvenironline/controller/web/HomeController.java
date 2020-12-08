@@ -7,6 +7,7 @@ import com.souvenironline.dto.BlogDTO;
 import com.souvenironline.dto.CategoryProductDTO;
 import com.souvenironline.dto.ProductDTO;
 import com.souvenironline.dto.SildeDTO;
+import com.souvenironline.repository.CategoryProductRepository;
 import com.souvenironline.service.web.ICategoryProductWebService;
 import com.souvenironline.service.web.IProductWebService;
 import com.souvenironline.service.web.impl.SildeWebService;
@@ -38,18 +39,30 @@ public class HomeController extends BaseController {
     private ICategoryProductWebService categoryProductWebService;
 
 
+
     @RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
     public ModelAndView homePage() {
 
         ModelAndView mav = new ModelAndView("web/home");
         ProductDTO model = new ProductDTO();
+        ProductDTO model1 = new ProductDTO();
         CategoryProductDTO cates = new CategoryProductDTO();
+        CategoryProductDTO category0 = new CategoryProductDTO();
+        CategoryProductDTO category1 = new CategoryProductDTO();
 
         cates.setListResult(categoryProductWebService.findAll());
-        model.setListResult(productWebService.findAll());
+        category0.setListResult(categoryProductWebService.findAllByLevel(0));
+        category1.setListResult(categoryProductWebService.findAllByLevel(1));
+        model.setListResult(productWebService.findAllProductHighlight());
+        model1.setListResult(productWebService.findAllNewProduct());
+
+
         List<SildeDTO> silde = sildeWebService.findAll();
         mav.addObject("cates", cates);
-        mav.addObject("model", model);
+        mav.addObject("cates0", category0);
+        mav.addObject("cates1", category1);
+        mav.addObject("productHighlight", model);
+        mav.addObject("newProduct", model1);
         mav.addObject("silde", silde);
         return mav;
     }

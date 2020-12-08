@@ -35,11 +35,11 @@ public class ProductEntity extends BaseEntity {
 	@Column(name = "view_count")
 	private Long viewCount;
 
-	@Column (name = "highlight", columnDefinition = "BOOLEAN")
-	private Boolean highlight;
+	@Column (name = "highlight")
+	private int highlight;
 
-	@Column (name = "new_product", columnDefinition = "BOOLEAN")
-	private Boolean newProduct;
+	@Column (name = "new_product")
+	private int newProduct;
 
 	@Column(name = "discount")
 	private String discount;
@@ -49,6 +49,9 @@ public class ProductEntity extends BaseEntity {
 
 	@Column(name = "status")
 	private Integer status;
+
+	@Column(name = "category_product_code")
+	private String categoryProductCode;
 
 
 	@OneToMany(mappedBy = "productComment")

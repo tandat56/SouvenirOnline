@@ -30,4 +30,15 @@ public class CategoryProductWeb implements ICategoryProductWebService {
         }
         return models;
     }
+
+    @Override
+    public List<CategoryProductDTO> findAllByLevel(int level) {
+        List<CategoryProductDTO> models = new ArrayList<>();
+        List<CategoryProductEntity> entities = categoryProductRepository.findAllByLevel(level);
+        for (CategoryProductEntity item : entities) {
+            CategoryProductDTO categoryProductDTO = categoryProductConverter.toDTO(item);
+            models.add(categoryProductDTO);
+        }
+        return models;
+    }
 }

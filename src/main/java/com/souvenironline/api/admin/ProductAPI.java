@@ -31,8 +31,4 @@ public class ProductAPI {
     public void deleteProduct(@RequestBody long[] ids) {
         productService.delete(ids);
     }
-    @GetMapping("/api/product")
-    public List<ProductDTO> getProduct(){
-        return productWebService.findAll();
-    }
 }

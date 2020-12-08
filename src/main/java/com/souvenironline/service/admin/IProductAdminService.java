@@ -15,4 +15,6 @@ public interface IProductAdminService {
     int getTotalItem();
 
     ProductDTO findById(long id);
+
+    List<ProductDTO> findAllProductHighlight();
 }

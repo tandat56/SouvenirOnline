@@ -266,50 +266,21 @@
                                 <a href="<c:url value='/trang-chu'/>" class="pl-0">Trang chủ</a>
                             </li>
                             <li class="position-static">
-                                <a href="#">Cửa hàng <i class="ion-ios-arrow-down"></i></a>
-                                <ul class="mega-menu row">
+                                <a href="<c:url value='/san-pham'/>">Cửa hàng</a>
+                                <%--<ul class="mega-menu row">
+                              <c:forEach var="item" items="${cates0.listResult}">
+
                                     <li class="col-3">
                                         <ul class="border-right h-100 pr-20">
-                                            <li class="mega-menu-title"><a href="#">Áo</a></li>
-
-<%--                                            <c:forEach var="item" items="categories">--%>
-<%--                                                <li><a href="<c:url value='/trang-chu'/>">${item.name} </a></li>--%>
-<%--                                            </c:forEach>--%>
+                                            <li class="mega-menu-title"><a href="#"> ${item.name}</a></li>
+                                            <c:forEach var="item" items="${cates1.listResult}">
+                                            <li><a href="#"> ${item.name} </a></li>
+                                            </c:forEach>
                                         </ul>
                                     </li>
-                                    <li class="col-3">
+                              </c:forEach>
+                                </ul>--%>
 
-
-                                        <ul class="border-right h-100 pr-20">
-                                            <li class="mega-menu-title"><a href="#">Mắt kiếng</a></li>
-                                            <li><a href="#">Mắt kính thể thao</a></li>
-                                            <li><a href="#">Mắt kính mát</a></li>
-                                            <li><a href="#">Mắt kính phượt</a></li>
-
-
-                                        </ul>
-                                    </li>
-                                    <li class="col-3">
-                                        <ul class="border-right h-100 pr-20">
-                                            <li class="mega-menu-title"><a href="#">Nón</a></li>
-                                            <li><a href="#">Nón đen lưu niệm</a></li>
-                                            <li><a href="#">Nón đen lưu niệm</a></li>
-
-
-                                        </ul>
-                                    </li>
-                                    <li class="col-3">
-                                        <ul>
-                                            <li class="mega-menu-title"><a href="#">Balo</a></li>
-                                            <li><a href="#">Balo thể thao</a></li>
-                                            <li><a href="#">Balo phượt</a></li>
-                                            <li><a href="#">Balo thời trang</a></li>
-
-
-                                        </ul>
-                                    </li>
-
-                                </ul>
                             </li>
                             <li>
                                 <a href="#">Trang khác <i class="ion-ios-arrow-down"></i></a>

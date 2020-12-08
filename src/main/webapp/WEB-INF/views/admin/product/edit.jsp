@@ -37,9 +37,9 @@
 					</c:if>
 					<form:form class="form-horizontal" role="form" id="formSubmit" modelAttribute="model">
 						<div class="form-group">
-							  <label for="categoryProduct" class="col-sm-3 control-label no-padding-right">Thể loại:</label>
+							  <label for="categoryProductCode" class="col-sm-3 control-label no-padding-right">Thể loại:</label>
 							  <div class="col-sm-9">
-							  	 <form:select path="categoryProduct" id="categoryProduct">
+							  	 <form:select path="categoryProductCode" id="categoryProductCode">
 							  	 	<form:option value="" label="-- Chọn thể loại --"/>
 							  	 	<form:options items="${categories}"/>
 							  	 </form:select>
@@ -94,11 +94,12 @@
 						  	</div>
 						</div>
 						<div class="form-group">
-							<label class="col-sm-3 control-label no-padding-right" for="form-field-1">Lượt xem: </label>
+							<label class="col-sm-3 control-label no-padding-right" for="form-field-1">Chọn: </label>
 							<div class="col-sm-9">
-								<form:input path="viewCount" cssClass="col-xs-10 col-sm-5" />
+								<form:checkbox path="newProduct" value="1"/>Sản phẩm nổi bật
+								<form:checkbox path="hightlight" value="1"/>Sản phẩm mới
 							</div>
-					</div>
+						</div>
 						<form:hidden path="id" id="productId"/>
 						<div class="clearfix form-actions">
 							<div class="col-md-offset-3 col-md-9">

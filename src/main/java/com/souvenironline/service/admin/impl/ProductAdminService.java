@@ -48,7 +48,7 @@ public class ProductAdminService implements IProductAdminService {
     @Override
     @Transactional
     public ProductDTO save(ProductDTO dto) {
-        CategoryProductEntity category = categoryProductRepository.findOneByCode(dto.getCategoryProduct());
+        CategoryProductEntity category = categoryProductRepository.findOneByCode(dto.getCategoryProductCode());
         ProductEntity productEntity = new ProductEntity();
         if (dto.getId() != null) {
             ProductEntity oldProduct = productRepository.findOne(dto.getId());
@@ -97,5 +97,16 @@ public class ProductAdminService implements IProductAdminService {
     public ProductDTO findById(long id) {
         ProductEntity entity = productRepository.findOne(id);
         return productConverter.toDTO(entity);
+    }
+
+    @Override
+    public List<ProductDTO> findAllProductHighlight() {
+        List<ProductDTO> models = new ArrayList<>();
+        List<ProductEntity> entities = productRepository.findAllProductHighlight();
+        for (ProductEntity item : entities) {
+            ProductDTO productDTO = productConverter.toDTO(item);
+            models.add(productDTO);
+        }
+        return models;
     }
 }

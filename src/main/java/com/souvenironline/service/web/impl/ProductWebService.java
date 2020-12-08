@@ -6,6 +6,7 @@ import com.souvenironline.entity.ProductEntity;
 import com.souvenironline.repository.ProductRepository;
 import com.souvenironline.service.web.IProductWebService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -29,5 +30,46 @@ public class ProductWebService implements IProductWebService {
             models.add(productDTO);
         }
         return models;
+    }
+
+    @Override
+    public List<ProductDTO> findAllProductHighlight() {
+        List<ProductDTO> models = new ArrayList<>();
+        List<ProductEntity> entities = productRepository.findAllProductHighlight();
+
+        for (ProductEntity item: entities){
+            ProductDTO productDTO = productConverter.toDTO(item);
+            models.add(productDTO);
+        }
+        return models;
+    }
+
+    @Override
+    public List<ProductDTO> findAllNewProduct() {
+        List<ProductDTO> models = new ArrayList<>();
+        List<ProductEntity> entities = productRepository.findAllNewProduct();
+
+        for (ProductEntity item: entities){
+            ProductDTO productDTO = productConverter.toDTO(item);
+            models.add(productDTO);
+        }
+        return models;
+    }
+
+    @Override
+    public List<ProductDTO> findAllProductByCategoryCode(String code) {
+        List<ProductDTO> models = new ArrayList<>();
+        List<ProductEntity> entities = productRepository.findAllProductByCategoryCode(code);
+
+        for (ProductEntity item: entities){
+            ProductDTO productDTO = productConverter.toDTO(item);
+            models.add(productDTO);
+        }
+        return models;
+    }
+
+    @Override
+    public int getTotalItem() {
+        return (int) productRepository.count();
     }
 }
