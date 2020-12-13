@@ -81,7 +81,7 @@
                                                 <div class="product-thumbnail w-100 position-relative">
                                                     <span class="badge badge-success top-left">- ${item.discount}%</span>
 
-                                                    <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
+                                                    <a class="d-block" href="<c:url value='/chi-tiet-san-pham?id=${item.id}'/>">
 
                                                         <c:if test="${not empty item.image}">
                                                             <c:set var="image" value="/repository/${item.image}"/>
@@ -196,7 +196,7 @@
                                                 <div class="product-thumbnail w-100 position-relative">
                                                     <span class="badge badge-success top-left">- ${item.discount}%</span>
 
-                                                    <a class="d-block" href="<c:url value='/chi-tiet-san-pham'/>">
+                                                    <a class="d-block" href="<c:url value='/chi-tiet-san-pham?id=${item.id}'/>">
 
                                                         <c:if test="${not empty item.image}">
                                                             <c:set var="image" value="/repository/${item.image}"/>

@@ -6,7 +6,6 @@ import com.souvenironline.entity.ProductEntity;
 import com.souvenironline.repository.ProductRepository;
 import com.souvenironline.service.web.IProductWebService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -71,5 +70,16 @@ public class ProductWebService implements IProductWebService {
     @Override
     public int getTotalItem() {
         return (int) productRepository.count();
+    }
+
+    @Override
+    public List<ProductDTO> findById(long id) {
+        List<ProductDTO> models = new ArrayList<>();
+        List<ProductEntity> entity = productRepository.findById(id);
+        for (ProductEntity item: entity){
+            ProductDTO productDTO = productConverter.toDTO(item);
+            models.add(productDTO);
+        }
+        return models;
     }
 }

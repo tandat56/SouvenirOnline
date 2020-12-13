@@ -17,4 +17,6 @@ public interface ProductRepository extends JpaRepository<ProductEntity, Long> {
    @Query(value ="select * from Product as p where p.category_product_code = ?1 " ,nativeQuery = true)
     List<ProductEntity> findAllProductByCategoryCode(String code);
 
+   List<ProductEntity> findById(long id);
+
 }
