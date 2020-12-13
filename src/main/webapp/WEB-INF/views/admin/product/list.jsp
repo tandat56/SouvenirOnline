@@ -66,6 +66,7 @@
 														<th>Giá</th>
 														<th>Thể loại</th>
 														<th>Người tạo</th>
+														<th>Người tạo</th>
 														<th>Chỉnh sửa</th>
 													</tr>
 												</thead>
@@ -77,6 +78,7 @@
 															<td>${item.price}</td>
 															<td>${item.categoryProductCode}</td>
 															<td>${item.createdBy}</td>
+															<td>${item.createdDate}</td>
 															<td>
 																<c:url var="updateProductgURL" value="/quan-tri/san-pham/chinh-sua">
 																	<c:param name="id" value="${item.id}"/>															

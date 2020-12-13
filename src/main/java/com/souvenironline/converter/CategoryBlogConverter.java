@@ -12,17 +12,20 @@ public class CategoryBlogConverter {
         result.setId(entity.getId());
         result.setCode(entity.getCode());
         result.setName(entity.getName());
+        result.setLevel(entity.getLevel());
         return result;
     }
     public CategoryBlogEntity toEntity(CategoryBlogDTO dto){
         CategoryBlogEntity result = new CategoryBlogEntity();
         result.setCode(dto.getCode());
         result.setName(dto.getName());
+        result.setLevel(dto.getLevel());
         return result;
     }
     public CategoryBlogEntity toEntity(CategoryBlogEntity result, CategoryBlogDTO dto){
         result.setCode(dto.getCode());
         result.setName(dto.getName());
+        result.setLevel(dto.getLevel());
         return result;
     }
 }

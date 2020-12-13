@@ -61,11 +61,11 @@ public class ProductAdminService implements IProductAdminService {
             productEntity.setCategoryProduct(category);
         }
         savePhoto(dto, productEntity);
-
         return productConverter.toDTO(productRepository.save(productEntity));
     }
+
     private void savePhoto(ProductDTO dto, ProductEntity staffEntity) {
-        String path = "/photo/"+ dto.getPhotoName();
+        String path = "/photo/" + dto.getPhotoName();
         if (dto.getPhotoBase64() != null) {
             if (staffEntity.getImage() != null) {
                 if (!path.equals(staffEntity.getImage())) {
@@ -103,6 +103,17 @@ public class ProductAdminService implements IProductAdminService {
     public List<ProductDTO> findAllProductHighlight() {
         List<ProductDTO> models = new ArrayList<>();
         List<ProductEntity> entities = productRepository.findAllProductHighlight();
+        for (ProductEntity item : entities) {
+            ProductDTO productDTO = productConverter.toDTO(item);
+            models.add(productDTO);
+        }
+        return models;
+    }
+
+    @Override
+    public List<ProductDTO> findAllNewProduct() {
+        List<ProductDTO> models = new ArrayList<>();
+        List<ProductEntity> entities = productRepository.findAllNewProduct();
         for (ProductEntity item : entities) {
             ProductDTO productDTO = productConverter.toDTO(item);
             models.add(productDTO);

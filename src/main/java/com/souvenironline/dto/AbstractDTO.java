@@ -5,6 +5,7 @@ import lombok.Setter;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Getter
@@ -12,8 +13,8 @@ import java.util.List;
 public class AbstractDTO<T> {
 
     private Long id;
-    private Timestamp createdDate;
-    private Timestamp modifiedDate;
+    private Date createdDate;
+    private Date modifiedDate;
     private String createdBy;
     private String modifiedBy;
     private long[] ids;

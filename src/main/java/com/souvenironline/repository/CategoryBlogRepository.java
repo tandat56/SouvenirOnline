@@ -14,8 +14,7 @@ public interface CategoryBlogRepository extends JpaRepository<CategoryBlogEntity
 
     CategoryBlogEntity findOneByCode(String code);
 
-    @Query(value = "select * from Blog", nativeQuery = true)
-    List<CategoryBlogEntity> findAllBlog();
+    List<CategoryBlogEntity> findAllByLevel(int level);
 
 
 

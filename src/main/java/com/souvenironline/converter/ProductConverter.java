@@ -13,6 +13,7 @@ public class ProductConverter {
         result.setId(entity.getId());
         result.setProductName(entity.getProductName());
         result.setImage(entity.getImage());
+        result.setTitle(entity.getTitle());
         result.setMoreImage(entity.getMoreImage());
         result.setDetail(entity.getDetail());
         result.setHightlight(entity.getHighlight());
@@ -23,7 +24,7 @@ public class ProductConverter {
         result.setStatus(entity.getStatus());
         result.setCategoryProductCode(entity.getCategoryProductCode());
         result.setCreatedBy(entity.getCreatedBy());
-      /*  result.setCreatedDate((Timestamp) entity.getCreatedDate());*/
+        result.setCreatedDate(entity.getCreatedDate());
         return result;
     }
 
@@ -32,6 +33,7 @@ public class ProductConverter {
 
         result.setProductName(dto.getProductName());
         result.setImage(dto.getImage());
+        result.setTitle(dto.getTitle());
         result.setMoreImage(dto.getMoreImage());
         result.setCategoryProductCode(dto.getCategoryProductCode());
         result.setDetail(dto.getDetail());
@@ -47,6 +49,7 @@ public class ProductConverter {
         result.setProductName(dto.getProductName());
         result.setCategoryProductCode(dto.getCategoryProductCode());
         result.setImage(dto.getImage());
+        result.setTitle(dto.getTitle());
         result.setMoreImage(dto.getMoreImage());
         result.setDetail(dto.getDetail());
         result.setHighlight(dto.getHightlight());

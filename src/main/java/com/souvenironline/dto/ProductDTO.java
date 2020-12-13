@@ -33,5 +33,4 @@ public class ProductDTO extends AbstractDTO<ProductDTO> {
     public void setPhotoBase64(String photoBase64) {
         this.photoBase64 = photoBase64;
     }
-
-    }
+}

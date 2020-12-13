@@ -22,6 +22,9 @@ public class CategoryBlogEntity extends BaseEntity {
 	@Column(name = "name")
 	private String name;
 
+	@Column(name = "level")
+	private int level;
+
 	@OneToMany(mappedBy = "categoryBlog")
 	private List<BlogEntity> blogs = new ArrayList<>();
 

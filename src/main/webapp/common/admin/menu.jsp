@@ -56,7 +56,7 @@
             </ul>
             <ul class="submenu">
                 <li>
-                    <a href="<c:url value='/quan-tri/san-pham/danh-sach?page=1&limit=10'/>">
+                    <a href="<c:url value='/quan-tri/san-pham/san-pham-noi-bat?page=1&limit=10'/>">
                         <i class="menu-icon fa fa-caret-right"></i>
                         QLSP nổi bật
                     </a>
@@ -65,7 +65,7 @@
             </ul>
             <ul class="submenu">
                 <li>
-                    <a href="<c:url value='/quan-tri/san-pham/danh-sach?page=1&limit=10'/>">
+                    <a href="<c:url value='/quan-tri/san-pham/san-pham-moi?page=1&limit=10'/>">
                         <i class="menu-icon fa fa-caret-right"></i>
                         QLSP mới
                     </a>

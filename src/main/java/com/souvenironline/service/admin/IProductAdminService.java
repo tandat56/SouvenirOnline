@@ -17,4 +17,5 @@ public interface IProductAdminService {
     ProductDTO findById(long id);
 
     List<ProductDTO> findAllProductHighlight();
+    List<ProductDTO> findAllNewProduct();
 }

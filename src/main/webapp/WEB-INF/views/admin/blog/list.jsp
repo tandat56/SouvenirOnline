@@ -65,6 +65,8 @@ cc<%@include file="/common/taglib.jsp"%>
 														<th>Tên bài viết</th>
 														<th>Mô tả ngắn</th>
 														<th>Thể loại</th>
+														<th>Người tạo</th>
+														<th>Ngày tạo</th>
 														<th>Thao tác</th>
 													</tr>
 												</thead>
@@ -75,6 +77,8 @@ cc<%@include file="/common/taglib.jsp"%>
 															<td>${item.title}</td>
 															<td>${item.shortDescription}</td>
 															<td>${item.categoryCode}</td>
+															<td>${item.createdBy}</td>
+															<td>${item.createdDate}</td>
 															<td>
 																<c:url var="updateBlogURL" value="/quan-tri/bai-viet/chinh-sua">
 																	<c:param name="id" value="${item.id}"/>															

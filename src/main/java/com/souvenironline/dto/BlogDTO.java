@@ -16,6 +16,7 @@ public class BlogDTO extends AbstractDTO<BlogDTO> {
     private String photoBase64;
     private String photoName;
 
+
     public String getPhotoBase64() {
         if (photoBase64 != null) {
             return photoBase64.split(",")[1];

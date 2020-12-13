@@ -14,12 +14,16 @@ public class BlogConverter {
         result.setShortDescription(entity.getShortDescription());
         result.setContent(entity.getContent());
         result.setThumbnail(entity.getThumbnail());
+        result.setCategoryCode(entity.getCategoryCode());
         result.setCategoryCode(entity.getCategoryBlog().getCode());
+        result.setCreatedBy(entity.getCreatedBy());
+        result.setCreatedDate(entity.getCreatedDate());
         return result;
     }
 
     public BlogEntity toEntity(BlogDTO dto) {
         BlogEntity result = new BlogEntity();
+        result.setCategoryCode(dto.getCategoryCode());
         result.setTitle(dto.getTitle());
         result.setShortDescription(dto.getShortDescription());
         result.setContent(dto.getContent());
@@ -28,6 +32,7 @@ public class BlogConverter {
     }
     public BlogEntity toEntity(BlogEntity result, BlogDTO dto){
         result.setTitle(dto.getTitle());
+        result.setCategoryCode(dto.getCategoryCode());
         result.setShortDescription(dto.getShortDescription());
         result.setThumbnail(dto.getThumbnail());
         result.setContent(dto.getContent());

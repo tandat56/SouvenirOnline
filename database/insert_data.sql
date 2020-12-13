@@ -13,3 +13,6 @@ values('nguoidung2','$2a$10$/RUbuT9KIqk6f8enaTQiLOXzhnUkiwEJRdtzdrMXXwU7dgnLKTCY
 INSERT INTO User_Role(userid,roleid) VALUES (1,1);
 INSERT INTO User_Role(userid,roleid) VALUES (2,2);
 INSERT INTO User_Role(userid,roleid) VALUES (3,2);
+
+insert into Category_Product(code,level,name) values ('linh-tinh',0,'Linh Tinh'), ('ao',0, 'Áo');
+insert into Category_Product(code,level,name) values ('balo',0,'Balo'), ('qua-tang',0,'Quà Tặng');

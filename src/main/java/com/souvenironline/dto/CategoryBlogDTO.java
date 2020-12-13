@@ -9,6 +9,5 @@ public class CategoryBlogDTO extends AbstractDTO<CategoryBlogDTO> {
 
     private String code;
     private String name;
-
-
+    private int level;
 }

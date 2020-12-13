@@ -25,6 +25,9 @@ public class BlogEntity extends BaseEntity {
 	@Column(name = "short_description")
 	private String shortDescription;
 
+	@Column(name = "category_code")
+	private String categoryCode;
+
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "categoryBlogId")
