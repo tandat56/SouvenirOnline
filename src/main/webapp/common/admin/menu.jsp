@@ -34,8 +34,6 @@
         </div>
     </div>
     <ul class="nav nav-list">
-
-
         <li>
             <a href="#" class="dropdown-toggle">
                 <i class="menu-icon fa fa-list"></i>

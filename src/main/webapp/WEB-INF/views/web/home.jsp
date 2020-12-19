@@ -16,7 +16,10 @@
     <div class="main-slider dots-style theme1">
         <!-- slider-item end -->
         <c:forEach var="item" items="${silde}">
-            <div class="slider-item bg-img bg-img2">
+
+            <c:set var="image" value="/repository/${item.image}"/>
+
+            <div class="slider-item bg-img" style="background-image: url(${image}); margin-top: 130px">
                 <div class="container">
                     <div class="row align-items-center slider-height">
                         <div class="col-12">
@@ -423,8 +426,8 @@
                         <div class="product-sync-init mb-20">
                             <div class="single-product">
                                 <div class="product-thumb">
-                                    <img src="<c:url value='/template/web/assets/img/slider/thumb/kieng1.jpg'/>"
-                                         alt="product-thumb">
+                                    <img src="#"
+                                         alt="product-thumb" />
                                 </div>
                             </div>
                             <!-- single-product end -->
