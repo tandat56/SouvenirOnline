@@ -67,6 +67,7 @@
             </div>
         </div>
         <!-- product-tab-nav end -->
+
         <div class="row">
             <div class="col-12">
                 <div class="tab-content" id="pills-tabContent">
@@ -76,21 +77,22 @@
                          aria-labelledby="pills-home-tab">
                         <div class="product-slider-init theme1 slick-nav">
 
-                            <c:forEach var="item" items="${productHighlight.listResult}">
+                            <c:forEach var="item3" items="${productHighlight.listResult}">
+                                <form method="get" action="<c:url value="/AddCart/${item3.id}"/> " >
                                 <div class="slider-item">
                                     <div class="card product-card">
                                         <div class="card-body p-0">
                                             <div class="media flex-column">
                                                 <div class="product-thumbnail w-100 position-relative">
-                                                    <span class="badge badge-success top-left">- ${item.discount}%</span>
+                                                    <span class="badge badge-success top-left">- ${item3.discount}%</span>
 
-                                                    <a class="d-block" href="<c:url value='/chi-tiet-san-pham?id=${item.id}'/>">
+                                                    <a class="d-block" href="<c:url value='/chi-tiet-san-pham/${item3.id}'/>">
 
-                                                        <c:if test="${not empty item.image}">
-                                                            <c:set var="image" value="/repository/${item.image}"/>
+                                                        <c:if test="${not empty item3.image}">
+                                                            <c:set var="image" value="/repository/${item3.image}"/>
                                                             <img src="${image}" id="viewImage" width="300px" height="300px">
                                                         </c:if>
-                                                        <c:if test="${empty item.image}">
+                                                        <c:if test="${empty item3.image}">
                                                             <img src="<c:url value='/template/image/default.png'/>" id="image" width="300px" height="300px">
                                                         </c:if>
                                                     </a>
@@ -98,8 +100,11 @@
                                                     <!-- product links -->
 
                                                     <div class="product-links d-flex d-flex justify-content-between">
-                                                        <button class="pro-btn" data-toggle="modal"
+                                           <%--             <button class="pro-btn" data-toggle="modal"
                                                                 onclick="cart.add(${item.id}, `${item.productName}`, ${item.price})">Thêm vào giỏ hàng
+                                                        </button>--%>
+                                                        <button class="pro-btn" type="submit" >
+                                                            Thêm vào giỏ hàng
                                                         </button>
                                                         <ul class="d-flex justify-content-center">
                                                             <li>
@@ -141,10 +146,10 @@
                                                         </div>
                                                         <h3 class="title my-10"><a
                                                                 href="#">
-                                                                ${item.productName}</a></h3>
+                                                                ${item3.productName}</a></h3>
                                                         <h6 class="product-price">
-                                                            <del class="del">${item.price}</del>
-                                                            <span class="onsale"><fmt:formatNumber type="number" groupingUsed="true" value="${item.price * (1 - item.discount / 100 )}" /> ₫</span></h6>
+                                                            <del class="del">${item3.price}</del>
+                                                            <span class="onsale"><fmt:formatNumber type="number" groupingUsed="true" value="${item3.price * (1 - item3.discount / 100 )}" /> ₫</span></h6>
 
 
                                                     </div>
@@ -153,6 +158,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                </form>
                             </c:forEach>
                         </div>
                     </div>
@@ -161,6 +167,8 @@
             </div>
 
         </div>
+
+
     </div>
     </div>
     </div>

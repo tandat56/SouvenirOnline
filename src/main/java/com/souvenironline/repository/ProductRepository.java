@@ -17,6 +17,10 @@ public interface ProductRepository extends JpaRepository<ProductEntity, Long> {
    @Query(value ="select * from Product as p where p.category_product_code = ?1 " ,nativeQuery = true)
     List<ProductEntity> findAllProductByCategoryCode(String code);
 
-   List<ProductEntity> findById(long id);
+    @Query(value = "select * from Product as p GROUP BY p.id ORDER BY RAND() LIMIT 10", nativeQuery = true)
+    List<ProductEntity> findAllProductLimit();
+
+    @Query(value = "select  * from Product p where p.id = ?", nativeQuery = true)
+    ProductEntity findById(long id);
 
 }

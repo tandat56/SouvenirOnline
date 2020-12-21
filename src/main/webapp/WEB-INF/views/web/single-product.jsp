@@ -7,7 +7,8 @@
 <title>Chi tiết sản phẩm</title>
 </head>
 <body>
-<c:forEach var="item3" items="${model}">
+<%--<c:forEach var="item" items="${model.}">--%>
+<form method="get" action="<c:url value="/AddCart/${model.id}"/> ">
 <nav class="breadcrumb-section theme1 breadcrumb-bg1">
   <div class="container">
     <div class="row">
@@ -20,7 +21,7 @@
         <ol class="breadcrumb bg-transparent m-0 p-0 align-items-center justify-content-center">
           <li class="breadcrumb-item"><a href="<c:url value='/san-pham'/>">Cửa hàng</a></li>
           <li class="breadcrumb-item active" aria-current="page">
-           ${item3.productName}
+           ${model.productName}
           </li>
         </ol>
       </div>
@@ -42,46 +43,13 @@
         <div class="product-sync-init mb-30">
             <div class="single-product">
                 <div class="product-thumb">
-                    <c:set var="image" value="/repository/${item3.image}"/>
+                    <c:set var="image" value="/repository/${model.image}"/>
                     <img class="first-img"
                          src="${image}"
                          alt="thumbnail" height="575px" width="500px">
                 </div>
             </div>
         </div>
-<%--        <div class="product-sync-nav slick-nav-sync">
-            <div class="single-product">
-                <div class="product-thumb">
-                    <a href="javascript:void(0)"> <img src="<c:url value='/template/web/assets/img/slider/thumb/1.1.jpg'/>" alt="product-thumb"></a>
-                </div>
-            </div>
-            <!-- single-product end -->
-            <div class="single-product">
-                <div class="product-thumb">
-                    <a href="javascript:void(0)"> <img src="<c:url value='/template/web/assets/img/slider/thumb/2.1.jpg'/>" alt="product-thumb"></a>
-                </div>
-            </div>
-            <!-- single-product end -->
-            <div class="single-product">
-
-                <div class="product-thumb">
-                    <a href="javascript:void(0)"><img src="<c:url value='/template/web/assets/img/slider/thumb/3.1.jpg'/>" alt="product-thumb"></a>
-                </div>
-            </div>
-            <!-- single-product end -->
-            <div class="single-product">
-                <div class="product-thumb">
-                    <a href="javascript:void(0)"><img src="<c:url value='/template/web/assets/img/slider/thumb/4.1.jpg'/>" alt="product-thumb"></a>
-                </div>
-            </div>
-            <!-- single-product end -->
-            <div class="single-product">
-                <div class="product-thumb">
-                    <a href="javascript:void(0)"><img src="<c:url value='/template/web/assets/img/slider/thumb/2.1.jpg'/>" alt="product-thumb"></a>
-                </div>
-            </div>
-            <!-- single-product end -->
-        </div>--%>
       </div>
 
 
@@ -103,24 +71,13 @@
                 <div class="product-body mb-40">
                     <div class="d-flex align-items-center mb-30 border-bottom pb-30">
                         <h6 class="product-price mr-20">
-                            <del class="del">${item3.price}</del> <span class="onsale"><fmt:formatNumber type="number" groupingUsed="true" value="${item3.price * (1 - item3.discount / 100 )}"/>₫</span>
+                            <del class="del">${model.price}</del> <span class="onsale"><fmt:formatNumber type="number" groupingUsed="true" value="${model.price * (1 - item3.discount / 100 )}"/>₫</span>
                         </h6>
-                        <span class="badge my-badge position-static bg-dark">Save ${item3.discount}%</span>
+                        <span class="badge my-badge position-static bg-dark">Save ${model.discount}%</span>
                     </div>
                     <p class="font-size">
-                    ${item3.title}
+                    ${model.title}
                     </p>
-<%--                    <ul class="font-size">
-                        <li>Part of the Kaval Collection.</li>
-                        <li>
-                            Regular fit is eased, but not sloppy, and perfect for any
-                            activity.
-                        </li>
-                        <li>
-                            Plain-woven jacket specifically constructed for freedom of
-                            movement.
-                        </li>
-                    </ul>--%>
                 </div>
                 <div class="product-footer">
                     <div class="product-count style d-flex flex-column flex-sm-row mt-30 mb-30">
@@ -197,9 +154,6 @@
                             <li class="nav-item">
                                 <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><h3>Mô tả</h3></a>
                             </li>
-                 <%--           <li class="nav-item">
-                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Nhận xét</a>
-                            </li>--%>
                         </ul>
                     </nav>
                 </div>
@@ -214,61 +168,19 @@
                         <div class="single-product-desc">
                             <ul>
                                 <li>
-                                    ${item3.detail}
+                                    ${model.detail}
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <!-- second tab-pane -->
-                        <%--          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                    <div class="single-product-desc">
-                                      <div class="studio-thumb">
-                                        <a href="#"><img class="mb-30" src="<c:url value='/template/web/assets/img/stodio.jpg'/>" alt="studio-thumb"></a>
-                                        <h6 class="mb-2">Tài liệu tham khảo <small>Ví dụ</small></h6>
-                                        <h6>Kho <small>300 sản phẩm</small></h6>
-                                        <h3>Bảng dữ liệu</h3>
-                                      </div>
-                                      <div class="product-features">
-                                        <ul>
-                                          <li><span>Compositions</span></li>
-                                          <li><span>Cotton</span></li>
-                                          <li><span>Paper Type</span></li>
-                                          <li><span>Doted</span></li>
-                                          <li><span>Color</span></li>
-                                          <li><span>Black</span></li>
-                                          <li><span>Size</span></li>
-                                          <li><span>L</span></li>
-                                          <li><span>Frame Size</span></li>
-                                          <li><span>40x60cm</span></li>
-                                        </ul>
-                                      </div>
-                                    </div>
-                                  </div>--%>
-                    <!-- third tab-pane -->
-<%--                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                        <div class="single-product-desc">
-                            <div class="grade-content">
-                                <span class="grade">Grade </span>
-                                <span class="star-on"><i class="ion-ios-star"></i> </span>
-                                <span class="star-on"><i class="ion-ios-star"></i> </span>
-                                <span class="star-on"><i class="ion-ios-star"></i> </span>
-                                <span class="star-on"><i class="ion-ios-star"></i> </span>
-                                <span class="star-on"><i class="ion-ios-star"></i> </span>
-                                <h6 class="sub-title">Hastheme</h6>
-                                <p>14/10/2020</p>
-                                <h4 class="title">demo</h4>
-                                <p>ok !</p>
-                                <a href="#" class="btn theme-btn--dark3 theme-btn--dark3-sm btn--sm rounded-5 mt-15" data-toggle="modal" data-target="#exampleModalCenter">Write your review !</a>
-                            </div>
-                        </div>
-                    </div>--%>
+
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-</c:forEach>
+</form>
+<%--</c:forEach>--%>
 
 <!-- product tab end -->
 <!-- new arrival section start -->
@@ -291,7 +203,7 @@
                       <div class="media flex-column">
                           <div class="product-thumbnail w-100 position-relative">
                               <span class="badge badge-danger top-left">Mới</span>
-                              <a class="d-block" href="<c:url value='/chi-tiet-san-pham?id=${item4.id}'/>">
+                              <a class="d-block" href="<c:url value='/chi-tiet-san-pham/${item4.id}'/>">
                               </a>
 
                                       <c:set var="image" value="/repository/${item4.image}"/>

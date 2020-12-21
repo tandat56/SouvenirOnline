@@ -2,6 +2,7 @@ package com.souvenironline.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
@@ -12,6 +13,7 @@ import java.util.List;
 @Setter
 @Entity
 @Table(name = "Product")
+@ToString
 public class ProductEntity extends BaseEntity {
 
 	@Column(name = "product_name")
@@ -51,6 +53,7 @@ public class ProductEntity extends BaseEntity {
 	private Integer status;
 
 	@Column(name = "category_product_code")
+	@ToString.Exclude
 	private String categoryProductCode;
 
 
@@ -59,6 +62,7 @@ public class ProductEntity extends BaseEntity {
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "productid")
+	@ToString.Exclude
 	private CategoryProductEntity categoryProduct;
 
 	@OneToMany(mappedBy = "product")
@@ -66,10 +70,12 @@ public class ProductEntity extends BaseEntity {
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "productwarehouseid")
+	@ToString.Exclude
 	private WarehouseEntity warehouse;
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "colorsid")
+	@ToString.Exclude
 	private ColorsEntity colors;
 
 	}

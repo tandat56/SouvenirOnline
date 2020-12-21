@@ -89,7 +89,7 @@
                                         <div class="card-body p-0">
                                             <div class="product-thumbnail position-relative">
                                                 <span class="badge badge-danger top-left">Mới</span>
-                                                <a href="<c:url value="/chi-tiet-san-pham" />" />
+                                                <a href="<c:url value="/chi-tiet-san-pham/${item11.id}" />" />
                                                 <c:set var="image" value="/repository/${item11.image}"/>
                                                 <img class="first-img"
                                                      src="${image}"

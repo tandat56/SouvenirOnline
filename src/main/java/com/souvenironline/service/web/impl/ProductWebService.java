@@ -73,13 +73,19 @@ public class ProductWebService implements IProductWebService {
     }
 
     @Override
-    public List<ProductDTO> findById(long id) {
+    public List<ProductDTO> findAllProductLimit() {
         List<ProductDTO> models = new ArrayList<>();
-        List<ProductEntity> entity = productRepository.findById(id);
-        for (ProductEntity item: entity){
+        List<ProductEntity> entities = productRepository.findAllProductLimit();
+
+        for (ProductEntity item: entities){
             ProductDTO productDTO = productConverter.toDTO(item);
             models.add(productDTO);
         }
         return models;
+    }
+
+    @Override
+    public ProductDTO findById(long id) {
+        return productConverter.toDTO(productRepository.findById(id));
     }
 }

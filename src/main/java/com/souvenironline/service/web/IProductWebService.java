@@ -1,6 +1,7 @@
 package com.souvenironline.service.web;
 
 import com.souvenironline.dto.ProductDTO;
+import com.souvenironline.entity.ProductEntity;
 
 import java.util.List;
 
@@ -16,5 +17,7 @@ public interface IProductWebService {
 
     int getTotalItem();
 
-    List<ProductDTO> findById(long id);
+    List<ProductDTO> findAllProductLimit();
+
+    ProductDTO findById(long id);
 }

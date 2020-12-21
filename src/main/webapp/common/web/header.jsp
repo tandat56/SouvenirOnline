@@ -179,20 +179,21 @@
 <div id="offcanvas-cart" class="offcanvas offcanvas-cart theme1">
     <div class="inner">
         <div class="head d-flex flex-wrap justify-content-between">
-            <span class="title">Cart</span>
+            <span class="title">Giỏ hàng</span>
             <button class="offcanvas-close">×</button>
         </div>
 
         <div class="sub-total d-flex flex-wrap justify-content-between">
 
-            <strong>Subtotal :</strong>
-            <span class="cart-cnt"></span>
-            <span class="amount cart-amt"></span>
+            <strong>Tổng :</strong>
+
+            <span> ${totalQuantityCart}</span>
+            <span class="amount"><fmt:formatNumber type="number" groupingUsed="true" value="${totalPriceCart}"/>₫</span>
+
 
         </div>
-        <a href="<c:url  value='/gio-hang'/>" class="btn theme--btn1 btn--lg text-uppercase  d-block d-sm-inline-block mr-sm-2">view
-            cart</a>
-        <a href="<c:url  value='/thanh-toan'/>" class="btn theme--btn1 btn--lg text-uppercase  d-block d-sm-inline-block mt-4 mt-sm-0">checkout</a>
+        <a href="<c:url  value='/gio-hang'/>" class="btn theme--btn1 btn--lg text-uppercase  d-block d-sm-inline-block mr-sm-2">Giỏ hàng</a>
+        <a href="<c:url  value='/thanh-toan'/>" class="btn theme--btn1 btn--lg text-uppercase  d-block d-sm-inline-block mt-4 mt-sm-0">Thanh toán</a>
         <p class="minicart-message">Freeship trên mọi nẻo đường !</p>
     </div>
 </div>
@@ -329,7 +330,7 @@
                                 <li class="cart-block position-relative d-none d-sm-block">
                                     <a class="offcanvas-toggle" href="#offcanvas-cart">
                                         <i class="ion-bag"></i>
-                                        <span class="badge cbdg1 cart-cnt">0</span>
+                                        <span class="badge cbdg1"> ${ Shop.size() } </span>
                                     </a>
                                 </li>
 

@@ -8,8 +8,5 @@ import java.util.List;
 public interface IBlogWebService {
 
     List<BlogDTO> findAll();
-
-/*    List<BlogDTO> findAllBlogByCategoryCode(String code);*/
-
     int getTotalItem();
 }

@@ -40,15 +40,46 @@
                     <table class="table mb-0">
                         <thead class="thead-light">
                             <tr class="text-center">
-                                <th class="text-center" >ID</th>
                                 <th class="text-center" >Tên sản phẩm</th>
                                 <th class="text-center" >Giá</th>
                                 <th class="text-center" >Số lượng</th>
                                 <th class="text-center" >Tổng tiền</th>
-                                <th class="text-center" ></th>
+                                <th class="text-center" >Chỉnh sửa</th>
+                                <th class="text-center" >Xóa</th>
                             </tr>
                         </thead>
-                        <tbody class="cart-items"></tbody>
+                        <tbody>
+
+                        <c:forEach var="item" items="${Shop}">
+
+                            <td class="text-center">${item.value.quantity/2}</td>
+                            <td class="text-center">${item.value.totalPrice/2}</td>
+                            <td class="text-center">
+                                <input type="number" min="1" max="100" class="span1" style="max-width: 34px" placeholder="1">
+                            </td>
+                            <td class="text-center">tong tien</td>
+                            <td class="text-center">
+                                <a href="<c:url value="/EditCart/${item.key}"/> " class="btn btn-mini btn-danger text-center" type="button">
+                                    <span class="icon-edit"> </span>
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="<c:url value="/DeleteCart/${item.key}"/>" class="btn btn-mini btn-danger text-center" type= "button">
+                                    <span class="icon-remove"> </span>
+                                </a>
+                            </td>
+
+
+                        </c:forEach>
+
+
+
+
+
+
+
+
+                        </tbody>
                     </table>
                     <div class="panel-footer">
                         <a onclick="cart.clear()" href="" class="btn btn-danger">

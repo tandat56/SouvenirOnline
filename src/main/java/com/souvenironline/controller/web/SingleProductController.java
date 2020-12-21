@@ -12,14 +12,13 @@ public class SingleProductController {
     @Autowired
     private IProductWebService productWebService;
 
-    @RequestMapping(value = "/chi-tiet-san-pham", method = RequestMethod.GET)
-    public ModelAndView singlePPage(@RequestParam(value = "id") Long id) {
-        ModelAndView mav = new ModelAndView("web/single-product");
+    @RequestMapping(value = "/chi-tiet-san-pham/{id}", method = RequestMethod.GET)
+    public ModelAndView singlePPage(@PathVariable Long id) {
         ProductDTO productDTO = new ProductDTO();
-        productDTO.setListResult(productWebService.findById(id));
+        ModelAndView mav = new ModelAndView("web/single-product");
         if (id != null) {
             mav.addObject("model", productWebService.findById(id));
-            mav.addObject("products", productWebService.findAll());
+            mav.addObject("products", productWebService.findAllProductLimit());
         }
         return mav;
     }

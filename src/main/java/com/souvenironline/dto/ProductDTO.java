@@ -2,9 +2,11 @@ package com.souvenironline.dto;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
+@ToString
 public class ProductDTO extends AbstractDTO<ProductDTO> {
 
     private String productName;
