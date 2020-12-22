@@ -41,6 +41,7 @@
                         <thead class="thead-light">
                             <tr class="text-center">
                                 <th class="text-center" >Tên sản phẩm</th>
+                                <th class="text-center" >Hình ảnh</th>
                                 <th class="text-center" >Giá</th>
                                 <th class="text-center" >Số lượng</th>
                                 <th class="text-center" >Tổng tiền</th>
@@ -51,42 +52,37 @@
                         <tbody>
 
                         <c:forEach var="item" items="${Shop}">
-
-                            <td class="text-center">${item.value.quantity/2}</td>
-                            <td class="text-center">${item.value.totalPrice/2}</td>
+                            <tr>
+                                <td class="text-center">${item.value.product.productName}</td>
+                                <td class="text-center">Hinh anh</td>
+                                <td class="text-center"><fmt:formatNumber type="number" groupingUsed="true" value="${item.value.product.price}"/>₫</td>
                             <td class="text-center">
-                                <input type="number" min="1" max="100" class="span1" style="max-width: 34px" placeholder="1">
+                                <input type="number" min="1" max="100" class="span1" id="quantity-cart-${item.key}" value="${item.value.quantity/2}" />
                             </td>
-                            <td class="text-center">tong tien</td>
+                                <td class="text-center"><fmt:formatNumber type="number" groupingUsed="true" value="${item.value.totalPrice/2}"/>₫</td>
                             <td class="text-center">
-                                <a href="<c:url value="/EditCart/${item.key}"/> " class="btn btn-mini btn-danger text-center" type="button">
+                                <button data-id="${item.key}" href="<c:url value="/EditCart/${item.key}"/> " class="btn btn-mini btn-danger edit-cart text-center" type="button">
                                     <span class="icon-edit"> </span>
-                                </a>
+                                </button>
                             </td>
+
                             <td class="text-center">
                                 <a href="<c:url value="/DeleteCart/${item.key}"/>" class="btn btn-mini btn-danger text-center" type= "button">
                                     <span class="icon-remove"> </span>
                                 </a>
                             </td>
-
-
+                            </tr>
                         </c:forEach>
-
-
-
-
-
-
 
 
                         </tbody>
                     </table>
-                    <div class="panel-footer">
-                        <a onclick="cart.clear()" href="" class="btn btn-danger">
-                            <span class="glyphicon glyphicon-trash"></span> Clear
+                    <div class="panel-footer mt-5">
+                        <a href="/san-pham" class="btn btn-danger mr-4" style="min-height: 30px" >
+                            <span class="glyphicon glyphicon-trash"></span> Tiếp tục mua sắm
                         </a>
-                        <a href="/thanh-toan" class="btn btn-success">
-                            <span class="glyphicon glyphicon-check"></span> Checkout
+                        <a href="/thanh-toan" class="btn btn-success" style="min-height: 30px">
+                            <span class="glyphicon glyphicon-check"></span> Thanh toán
                         </a>
                     </div>
                 </div>
@@ -95,5 +91,12 @@
         </div>
     </div>
 </section>
+<content tag="script">
+    <script>
+        $(".edit-cart").on("click", function (){
+            alert($(this).data("id"));
+        });
+    </script>
+</content>
 </body>
 </html>

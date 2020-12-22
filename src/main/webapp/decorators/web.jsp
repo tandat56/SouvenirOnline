@@ -29,7 +29,8 @@
 <script src="<c:url value='/template/web/assets/js/vendor/vendor.min.js'/>"></script>
 <script src="<c:url value='/template/web/assets/js/plugins/plugins.min.js'/>"></script>
 <script src="<c:url value='/template/web/assets/js/main.js'/>"></script>
-<script src="<c:url value='/template/web/assets/js/Poly.js'/>"></script>
-
+<script src="<c:url value='/template/admin/assets/js/bootstrap.min.js' />"></script>
+<script src="<c:url value='/template/admin/assets/js/jquery-ui.custom.min.js' />"></script>
+<dec:getProperty property="page.script"></dec:getProperty>
 </body>
 </html>
