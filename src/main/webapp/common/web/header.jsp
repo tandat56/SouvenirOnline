@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="com.souvenironline.util.SecurityUtils" %>
 <%@include file="/common/taglib.jsp"%>
 <div class="offcanvas-overlay"></div>
 <!-- offcanvas-overlay end -->
@@ -203,50 +204,36 @@
 <div id="offcanvas-setting" class="offcanvas offcanvas-cart theme1">
     <div class="inner">
         <div class="head d-flex justify-content-between">
-            <span class="title">Setting</span>
+            <h4 class="title_setting">Tài khoản của tôi</h4>
             <button class="offcanvas-close">×</button>
         </div>
         <div class="content_setting">
             <div class="info_setting">
-                <h3 class="title_setting">Tài khoản của tôi</h3>
-                <ul>
+
+                <security:authorize access="isAnonymous()">
                     <li>
-                        <a href="<c:url  value='/tai-khoan'/>">Tài khoản của tôi</a>
+                        <a href="<c:url  value='/dang-nhap'/>">Đăng nhập </a>
+                    </li>
+                    <li>
+                        <a href="<c:url  value='/thanh-toan'/>">Đăng kí</a>
+                    </li>
+
+                </security:authorize>
+
+                <security:authorize access="isAuthenticated()">
+                    <li>
+                        <a href="<c:url  value='/dang-nhap'/>">Xin chào <%=SecurityUtils.getPrincipal().getFullName()%></a>
                     </li>
                     <li>
                         <a href="<c:url  value='/thanh-toan'/>">Thanh toán</a>
                     </li>
                     <li>
-                        <a href="<c:url  value='/dang-nhap'/>">Đăng nhập</a>
+                        <a href="<c:url  value='/thoat'/>">Thoát</a>
                     </li>
 
-                </ul>
-            </div>
+                </security:authorize>
 
-            <div class="info_setting">
-                <h3 class="title_setting">Language</h3>
-                <ul>
-                    <li class="active">
-                        <a href="#">
-                            <img src="<c:url value='/template/web/assets/img/logo/france.jpg'/>" alt="img">
-                            English
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="<c:url value='/template/web/assets/img/logo/us-flag.jpg'/>" alt="img">Français
-                        </a>
-                    </li>
-                </ul>
             </div>
-            <div class="info_setting">
-                <div class="title_setting">Currency :</div>
-                <ul>
-                    <li><a href="#">EUR €</a></li>
-                    <li class="active"><a href="#">USD $</a></li>
-                </ul>
-            </div>
-
         </div>
     </div>
 </div>

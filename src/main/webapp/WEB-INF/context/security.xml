@@ -6,12 +6,28 @@
             http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
             http://www.springframework.org/schema/security
             http://www.springframework.org/schema/security/spring-security-3.2.xsd">
-            
+
     <http auto-config="false" use-expressions="true" disable-url-rewriting="true">
-    
-    	<intercept-url pattern="/quan-tri/trang-chu" access="hasAnyRole('ADMIN')" />
-    	
-    	<access-denied-handler error-page="/accessDenied" />
+
+        <!-- Home, Product -->
+        <intercept-url pattern="/quan-tri/trang-chu" access="hasAnyRole('ADMIN')" />
+        <intercept-url pattern="/quan-tri/san-pham/chinh-sua" access="hasAnyRole('ADMIN')" />
+        <intercept-url pattern="/quan-tri/san-pham/danh-sach" access="hasAnyRole('ADMIN')" />
+        <intercept-url pattern="/quan-tri/san-pham/san-pham-moi" access="hasAnyRole('ADMIN')" />
+        <intercept-url pattern="/quan-tri/san-pham/san-pham-noi-bat" access="hasAnyRole('ADMIN')" />
+
+        <!-- Slide -->
+        <intercept-url pattern="/quan-tri/silde/danh-sach" access="hasAnyRole('ADMIN')" />
+        <intercept-url pattern="/quan-tri/silde/chinh-sua" access="hasAnyRole('ADMIN')" />
+
+        <!-- Blog -->
+        <intercept-url pattern="/quan-tri/bai-viet/chinh-sua" access="hasAnyRole('ADMIN')" />
+        <intercept-url pattern="/quan-tri/bai-viet/danh-sach" access="hasAnyRole('ADMIN')" />
+
+        <!-- Thanh toan -->
+        <intercept-url pattern="/thanh-toan" access="hasAnyRole('USER')" />
+
+        <access-denied-handler error-page="/accessDenied" />
         <form-login  login-page="/dang-nhap"
                      username-parameter="j_username"
                      password-parameter="j_password"
