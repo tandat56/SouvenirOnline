@@ -1,17 +1,20 @@
 package com.souvenironline.entity;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.*;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "User")
+@ToString
 public class UserEntity extends BaseEntity {
 
 	@Column(name = "username")
@@ -38,21 +41,32 @@ public class UserEntity extends BaseEntity {
 	@Column
 	private Integer status;
 
-	@ManyToMany(fetch = FetchType.LAZY)
-	@JoinTable(name = "User_Role", joinColumns = @JoinColumn(name = "userid"),
+	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	// Đây là bảng trung gian được tự tạo và có 2 row
+	@ToString.Exclude
+	@JoinTable(name = "User_Role", joinColumns = @JoinColumn(name = "userid"), // Đang đứng ở Entity nào thì Joincolum đầu tiên phải là id của Entity đó
 	inverseJoinColumns = @JoinColumn(name = "roleid"))
-	
 	private List<RoleEntity> Role = new ArrayList<>();
 
-	public List<RoleEntity> getRole() {
-		return Role;
+	//contructor này đáng lẽ không cần phải tạo vì lombok đã lo việc đó, nếu sử dụng dc mapper thì nên bảo trì và bỏ contructor này đi
+	public <T> UserEntity(Long id, Date createdDate, Date modifiedDate, String createdBy, String modifiedBy, String userName, String password, String fullName, String phoneNumber, String email, String city, String address, Integer status, List<RoleEntity> user) {
+		this.userName = userName;
+		this.password = password;
+		this.fullName = fullName;
+		this.status = status;
+		Role = user;
+	}
+
+	public UserEntity(List<RoleEntity> role) {
+
 	}
 
 	@OneToMany(mappedBy = "user")
+	@ToString.Exclude
 	private List<CommentEntity> comments = new ArrayList<>();
 
 	@OneToMany(mappedBy = "user")
+	@ToString.Exclude
 	private List<BillEntity> bills = new ArrayList<>();
-
 
 }

@@ -1,11 +1,13 @@
 package com.souvenironline.entity;
 
+import org.springframework.data.annotation.Id;
+
 import javax.persistence.Entity;
 import java.io.Serializable;
 
 @Entity
 public class Report extends BaseEntity {
-
+    @Id
     Serializable group;
     Double sum;
     Long count;

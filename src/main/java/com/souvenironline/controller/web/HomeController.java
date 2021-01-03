@@ -3,11 +3,9 @@ package com.souvenironline.controller.web;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.souvenironline.dto.BlogDTO;
 import com.souvenironline.dto.CategoryProductDTO;
 import com.souvenironline.dto.ProductDTO;
 import com.souvenironline.dto.SildeDTO;
-import com.souvenironline.repository.CategoryProductRepository;
 import com.souvenironline.service.web.ICategoryProductWebService;
 import com.souvenironline.service.web.IProductWebService;
 import com.souvenironline.service.web.impl.SildeWebService;
@@ -69,7 +67,7 @@ public class HomeController extends BaseController {
 
     @RequestMapping(value = "/dang-nhap", method = RequestMethod.GET)
     public ModelAndView loginPage() {
-        ModelAndView mav = new ModelAndView("web/login");
+        ModelAndView mav = new ModelAndView("web/user/login");
         return mav;
     }
 
@@ -90,7 +88,7 @@ public class HomeController extends BaseController {
 
     @RequestMapping(value = "/page-register", method = RequestMethod.GET)
     public ModelAndView registerPage() {
-        ModelAndView mav = new ModelAndView("web/register");
+        ModelAndView mav = new ModelAndView("web/user/register");
         return mav;
     }
 

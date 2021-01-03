@@ -8,15 +8,15 @@ import java.io.Serializable;
 import java.util.List;
 
 public interface ReportRepository extends JpaRepository<Report, Serializable> {
-/*    @Query(value = "SELECT new Report(o.category.name, "
-            + " sum(o.unitPrice * o.quantity), "
-            + " sum(o.quantity), "
-            + " min(o.unitPrice), "
-            + " max(o.unitPrice), "
-            + " avg(o.unitPrice)) "
-            + " FROM Product o "
-            + " GROUP BY o.category.name", nativeQuery = true)
-    List<Report> inventoryByCategory();*/
+//    @Query(value = "SELECT new Report(o.Category_Product.code, "
+//            + " sum(o.price * o.quantity), "
+//            + " sum(o.quantity), "
+//            + " min(o.price), "
+//            + " max(o.price), "
+//            + " avg(o.price)) "
+//            + " FROM Product o "
+//            + " GROUP BY o.Category_Product.code", nativeQuery = true)
+//    List<Report> inventoryByCategory();
 
 }
 

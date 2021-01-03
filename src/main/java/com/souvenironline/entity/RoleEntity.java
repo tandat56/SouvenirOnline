@@ -8,12 +8,16 @@ import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "Role")
 public class RoleEntity extends BaseEntity {
 		
@@ -23,8 +27,11 @@ public class RoleEntity extends BaseEntity {
 	@Column(name = "code")
 	private String code;
 
-	@ManyToMany(mappedBy = "Role")
-    private List<UserEntity> users = new ArrayList<>();
+	@ManyToMany(mappedBy = "Role") // là biến được gọi bên UserEntity
+    private List<UserEntity> users = new ArrayList<>(); // hỏi Đạt
 
-
+    public RoleEntity(String code) {
+        super();
+        this.code = code;
+    }
 }
