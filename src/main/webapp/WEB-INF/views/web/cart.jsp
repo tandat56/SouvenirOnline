@@ -54,13 +54,26 @@
                         <c:forEach var="item" items="${Shop}">
                             <tr>
                                 <td class="text-center">${item.value.product.productName}</td>
-                                <td class="text-center">Hinh anh</td>
+                                <td class="text-center">
+                                    <c:set var="image" value="/repository/${item.value.product.image}"/>
+                                    <img class="first-img" src="${image}" alt="thumbnail" height="100px" width="100px">
+                                </td>
                                 <td class="text-center"><fmt:formatNumber type="number" groupingUsed="true" value="${item.value.product.price}"/>₫</td>
                             <td class="text-center">
-                                <input type="number" min="1" max="100" class="span1" id="quantity-cart-${item.key}" value="${item.value.quantity/2}" />
+                              <%--  <input type="number" min="1" max="100" class="span1" id="quantity-cart-${item.key}" value="${item.value.quantity/2}" />--%>
+                                  <div class="product-count style">
+                                      <div class="count d-flex justify-content-center">
+                                          <input type="number" min="1" max="10" step="1" class="span1" id="quantity-cart-${item.key}" value="${item.value.quantity/2}">
+                                          <div class="button-group">
+                                              <button class="count-btn increment"><i class="fas fa-chevron-up"></i></button>
+                                              <button class="count-btn decrement"><i class="fas fa-chevron-down"></i></button>
+                                          </div>
+                                      </input>
+                                  </div>
+                                  </div>
                             </td>
                                 <td class="text-center"><fmt:formatNumber type="number" groupingUsed="true" value="${item.value.totalPrice/2}"/>₫</td>
-                            <td class="text-center">
+                            <td class="text-center ">
                                 <button data-id="${item.key}" href="<c:url value="/EditCart/${item.key}"/> " class="btn btn-mini btn-danger edit-cart text-center" type="button">
                                     <span class="icon-edit"> </span>
                                 </button>
@@ -94,7 +107,9 @@
 <content tag="script">
     <script>
         $(".edit-cart").on("click", function (){
-            alert($(this).data("id"));
+            var id = $(this).data("id");
+            var quantity = $("#quantity-cart-"+id).val();
+            window.location = "EditCart/"+id+"/"+quantity;
         });
     </script>
 </content>

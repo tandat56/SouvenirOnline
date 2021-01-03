@@ -56,8 +56,8 @@ public class CartService implements ICartService {
         CartDTO itemCart = new CartDTO();
         if (cart.containsKey(id)) {
             itemCart = cart.get(id);
-            itemCart.setQuantity(quantity);
-            double totalPrice = quantity * itemCart.getProduct().getPrice();
+            itemCart.setQuantity(quantity*2);
+            double totalPrice = (quantity * itemCart.getProduct().getPrice())*2;
             itemCart.setTotalPrice(totalPrice);
         }
         cart.put(id, itemCart);

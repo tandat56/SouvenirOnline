@@ -9,4 +9,5 @@ public interface IBlogWebService {
 
     List<BlogDTO> findAll();
     int getTotalItem();
+    BlogDTO findById(long id);
 }

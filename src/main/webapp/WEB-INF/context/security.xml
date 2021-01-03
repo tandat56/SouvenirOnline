@@ -15,11 +15,9 @@
         <intercept-url pattern="/quan-tri/san-pham/danh-sach" access="hasAnyRole('ADMIN')" />
         <intercept-url pattern="/quan-tri/san-pham/san-pham-moi" access="hasAnyRole('ADMIN')" />
         <intercept-url pattern="/quan-tri/san-pham/san-pham-noi-bat" access="hasAnyRole('ADMIN')" />
-
         <!-- Slide -->
         <intercept-url pattern="/quan-tri/silde/danh-sach" access="hasAnyRole('ADMIN')" />
         <intercept-url pattern="/quan-tri/silde/chinh-sua" access="hasAnyRole('ADMIN')" />
-
         <!-- Blog -->
         <intercept-url pattern="/quan-tri/bai-viet/chinh-sua" access="hasAnyRole('ADMIN')" />
         <intercept-url pattern="/quan-tri/bai-viet/danh-sach" access="hasAnyRole('ADMIN')" />

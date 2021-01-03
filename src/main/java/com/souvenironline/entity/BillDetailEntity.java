@@ -17,10 +17,14 @@ public class BillDetailEntity extends BaseEntity {
 	private String unitPrice;
 
 	@Column(name = "quantity")
-	private String quantity;
+	private int quantity;
 
 	@Column(name = "discount")
 	private String discount;
+
+	@Column(name = "total")
+	private int total;
+
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "billDetailid")

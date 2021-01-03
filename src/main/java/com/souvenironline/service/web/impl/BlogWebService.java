@@ -33,20 +33,13 @@ public class BlogWebService implements IBlogWebService {
         return models;
     }
 
-/*    @Override
-    public List<BlogDTO> findAllBlogByCategoryCode(String code) {
-        List<BlogDTO> models = new ArrayList<>();
-        List<BlogEntity> entities = blogRepository.findAllByCode(code);
-
-        for (BlogEntity item: entities){
-            BlogDTO blogDTO = blogConverter.toDTO(item);
-            models.add(blogDTO);
-        }
-        return models;
-    }*/
-
     @Override
     public int getTotalItem() {
         return (int) blogRepository.count();
+    }
+
+    @Override
+    public BlogDTO findById(long id) {
+        return blogConverter.toDTO(blogRepository.findOne(id));
     }
 }

@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 	
    
-    <link rel="shortcut icon" type="image/x-icon" href="<c:url value='/template/web/assets/img/logo/favicon.png'/>">
+<%--    <link rel="shortcut icon" type="image/x-icon" href="<c:url value='/template/web/assets/img/logo/favicon.png'/>">--%>
 
     <link href="<c:url value='/template/web/assets/css/vendor/vendor.min.css'/>" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/2c4dbbb156.js" crossorigin="anonymous"></script>

@@ -35,7 +35,7 @@
     </div>
     <ul class="nav nav-list">
         <li>
-            <a href="#" class="dropdown-toggle">
+            <a class="dropdown-toggle">
                 <i class="menu-icon fa fa-list"></i>
                 <span class="menu-text"></span>
                 Sản phẩm 
@@ -73,7 +73,7 @@
         </li>
 
         <li >
-            <a href="#" class="dropdown-toggle">
+            <a class="dropdown-toggle">
              <i class="menu-icon fa fa-list"></i>    
                 <span class="menu-text"></span>
                 Bài viết
@@ -94,7 +94,7 @@
 
         
         <li>
-            <a href="#" class="dropdown-toggle">
+            <a class="dropdown-toggle">
                 <i class="menu-icon fa fa-list"></i>
                 <span class="menu-text"></span>
                 Silde
@@ -115,33 +115,7 @@
 
 
 
-        
-        <li >
-            <a href="#" class="dropdown-toggle">
-                <i class="menu-icon fa fa-list"></i>
-                <span class="menu-text"></span>
-                Kho hàng
-                <b class="arrow fa fa-angle-down"></b>
-            </a>
 
-            <b class="arrow"></b>
-            <ul class="submenu">
-                <li>
-                    <a href="<c:url value='/quan-tri/kho-hang/ao/danh-sach?page=1&limit=10'/>">
-                    <i class="menu-icon fa fa-caret-right"></i>
-                        Kho Áo
-                    </a>
-                    <b class="arrow"></b>
-                </li>            
-                <li>
-                <a href="<c:url value='/quan-tri/kho-hang/balo/danh-sach?page=1&limit=10'/>">
-                    <i class="menu-icon fa fa-caret-right"></i>
-                       Kho Balo
-                </a>
-                <b class="arrow"></b>
-                </li>
-            </ul>
-        </li>
     </ul>
     <div class="sidebar-toggle sidebar-collapse">
         <i class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>

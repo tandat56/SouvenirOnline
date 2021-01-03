@@ -71,9 +71,9 @@
                 <div class="product-body mb-40">
                     <div class="d-flex align-items-center mb-30 border-bottom pb-30">
                         <h6 class="product-price mr-20">
-                            <del class="del">${model.price}</del> <span class="onsale"><fmt:formatNumber type="number" groupingUsed="true" value="${model.price * (1 - item3.discount / 100 )}"/>₫</span>
+                            <%--<del class="del">${model.price}</del>--%> <span class="onsale"><fmt:formatNumber type="number" groupingUsed="true" value="${model.price * (1 - item3.discount / 100 )}"/>₫</span>
                         </h6>
-                        <span class="badge my-badge position-static bg-dark">Save ${model.discount}%</span>
+<%--                        <span class="badge my-badge position-static bg-dark">Save ${model.discount}%</span>--%>
                     </div>
                     <p class="font-size">
                     ${model.title}

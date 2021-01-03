@@ -35,16 +35,16 @@ public class CartController {
         session.setAttribute("totalPriceCart", cartService.totalPrice(cart));
         return "redirect:"+request.getHeader("Referer");
     }
-    @RequestMapping(value = "EditCart/{id}")
-    public String EditCart(HttpServletRequest request ,HttpSession session, @PathVariable long id) {
-        HashMap<Long, CartDTO> cart = (HashMap<Long, CartDTO>)session.getAttribute("Cart");
+    @RequestMapping(value = "EditCart/{id}/{quantity}")
+    public String EditCart(HttpServletRequest request ,HttpSession session, @PathVariable long id, @PathVariable int quantity) {
+        HashMap<Long, CartDTO> cart = (HashMap<Long, CartDTO>)session.getAttribute("Shop");
         if(cart == null) {
             cart = new HashMap<Long, CartDTO>();
         }
-//		cart = cartService.EditCart(id, quanty, cart);
-//		session.setAttribute("Cart", cart);
-//		session.setAttribute("TotalQuantyCart", cartService.TotalQuanty(cart));
-//		session.setAttribute("TotalPriceCart", cartService.TotalPrice(cart));
+		cart = cartService.editCart(id, quantity, cart);
+		session.setAttribute("Shop", cart);
+		session.setAttribute("totalQuantityCart", cartService.totalQuantity(cart));
+		session.setAttribute("totalPriceCart", cartService.totalPrice(cart));
         return "redirect:"+request.getHeader("Referer");
     }
 

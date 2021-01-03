@@ -32,43 +32,8 @@
 <!-- breadcrumb-section end -->
 
 <!-- product tab start -->
-<section class="whish-list-section theme1 pb-70">
-    <div class="container grid-wraper">
-        <div class="row">
-            <div class="col-12">
-                <h3 class="title pb-25 text-center text-md-left text-capitalize">Giỏ hàng</h3>
-                <div class="table-responsive">
-                    <table class="table mb-0">
-                        <thead class="thead-light">
-                        <tr>
-                            <th class="text-center">ID</th>
-                            <th class="text-center">Tên sản phẩm</th>
-                            <th class="text-center">Giá</th>
-                            <th class="text-center">Số lượng</th>
-                            <th class="text-center">Tổng tiền</th>
-                            <th class="text-center"></th>
-                        </tr>
-                        </thead>
-                        <tbody class="cart-items"></tbody>
-                    </table>
-                    <div class="panel-footer">
-                        <a onclick="cart.clear()" href="" class="btn btn-danger">
-                            <span class="glyphicon glyphicon-trash"></span> Clear
-                        </a>
-                        <a href="/thanh-toan" class="btn btn-success">
-                            <span class="glyphicon glyphicon-check"></span> Checkout
-                        </a>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-    </div>
-    </div>
-    &nbsp;
-</section>
-
-<form:form action="/order/checkout" modelAttribute="bill">
+<form:form action="thanh-toan" method="POST" modelAttribute="bill">
     <section class="check-out-section pb-40">
         <div class="container grid-wraper">
             <div class="row">
@@ -79,7 +44,7 @@
                                 <h5 class="mb-0">
                                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
                                             aria-expanded="true" aria-controls="collapseOne">
-                                        Thông tin
+                                        Thông tin thanh toán
                                     </button>
                                 </h5>
                             </div>
@@ -87,33 +52,35 @@
                                  data-parent="#accordion">
                                 <div class="card-body">
                                         <div class="form-group row">
-                                            <label for="fullName" class="col-md-3 col-form-label">Họ và tên :</label>
+                                            <label for="fullName" class="col-md-3 col-form-label">Họ tên* :</label>
                                             <div class="col-md-6">
-                                                <input type="text" id="fullName" class="form-control">
+                                                <form:input type="text" path="fullName" class="form-control" placeholder="Mời nhập họ tên" />
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-md-3 col-form-label">Ngày đặt :</label>
+                                            <label class="col-md-3 col-form-label">Email* :</label>
                                             <div class="col-md-6">
-                                                    <%--                                            <form:input path="setCreatedDate" class="form-control" readonly="true"/>--%>
-                                                <input type="text" id="Ordate" class="form-control">
+                                                <form:input type="email" path="email" class="form-control" placeholder="Mời nhập email" />
                                             </div>
                                         </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-3 col-form-label">Điện thoại* :</label>
+                                        <div class="col-md-6">
+                                            <form:input type="email" path="phone" class="form-control" placeholder="Mời nhập SĐT" />
+                                        </div>
+                                    </div>
                                         <div class="form-group row">
-                                            <label class="col-md-3 col-form-label">Total :</label>
+                                            <label for="address" class="col-md-3 col-form-label">Điạ chỉ*</label>
                                             <div class="col-md-6">
-                                                    <%--<form:input path="unitPrice"  class="form-control" readonly="true"/>--%>
-                                                <input type="text" id="Ordate" class="form-control">
+                                                <form:textarea class="form-control" path="address" cols="56"  rows="3" />
                                             </div>
                                         </div>
-                                        <div class="form-group row">
-                                            <label for="notice2" class="col-md-3 col-form-label">Địa chỉ giao hàng
-                                                :</label>
-                                            <div class="col-md-6">
-                                                <textarea class="form-control" name="notice2" id="notice2" cols="56"
-                                                          rows="3"></textarea>
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="note" class="col-md-3 col-form-label">Ghi chú</label>
+                                        <div class="col-md-6">
+                                                <form:textarea class="form-control" path="note" cols="56" rows="3" />
                                         </div>
+                                    </div>
                                         <input name="details" type="hidden">
                                         <div class="text-center">
                                             <button class="btn theme-btn--dark1 btn--md ">Thanh toán</button>

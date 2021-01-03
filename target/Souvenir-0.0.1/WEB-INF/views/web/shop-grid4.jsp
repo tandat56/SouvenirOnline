@@ -92,9 +92,7 @@
                                                 <a href="<c:url value="/chi-tiet-san-pham/${item.id}" />" />
 
                                                 <c:set var="image" value="/repository/${item.image}"/>
-                                                <img class="first-img"
-                                                     src="${image}"
-                                                     alt="thumbnail" height="300px" width="300px">
+                                                <img class="first-img" src="${image}" alt="thumbnail" height="300px" width="300px">
                                                 </a>
                                                 <!-- product links -->
                                                 <div class="product-links d-flex d-flex justify-content-between">
@@ -278,13 +276,8 @@
 
                     <ul id="offcanvas-menu2" class="blog-ctry-menu">
                         <li><a href="<c:url value='/san-pham/danh-sach-theo-the-loai/${item1.code}'/>">${item1.name}</a>
-                                                            <%--  <ul class="category-sub-menu">
-                                                                    <li><a href="#">Sub menu</a></li>
 
-                                                                </ul>--%>
-
-                                                      </ul>
-
+                    </ul>
                     </c:forEach>
 
                             <div class="search-filter border-top mt-45 pt-45">

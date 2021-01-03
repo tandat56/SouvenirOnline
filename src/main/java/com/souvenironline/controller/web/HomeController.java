@@ -52,15 +52,15 @@ public class HomeController extends BaseController {
 
         cates.setListResult(categoryProductWebService.findAll());
         category0.setListResult(categoryProductWebService.findAllByLevel(0));
-        category1.setListResult(categoryProductWebService.findAllByLevel(1));
+//        category1.setListResult(categoryProductWebService.findAllByLevel(1));
         model.setListResult(productWebService.findAllProductHighlight());
         model1.setListResult(productWebService.findAllNewProduct());
 
 
         List<SildeDTO> silde = sildeWebService.findAll();
+
         mav.addObject("cates", cates);
         mav.addObject("cates0", category0);
-        mav.addObject("cates1", category1);
         mav.addObject("productHighlight", model);
         mav.addObject("newProduct", model1);
         mav.addObject("silde", silde);

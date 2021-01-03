@@ -278,7 +278,6 @@
                                     <li><a href="<c:url value='/thanh-toan'/>">Thanh toán</a></li>
                                     <li><a href="<c:url value='/so-sanh'/>">So sánh</a></li>
                                     <li><a href="<c:url value='/dang-nhap'/>">Đăng nhập &amp; Đăng ký</a></li>
-                                    <li><a href="<c:url value='/tai-khoan'/>">Tài khoản</a></li>
                                     <li><a href="<c:url value='/danh-sach-yeu-thich'/>">Danh sách yêu thích</a></li>
                                 </ul>
                             </li>

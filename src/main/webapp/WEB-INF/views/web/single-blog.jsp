@@ -44,41 +44,23 @@
                 <div class="col-12">
                   <div class="single-blog text-left">
                     <a class="blog-thumb zoom-in d-block overflow-hidden" href="blog-grid-left-sidebar.html">
-                      <img class="object-fit-none" src="<c:url value='/template/web/assets/img/blog-post/large-blog.jpg'/>" alt="blog-thumb-naile">
+
+                        <c:set var="image" value="/repository/${model.thumbnail}"/>
+                        <img class="first-img" src="${image}" alt="thumbnail" height="600px" width="600px">
                     </a>
                     <div class="blog-post-content pt-30">
                       <h3 class="title mb-15">
-                        <a href="single-blog.html">Đây là bài đăng bí mật cho XipBlog</a>
+                        <a href="single-blog.html">${model.title}</a>
                       </h3>
                       <h5 class="sub-title font-style-normal">
                         Posted by
-                        <a class="blog-link" href="../../user/hastech.html">HasTech</a>
-                        <span class="separator">/</span> 14 oct, 2020
+                        <a class="blog-link" href="../../user/hastech.html"> ${model.createdBy}</a>
+                        <span class="separator">/</span>  ${model.createdDate}
                         <span class="separator">/</span>
-                        <a class="blog-link" href="../../user/hastech.html">Electronics</a>
+
                       </h5>
                       <p class="text">
-                        Gấu bông xinh xắn tuyệt vời Sắm ngay một bé bầu trời đáng yêu! ^^
-                         Dù là trẻ con hay người lớn thì chắc hẳn ai cũng thích thú nhồi bông,
-                          hoa quả nhồi bông đúng không. Vừa dễ thương lại êm êm, mềm mềm,
-                           ôm hay gối cả ngày đều không thấy chán luôn ý. Nắm bắt được nhu cầu của các bạn,
-                            Tô lại mới về thêm một em bé Thú bông chó Shiba Nằm Bẹp siêu cute và đáng yêu cho các bạn đây ạ!
-                             Chất liệu: + Bên ngoài: Được làm từ vải nhung mềm mại, chỉ cần chạm vào là cứ muốn sờ mãi không thôi.
-                              + Bên trong: Bông sợi cao cấp, an toàn cho người sử dụng.
-                               Kích thước: đa dạng cho bạn thoải mái lựa chọn Mô tả:
-                                Thiết kế hình chú chó Shiba nằm ngủ vô cùng dễ thương, kích thước vừa vặn, dễ mang theo khi di chuyển.
-                                 + Phia bên ngoài làm từ vải nhung mềm mại, tạo cảm giác cực đã khi ôm. 
-                                 + Chất vải co dãn, có độ đàn hồi tốt, không lo bị xẹp khi sử dụng. 
-                                 + Giữ form cực tốt, dù bạn ôm, gối đầu hay gác chân, nằm lên, hoặc thậm chí là khi giặt thì cũng không hề phải lo nha.
-                           Ứng dụng:
-                             + Các bé thú bông luôn là người bạn thân ở bên cạnh chúng ta dù vui hay buồn.
-                              + Chỉ cần ôm sương sương các bé là các bạn sẽ cảm nhận được ngay sự ấm áp, mềm mại, an toàn rồi đấy. 
-                              Không tin thì các bạn có thể ghé Tô thử ngay nhé. + Thiết kế cực kì đa dạng.
-                            Từ các bé dễ thương, đáng yêu cho đến các bé mặt ngầu lòi, hài hước, các bạn có thể thỏa sức lựa chọn hen.
-                            + Trong phòng nếu quá khô khan và buồn tẻ thì chỉ cần xuất hiện 1 bé thú bông là mọi chuyện sẽ được giải quyết liền.
-                           Vừa xinh xắn vừa đáng yêu, em nó sẽ là 1 phụ kiện trang trí cho phòng của bạn trở nên tươi mới hơn đó. 
-                           + Là món quà ý nghĩa, xinh xắn để tặng bạn bè và người thân trong các dịp đặc biệt đó nha.
-                           Bảo hành: Mọi sản phẩm gấu bông của Tô đều được bảo hành đường may trong 12 tháng đó nha.
+                          ${model.content}
                       </p>
                     </div>
                   </div>
