@@ -35,15 +35,51 @@
     </div>
     <ul class="nav nav-list">
         <li>
-            <a class="dropdown-toggle">
+            <a href="<c:url value='/quan-tri/san-pham/danh-sach?page=1&limit=10'/>" class="dropdown-toggle">
                 <i class="menu-icon fa fa-list"></i>
                 <span class="menu-text"></span>
-                Sản phẩm 
+                Danh sách sản phẩm
                 <b class="arrow fa fa-angle-down"></b>
             </a>
+        </li>
 
-            <b class="arrow"></b>
-            <ul class="submenu">
+        <li>
+            <a href="<c:url value='/quan-tri/san-pham/san-pham-noi-bat?page=1&limit=10'/>" class="dropdown-toggle">
+                <i class="menu-icon fa fa-list"></i>
+                <span class="menu-text"></span>
+                Sản phẩm nổi bật
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+        </li>
+
+        <li>
+            <a href="<c:url value='/quan-tri/san-pham/san-pham-moi?page=1&limit=10'/>" class="dropdown-toggle">
+                <i class="menu-icon fa fa-list"></i>
+                <span class="menu-text"></span>
+                Sản phẩm mới
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+        </li>
+
+        <li>
+            <a href="<c:url value='/quan-tri/bai-viet/danh-sach?page=1&limit=10'/>" class="dropdown-toggle">
+                <i class="menu-icon fa fa-list"></i>
+                <span class="menu-text"></span>
+               Quản lý bài viết
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+        </li>
+        <li>
+        <a href="<c:url value='/quan-tri/silde/danh-sach?page=1&limit=10'/>" class="dropdown-toggle">
+                <i class="menu-icon fa fa-list"></i>
+                <span class="menu-text"></span>
+                Quản lý Silde
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+        </li>
+
+
+           <%-- <ul class="submenu">
                 <li>
                     <a href="<c:url value='/quan-tri/san-pham/danh-sach?page=1&limit=10'/>">
                         <i class="menu-icon fa fa-caret-right"></i>
@@ -51,71 +87,7 @@
                     </a>
                     <b class="arrow"></b>
                 </li>
-            </ul>
-            <ul class="submenu">
-                <li>
-                    <a href="<c:url value='/quan-tri/san-pham/san-pham-noi-bat?page=1&limit=10'/>">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        QLSP nổi bật
-                    </a>
-                    <b class="arrow"></b>
-                </li>
-            </ul>
-            <ul class="submenu">
-                <li>
-                    <a href="<c:url value='/quan-tri/san-pham/san-pham-moi?page=1&limit=10'/>">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        QLSP mới
-                    </a>
-                    <b class="arrow"></b>
-                </li>
-            </ul>
-        </li>
-
-        <li >
-            <a class="dropdown-toggle">
-             <i class="menu-icon fa fa-list"></i>    
-                <span class="menu-text"></span>
-                Bài viết
-                <b class="arrow fa fa-angle-down"></b>
-            </a>
-
-            <b class="arrow"></b>
-            <ul class="submenu">
-                <li>
-                    <a href="<c:url value='/quan-tri/bai-viet/danh-sach?page=1&limit=10'/>">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Danh sách
-                    </a>
-                    <b class="arrow"></b>
-                </li>
-            </ul>
-        </li>
-
-        
-        <li>
-            <a class="dropdown-toggle">
-                <i class="menu-icon fa fa-list"></i>
-                <span class="menu-text"></span>
-                Silde
-                <b class="arrow fa fa-angle-down"></b>
-            </a>
-
-            <b class="arrow"></b>
-            <ul class="submenu">
-                <li>
-                    <a href="<c:url value='/quan-tri/silde/danh-sach?page=1&limit=10'/>">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Sildes
-                    </a>
-                    <b class="arrow"></b>
-                </li>
-            </ul>
-        </li>
-
-
-
-
+            </ul>--%>
     </ul>
     <div class="sidebar-toggle sidebar-collapse">
         <i class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
