@@ -33,7 +33,7 @@
 
 <!-- product tab start -->
 
-<form:form action="thanh-toan" method="POST" modelAttribute="bill">
+<form:form action="/thanh-toan" method="POST" modelAttribute="bill">
     <section class="check-out-section pb-40">
         <div class="container grid-wraper">
             <div class="row">

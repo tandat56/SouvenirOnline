@@ -22,6 +22,11 @@ public class MessageUtil {
 		} else if (message.equals("error_system")) {
 			result.put("message", "Error system");
 			result.put("alert", "danger");
+		}else if (message.equals("add_success")) {
+			result.put("message", "Thêm mới thành công");
+		}
+		else if (message.equals("add_false")) {
+			result.put("message", "Thêm mới thất bại");
 		}
 		return result;
 	}

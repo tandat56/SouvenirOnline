@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController(value = "blogAPIOfAdmin")
+//@RequestMapping(value = "/api/blog")
 public class BlogAPI {
 
     @Autowired
