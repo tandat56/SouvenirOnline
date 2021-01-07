@@ -87,6 +87,7 @@
                                 <div class="col-sm-6 col-md-4 mb-30">
                                     <div class="card product-card">
                                         <div class="card-body p-0">
+                                            <form method="get" action="<c:url value="/AddCart/${item.id}"/> " >
                                             <div class="product-thumbnail position-relative">
                                                 <span class="badge badge-danger top-left">Mới</span>
                                                 <a href="<c:url value="/chi-tiet-san-pham/${item.id}" />" />
@@ -96,8 +97,8 @@
                                                 </a>
                                                 <!-- product links -->
                                                 <div class="product-links d-flex d-flex justify-content-between">
-                                                    <button class="pro-btn" data-toggle="modal"
-                                                            data-target="#add-to-cart" tabindex="0">Thêm vào giỏ hàng
+                                                    <button class="pro-btn" type="submit" >
+                                                        Thêm vào giỏ hàng
                                                     </button>
                                                     <ul class="d-flex justify-content-center">
                                                         <li>
@@ -129,6 +130,7 @@
                                                 </div>
                                                 <!-- product links end-->
                                             </div>
+                                            </form>
                                             <div class="product-desc">
                                                 <h3 class="title"><a href="shop-grid-4-column.html"> ${item.title}</a></h3>
                                                 <div class="star-rating my-10">

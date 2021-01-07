@@ -63,7 +63,7 @@
                               <%--  <input type="number" min="1" max="100" class="span1" id="quantity-cart-${item.key}" value="${item.value.quantity/2}" />--%>
                                   <div class="product-count style">
                                       <div class="count d-flex justify-content-center">
-                                          <input type="number" min="1" max="10" step="1" class="span1" id="quantity-cart-${item.key}" value="${item.value.quantity/2}">
+                                          <input type="number" min="1" max="10" step="1" readonly class="span1" id="quantity-cart-${item.key}" value="${item.value.quantity/2}">
                                           <div class="button-group">
                                               <button class="count-btn increment"><i class="fas fa-chevron-up"></i></button>
                                               <button class="count-btn decrement"><i class="fas fa-chevron-down"></i></button>

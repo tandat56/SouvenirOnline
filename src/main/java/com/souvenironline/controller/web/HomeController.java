@@ -2,10 +2,13 @@ package com.souvenironline.controller.web;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import com.souvenironline.dto.CartDTO;
 import com.souvenironline.dto.CategoryProductDTO;
 import com.souvenironline.dto.ProductDTO;
 import com.souvenironline.dto.SildeDTO;
+import com.souvenironline.service.web.ICartService;
 import com.souvenironline.service.web.ICategoryProductWebService;
 import com.souvenironline.service.web.IProductWebService;
 import com.souvenironline.service.web.impl.SildeWebService;
@@ -15,10 +18,12 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.HashMap;
 import java.util.List;
 
 @Controller(value = "homeControllerOfWeb")
@@ -36,7 +41,8 @@ public class HomeController extends BaseController {
     @Autowired
     private ICategoryProductWebService categoryProductWebService;
 
-
+    @Autowired
+    private ICartService cartService;
 
     @RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
     public ModelAndView homePage() {
@@ -69,6 +75,19 @@ public class HomeController extends BaseController {
     public ModelAndView loginPage() {
         ModelAndView mav = new ModelAndView("web/user/login");
         return mav;
+    }
+    @RequestMapping(value = "AddCart/{id}")
+    public String AddCart(HttpServletRequest request, HttpSession session, @PathVariable long id) {
+        HashMap<Long, CartDTO> cart = (HashMap<Long, CartDTO>)session.getAttribute("Shop");
+        cart = cartService.addCard(id, cart);
+        if(cart == null){
+            cart = new HashMap<Long, CartDTO>();
+        }
+        cart = cartService.addCard(id, cart);
+        session.setAttribute("Shop", cart);
+        session.setAttribute("totalQuantityCart", cartService.totalQuantity(cart));
+        session.setAttribute("totalPriceCart", cartService.totalPrice(cart));
+        return "redirect:"+request.getHeader("Referer");
     }
 
     @RequestMapping(value = "/thoat", method = RequestMethod.GET)
