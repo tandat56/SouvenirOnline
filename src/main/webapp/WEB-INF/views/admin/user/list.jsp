@@ -63,13 +63,11 @@
 													<tr>
 														<th><input type="checkbox" id="checkAll"></th>
 														<th>Tên tài khoản</th>
-														<th>Mật khẩu</th>
 														<th>Tên người dùng</th>
-														<th>Email</th>
-														<th>Thành phố</th>
 														<th>Trạng thái</th>
 														<th>Người tạo</th>
-														<th>Ngày sửa</th>
+														<th>Ngày tạo</th>
+														<th>Chỉnh sửa</th>
 													</tr>
 												</thead>
 												<tbody>
@@ -77,10 +75,7 @@
 														<tr>
 															<td><input type="checkbox" id="checkbox_${item.id}" value="${item.id}"></td>
 															<td>${item.userName}</td>
-															<td>${item.password}</td>
 															<td>${item.fullName}</td>
-															<td>${item.email}</td>
-															<td>${item.city}</td>
 															<td>${item.status}</td>
 															<td>${item.createdBy}</td>
 															<td>${item.createdDate}</td>

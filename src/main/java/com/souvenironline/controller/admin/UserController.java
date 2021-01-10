@@ -24,17 +24,9 @@ public class UserController {
     @Autowired
     private MessageUtil messageUtil;
 
-//    @RequestMapping(value = "/quan-tri/san-pham/thong-ke", method = RequestMethod.GET)
-//    public ModelAndView inventoryCategory(Model model) {
-//        ModelAndView mav = new ModelAndView("web/thongke");
-//        model.addAttribute("items",reportRepository.inventoryByCategory());
-//        return mav;
-//    }
-
-
     @RequestMapping(value = "/quan-tri/nguoi-dung/danh-sach", method = RequestMethod.GET)
-    public ModelAndView showList(@RequestParam("page") int page,
-                                 @RequestParam("limit") int limit, HttpServletRequest request) {
+    public ModelAndView showList(@RequestParam(value = "page") int page,
+                                 @RequestParam(value = "limit") int limit, HttpServletRequest request) {
         UserDTO model = new UserDTO();
         model.setPage(page);
         model.setLimit(limit);
@@ -69,7 +61,4 @@ public class UserController {
         mav.addObject("model", model);
         return mav;
     }
-
-
-
 }

@@ -5,6 +5,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Getter
@@ -14,7 +15,7 @@ import java.util.List;
 public class BillEntity extends BaseEntity {
 
 	@Column(name = "order_date")
-	private String orderDate;
+	private Date orderDate;
 
 	@Column(name = "shipped_date")
 	private String shippedDate;
@@ -27,6 +28,15 @@ public class BillEntity extends BaseEntity {
 
 	@Column(name = "ship_city")
 	private String shipCity;
+
+	@Column(name = "amount")
+	private String amount;
+
+	@Column(name = "phoneNumber")
+	private String phoneNumber;
+
+	@Column(name = "userOrder")
+	private String userOrder;
 
 	@Column(name = "bill_type")
 	private Integer billType;

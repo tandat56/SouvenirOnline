@@ -76,19 +76,6 @@ public class HomeController extends BaseController {
         ModelAndView mav = new ModelAndView("web/user/login");
         return mav;
     }
-    @RequestMapping(value = "AddCart/{id}")
-    public String AddCart(HttpServletRequest request, HttpSession session, @PathVariable long id) {
-        HashMap<Long, CartDTO> cart = (HashMap<Long, CartDTO>)session.getAttribute("Shop");
-        cart = cartService.addCard(id, cart);
-        if(cart == null){
-            cart = new HashMap<Long, CartDTO>();
-        }
-        cart = cartService.addCard(id, cart);
-        session.setAttribute("Shop", cart);
-        session.setAttribute("totalQuantityCart", cartService.totalQuantity(cart));
-        session.setAttribute("totalPriceCart", cartService.totalPrice(cart));
-        return "redirect:"+request.getHeader("Referer");
-    }
 
     @RequestMapping(value = "/thoat", method = RequestMethod.GET)
     public ModelAndView logout(HttpServletRequest request, HttpServletResponse response) {

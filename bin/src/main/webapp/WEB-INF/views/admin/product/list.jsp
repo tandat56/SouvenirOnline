@@ -66,7 +66,7 @@
 														<th>Giá</th>
 														<th>Thể loại</th>
 														<th>Người tạo</th>
-														<th>Người tạo</th>
+														<th>Ngày tạo</th>
 														<th>Chỉnh sửa</th>
 													</tr>
 												</thead>

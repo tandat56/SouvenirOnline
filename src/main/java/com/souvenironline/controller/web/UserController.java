@@ -12,8 +12,6 @@ import com.souvenironline.entity.UserEntity;
 
 @Controller(value = "userControllerOfWeb")
 public class UserController extends BaseController {
-//    @Autowired
-//    AccountServiceImpl accountService = new AccountServiceImpl();
 
     @RequestMapping(value = "/dang-ky", method = RequestMethod.GET)
     public ModelAndView Register(){
@@ -21,16 +19,4 @@ public class UserController extends BaseController {
         _mav.addObject("user", new UserEntity());
         return _mav;
     }
-
-//    @RequestMapping(value = "/dang-ky", method = RequestMethod.POST)
-//    public ModelAndView CreateAcc(@ModelAttribute("user") UserEntity userEntity){
-////        int count = accountService.AddAccount(userEntity);
-//        if(count > 0 ){
-//            _mav.addObject("status","Đăng kí thành công");
-//        }else{```
-//            _mav.addObject("status","Thất bại");
-//        }
-//      _mav.setViewName("web/user/register");
-//        return _mav;
-//    }
 }

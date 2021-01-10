@@ -111,6 +111,7 @@
             var quantity = $("#quantity-cart-"+id).val();
             window.location = "EditCart/"+id+"/"+quantity;
         });
+
     </script>
 </content>
 </body>

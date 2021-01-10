@@ -52,33 +52,39 @@
                                  data-parent="#accordion">
                                 <div class="card-body">
                                         <div class="form-group row">
-                                            <label for="fullName" class="col-md-3 col-form-label">Họ tên* :</label>
+                                            <label for="userOrder" class="col-md-3 col-form-label">Họ tên* :</label>
                                             <div class="col-md-6">
-                                                <form:input type="text" path="fullName" class="form-control" placeholder="Mời nhập họ tên" />
+                                                <form:input type="text" path="userOrder" class="form-control" placeholder="Mời nhập họ tên" />
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-md-3 col-form-label">Email* :</label>
+                                            <label for="shipAddress" class="col-md-3 col-form-label">Điạ chỉ*</label>
                                             <div class="col-md-6">
-                                                <form:input type="email" path="email" class="form-control" placeholder="Mời nhập email" />
+                                                <form:textarea class="form-control" path="shipAddress" cols="3"  rows="3" />
                                             </div>
                                         </div>
                                     <div class="form-group row">
-                                        <label class="col-md-3 col-form-label">Điện thoại* :</label>
+                                        <label  class="col-md-3 col-form-label">Tổng tiền</label>
                                         <div class="col-md-6">
-                                            <form:input type="email" path="phone" class="form-control" placeholder="Mời nhập SĐT" />
+                                            <c:forEach var="item5" items="${sessionScope.Shop}">
+                                              <%--  <form:textarea class="form-control" id="amount" path="amount" cols="30"  rows="3" value="${item5.value.totalPrice}" />--%>
+                                                <td class="text-center"><fmt:formatNumber type="number" groupingUsed="true" value="${item5}"/>₫</td>
+                                            </c:forEach>
+                                          <%-- <c:set var="lala" value="${sessionScope.totalPriceCart}" />--%>
+
+
                                         </div>
                                     </div>
-                                        <div class="form-group row">
-                                            <label for="address" class="col-md-3 col-form-label">Điạ chỉ*</label>
-                                            <div class="col-md-6">
-                                                <form:textarea class="form-control" path="address" cols="56"  rows="3" />
-                                            </div>
-                                        </div>
                                     <div class="form-group row">
-                                        <label for="note" class="col-md-3 col-form-label">Ghi chú</label>
+                                        <label for="phoneNumber" class="col-md-3 col-form-label"> Số điện thoại</label>
                                         <div class="col-md-6">
-                                                <form:textarea class="form-control" path="note" cols="56" rows="3" />
+                                            <form:textarea class="form-control" path="phoneNumber" cols="3"  rows="3" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="createdDate" class="col-md-3 col-form-label">Ngày đặt</label>
+                                        <div class="col-md-6">
+                                                <form:textarea class="form-control" path="createdDate" cols="3" rows="3" />
                                         </div>
                                     </div>
                                         <input name="details" type="hidden">
@@ -94,12 +100,22 @@
         </div>
     </section>
 </form:form>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script>
-    $(function () {
-        cart.show_all();
-        $("[name=amount]").val(cart.amount);
-        $("[name=details]").val(cart.details); // lấy id và số lượng gán vào name = details
-    })
+    $( document ).ready(function() {
+        var total = $('#amount').val();
+        /*     var myJSON = JSON.stringify(se);
+            var tl = JSON.stringify(total);
+             var bl = parseInt(tl);*/
+        console.log(total);
+    });
+
 </script>
+<%--<<script>
+    function amount() {
+        var amount = document.getElementById("auntmo").value;
+        document.getElementById("amount").setAttribute('amount', amount);
+    }
+</script>--%>
 </body>
 </html>
