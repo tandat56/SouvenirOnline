@@ -33,7 +33,7 @@ public class Register {
     public ModelAndView registrationControlOrAPI(@ModelAttribute("userDTO") UserDTO dto){
         ModelAndView mav = new ModelAndView("web/user/register");
         if(dto.getFullName().isEmpty() || dto.getUserName().isEmpty() || dto.getPassword().isEmpty()){
-            mav.addObject("message", "Thêm mới thất bại");
+            mav.addObject("message", "Thêm mới thất bại!");
             mav.addObject("alert", "danger");
             return mav;
         }

@@ -12,6 +12,7 @@ public interface IUserAdminService {
     UserDTO save(UserDTO dto);
 
     void delete(long[] ids);
+
     int getTotalItem();
 
     UserDTO findById(long id);

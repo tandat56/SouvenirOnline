@@ -54,6 +54,8 @@
 </section>
 <!-- main slider end -->
 
+
+
 <!-- product tab start -->
 <section class="product-tab bg-white pt-40 pb-70">
     <div class="container">
@@ -288,30 +290,14 @@
     </div>
 </section>
 <!-- product tab end -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- common-banner start -->
 <div class="common-banner pb-70 bg-white">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="position-relative zoom-in overflow-hidden">
-                    <div class="banner-thumb banner-lagre">
-                        <img src="<c:url value='/template/web/assets/img/banner/silde2.jpg'/>"
+                    <div class="banner-thumb banner-lagre" href="<c:url value='/san-pham' /> ">
+                        <img  src="<c:url value='/template/web/assets/img/banner/silde2.jpg'/>"
                              alt="banner-thumb-naile">
                     </div>
 
@@ -319,7 +305,7 @@
                         <p class="text text-uppercase text-dark mb-10">Black Friday</p>
                         <h4 class="title text-capitalize text-dark">Save Up To
                             <span class="d-block d-inline-sm-block mt-10 mt-md-20">50% Off</span> </h4>
-                        <a class="view-link text-capitalize mt-25" href="<c:url value='/san-pham' /> ">Xem bộ sưu tập
+                        <a class="view-link text-capitalize mt-25" href="<c:url value='/san-pham' /> ">Xem bộ cửa hàng
                             <span class="ion-android-arrow-dropright-circle theme-color"></span></a>
 
                     </div>
@@ -331,70 +317,24 @@
 <!-- common-banner end -->
 
 <!-- blog-section start -->
-<section class="blog-section theme1 pb-70">
+<hr>
+<section class="blog-section theme1">
+
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="section-title text-center mb-30">
-                    <h2 class="title text-dark text-capitalize">Có thể bạn muốn xem</h2>
-                    <p class="text mt-20">
-                        Click vào thể loại bạn muốn tìm để hiển thị danh sách!
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="blog-init slick-nav">
-                    <div class="slider-item">
-                        <div class="single-blog">
-                            <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden"
-                               href="blog-grid-left-sidebar.html">
-                                <img src="<c:url value='/template/web/assets/img/blog-post/over1.jpg'/>"
-                                     alt="blog-thumb-naile">
-                            </a>
-                            <div class="blog-post-content">
-                                <h3 class="title text-capitalize mb-15"><a
-                                        href="<c:url value='/chi-tiet-san-pham'/>">GLASSES </a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- slider-item end -->
-                    <div class="slider-item">
-                        <div class="single-blog">
-                            <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden"
-                               href="blog-grid-left-sidebar.html">
-                                <img src="<c:url value='/template/web/assets/img/blog-post/over2.jpg'/>"
-                                     alt="blog-thumb-naile">
-                            </a>
-                            <div class="blog-post-content">
-                                <h3 class="title text-capitalize mb-15"><a
-                                        href="<c:url value='/chi-tiet-san-pham'/>"> BACKPACK</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- slider-item end -->
-                    <div class="slider-item">
-                        <div class="single-blog">
-                            <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden"
-                               href="blog-grid-left-sidebar.html">
-                                <img src="<c:url value='/template/web/assets/img/blog-post/over3.jpg'/>"
-                                     alt="blog-thumb-naile">
-                            </a>
-                            <div class="blog-post-content">
-                                <h3 class="title text-capitalize mb-15"><a
-                                        href="<c:url value='/chi-tiet-san-pham'/>">T-SHIRT</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- slider-item end -->
-
-                    <!-- slider-item end -->
+                    <h2 class="title text-dark text-capitalize">Địa chỉ cửa hàng chúng tôi</h2>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<hr>
+<div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.7645028487154!2d106.58363261462229!3d10.752624492337663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c54c5a45679%3A0x95ad6eb0f2830073!2zNDQ0OSBOZ3V54buFbiBD4butdSBQaMO6LCBUw6JuIFThuqFvIEEsIELDrG5oIFTDom4sIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1610867287318!5m2!1sen!2s"
+            width="100%" height="650" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
 <!-- blog-section end -->
 
 <!-- news-letter start -->

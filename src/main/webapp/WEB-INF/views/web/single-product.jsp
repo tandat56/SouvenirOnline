@@ -82,7 +82,7 @@
                 <div class="product-footer">
                     <div class="product-count style d-flex flex-column flex-sm-row mt-30 mb-30">
                         <div class="count d-flex">
-                            <input type="number" min="1" max="10" step="1" value="1">
+                            <input type="number" min="1" max="10" step="1" value="1" readonly>
                             <div class="button-group">
                                 <button class="count-btn increment">
                                     <i class="fas fa-chevron-up"></i>

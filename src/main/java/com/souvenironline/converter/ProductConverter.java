@@ -3,8 +3,6 @@ import com.souvenironline.dto.ProductDTO;
 import com.souvenironline.entity.ProductEntity;
 import org.springframework.stereotype.Component;
 
-import java.sql.Timestamp;
-
 @Component
 public class ProductConverter {
 

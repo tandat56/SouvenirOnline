@@ -49,7 +49,7 @@
             </div>
             <div class="col-lg-6 mb-30">
                 <div class="about-left-image mb-30">
-                    <img src="<c:url value='/template/web/assets/img/blog-post/5.jpg'/>" alt="img" class="img-responsive">
+                    <img src="<c:url value='/template/web/assets/img/blog-post/about.jpg'/>" alt="img" width="665" height="355" class="img-responsive">
                 </div>
             </div>
         </div>

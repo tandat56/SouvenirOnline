@@ -1,12 +1,21 @@
 package com.souvenironline.entity;
 
-import org.springframework.data.annotation.Id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.io.Serializable;
 
 @Entity
-public class Report extends BaseEntity {
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class Report  {
+
     @Id
     Serializable group;
     Double sum;
@@ -14,16 +23,4 @@ public class Report extends BaseEntity {
     Double min;
     Double max;
     Double avg;
-    public Report(Serializable group, Double sum, Long count, Double min, Double max, Double avg) {
-        super();
-        this.group = group;
-        this.sum = sum;
-        this.count = count;
-        this.min = min;
-        this.max = max;
-        this.avg = avg;
-    }
-    public Report() {
-        super();
-    }
 }

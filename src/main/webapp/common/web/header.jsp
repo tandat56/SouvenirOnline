@@ -194,7 +194,7 @@
 
         </div>
         <a href="<c:url  value='/gio-hang'/>" class="btn theme--btn1 btn--lg text-uppercase  d-block d-sm-inline-block mr-sm-2">Giỏ hàng</a>
-        <a href="<c:url  value='/thanh-toan'/>" class="btn theme--btn1 btn--lg text-uppercase  d-block d-sm-inline-block mt-4 mt-sm-0">Thanh toán</a>
+        <a href="<c:url  value='/thanh-toan'/>" class="btn theme--btn1 btn--lg text-uppercase  d-block d-sm-inline-block mt-4 mt-sm-0 position-absolute">Thanh toán</a>
         <p class="minicart-message">Freeship trên mọi nẻo đường !</p>
     </div>
 </div>

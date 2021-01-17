@@ -42,12 +42,7 @@
                     </div>
                 </c:if>
                 <form:form action="/api/registration" modelAttribute="userDTO" method="POST" class="log-in-form">
-                    <div class="form-group row">
-                        <label class="col-md-3 col-form-label">Họ tên</label>
-                        <div class="col-md-6">
-                            <form:input type="text" class="form-control" path="fullName" placeholder="Nhập họ và tên"/>
-                        </div>
-                    </div>
+
                     <div class="form-group row">
                         <label for="userName" class="col-md-3 col-form-label">Tài khoản</label>
                         <div class="col-md-6">
@@ -67,6 +62,24 @@
                                     </button>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Họ tên</label>
+                        <div class="col-md-6">
+                            <form:input type="text" class="form-control" path="fullName" placeholder="Nhập họ và tên"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Điện thoại</label>
+                        <div class="col-md-6">
+                            <form:input type="text" class="form-control" path="phoneNumber" placeholder="Nhập số điện thoại"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Địa chỉ</label>
+                        <div class="col-md-6">
+                            <form:input type="text" class="form-control" path="address" placeholder="Nhập họ và tên"/>
                         </div>
                     </div>
 

@@ -64,10 +64,9 @@
 														<th><input type="checkbox" id="checkAll"></th>
 														<th>Tên tài khoản</th>
 														<th>Tên người dùng</th>
+														<th>Điện thoại</th>
+														<th>Địa chỉ</th>
 														<th>Trạng thái</th>
-														<th>Người tạo</th>
-														<th>Ngày tạo</th>
-														<th>Chỉnh sửa</th>
 													</tr>
 												</thead>
 												<tbody>
@@ -76,17 +75,9 @@
 															<td><input type="checkbox" id="checkbox_${item.id}" value="${item.id}"></td>
 															<td>${item.userName}</td>
 															<td>${item.fullName}</td>
+															<td>${item.phoneNumber}</td>
+															<td>${item.address}</td>
 															<td>${item.status}</td>
-															<td>${item.createdBy}</td>
-															<td>${item.createdDate}</td>
-															<td>
-																<c:url var="updateuUserURL" value="/quan-tri/nguoi-dung/chinh-sua">
-																	<c:param name="id" value="${item.id}"/>															
-																</c:url>																
-																<a class="btn btn-sm btn-primary btn-edit" data-toggle="tooltip"
-																   title="Cập nhật người dùng" href='${updateuUserURL}'><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-																</a>
-															</td>
 														</tr>
 													</c:forEach>
 												</tbody>

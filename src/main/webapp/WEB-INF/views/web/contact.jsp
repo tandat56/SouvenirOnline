@@ -9,6 +9,7 @@
 <body>
 <nav class="breadcrumb-section theme1 breadcrumb-bg1">
   <div class="container">
+
     <div class="row">
       <div class="col-12">
         <div class="breadcrumb-title text-center my-20">
@@ -29,7 +30,6 @@
 <!-- breadcrumb-section end -->
 
 <!-- product tab start -->
-
 <section class="contact-section pt-70 pb-40">
     <div class="container">
         <div class="row">
@@ -108,5 +108,9 @@
         </div>
     </div>
 </section>
+<div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.7645028487154!2d106.58363261462229!3d10.752624492337663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c54c5a45679%3A0x95ad6eb0f2830073!2zNDQ0OSBOZ3V54buFbiBD4butdSBQaMO6LCBUw6JuIFThuqFvIEEsIELDrG5oIFTDom4sIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1610867287318!5m2!1sen!2s"
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
 </body>
 </html>

@@ -38,7 +38,7 @@
 					<form:form class="form-horizontal" role="form" id="formSubmit" modelAttribute="model">
 
 						<div class="form-group">
-								<label class="col-sm-3 control-label no-padding-right" for="form-field-1">Tên sản phẩm</label>
+								<label class="col-sm-3 control-label no-padding-right" for="form-field-1">Nội dung 1</label>
 								<div class="col-sm-9">
 									<form:input path="name" cssClass="col-xs-10 col-sm-5"/>
 								</div>
@@ -61,17 +61,14 @@
 							<br/>
 						</div>
 
-
-
-
 						<div class="form-group">
-						  	<label for="shortDescription" class="col-sm-3 control-label no-padding-right">Nội dung:</label>
+						  	<label for="shortDescription" class="col-sm-3 control-label no-padding-right">Nội dung 2:</label>
 						  	<div class="col-sm-9">
 						  		<form:textarea path="content" rows="5" cols="10" cssClass="form-control" id="shortDescription"/>
 						  	</div>
 						</div>
 						<div class="form-group">
-						  	<label for="content" class="col-sm-3 control-label no-padding-right">Chú thích:</label>
+						  	<label for="content" class="col-sm-3 control-label no-padding-right">Nội dung 3:</label>
 						  	<div class="col-sm-9">
 						  		<form:textarea path="caption" rows="5" cols="10" cssClass="form-control" id="content"/>
 						  	</div>

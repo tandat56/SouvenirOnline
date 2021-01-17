@@ -24,6 +24,84 @@
                 </div>
             </div>
         </div>
+        <div class="page-content-wrapper">
+            <div class="page-content">
+                <!-- start widget -->
+                <div class="row" style="margin-bottom: 150px; margin-left: 10px">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="analysis-box m-b-0 bg-b-purple">
+                            <h3 class="text-white box-title">
+                                Số lượng hóa đơn
+                                <span class="pull-right position-absolute" style="margin-left: 15px" >${order}</span>
+                            </h3>
+                            <i class="fa fa-credit-card text-white fa fa-2x" style="margin-left: 60px"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="analysis-box m-b-0 bg-b-danger">
+                            <h3 class="text-white box-title">
+                                Số lượng sản phẩm <span class="pull-right position-absolute" style="margin-left: 15px">${product}</span>
+                            </h3>
+                            <i class="fa fa-tasks text-white fa fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="analysis-box m-b-0 bg-b-cyan">
+                            <h3 class="text-white box-title">
+                                Số lượng tài khoản<span class="pull-right position-absolute" style="margin-left: 15px">${accout}</span>
+                            </h3>
+                            <i class="fa fa-users text-white fa fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="analysis-box m-b-0 bg-b-blue">
+                            <h3 class="text-white box-title">
+                                Số lượng bài viết <span class="pull-right position-absolute" style="margin-left: 15px">${post}</span>
+                            </h3>
+                            <i class="fa fa-file text-white fa fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- end widget -->
+                <!-- chart start -->
+
+                <!-- Chart end -->
+                <!-- start course list -->
+
+                <div>
+                    <form:form id="formSubmit" role="form" class="row " cssStyle="margin-left: 10px">
+                        <c:forEach var="item44" items="${entity}">
+                            <div class="col-lg-3 col-md-6 col-12 col-sm-6" style="margin-bottom: 60px">
+                                <div class="blogThumb">
+                                    <div class="thumb-center">
+                                        <c:set var="image" value="/repository/${item44.image}"/>
+                                        <img src="${image}" id="viewImage" width="300px" height="300px">
+                                    </div>
+                                    <div class="white-box">
+                                        <div class="text-muted">
+                                            <span class="m-r-10">${item44.createdDate}</span> <a
+                                                class="text-muted m-l-10" href="#"><i
+                                                class="fa fa-heart-o"></i></a>
+                                        </div>
+                                        <h3 class="m-t-20 m-b-20">${item44.title}</h3>
+                                        <p>${item44.sortName}</p>
+
+                                        <a href="<c:url value="/chi-tiet-san-pham/${item44.id}" />"
+                                           class="btn btn-success btn-rounded waves-effect waves-light m-t-20">
+                                            Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </c:forEach>
+                    </form:form>
+                </div>
+                <!-- end page content -->
+                <!-- start chat sidebar -->
+
+                <!-- end chat sidebar -->
+            </div>
+            <!-- end page container -->
+
     </div>
 </div><!-- /.main-content -->
 </body>

@@ -52,44 +52,59 @@
                                  data-parent="#accordion">
                                 <div class="card-body">
                                         <div class="form-group row">
-                                            <label for="userOrder" class="col-md-3 col-form-label">Họ tên* :</label>
+                                            <form:hidden path="userID"/>
+                                            <label  class="col-md-3 col-form-label">Họ tên* :</label>
                                             <div class="col-md-6">
-                                                <form:input type="text" path="userOrder" class="form-control" placeholder="Mời nhập họ tên" />
+
+                                                <form:input type="text" path="name" class="form-control" placeholder="Mời nhập họ tên" />
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="shipAddress" class="col-md-3 col-form-label">Điạ chỉ*</label>
+                                            <label for="email" class="col-md-3 col-form-label">Email</label>
                                             <div class="col-md-6">
-                                                <form:textarea class="form-control" path="shipAddress" cols="3"  rows="3" />
+                                                <form:input class="form-control" path="email" cols="3"  rows="3" />
                                             </div>
                                         </div>
                                     <div class="form-group row">
+                                        <label for="phone" class="col-md-3 col-form-label">Số diện thoại</label>
+                                        <div class="col-md-6">
+                                            <form:input class="form-control" path="phone" cols="3"  rows="3" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="address" class="col-md-3 col-form-label">Địa chỉ</label>
+                                        <div class="col-md-6">
+                                            <form:input class="form-control" path="address" cols="3"  rows="3" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="note" class="col-md-3 col-form-label">Ghi chú</label>
+                                        <div class="col-md-6">
+                                            <form:input class="form-control" path="note" cols="56"  rows="8" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
                                         <label  class="col-md-3 col-form-label">Tổng tiền</label>
                                         <div class="col-md-6">
-                                            <c:forEach var="item5" items="${sessionScope.Shop}">
-                                              <%--  <form:textarea class="form-control" id="amount" path="amount" cols="30"  rows="3" value="${item5.value.totalPrice}" />--%>
-                                                <td class="text-center"><fmt:formatNumber type="number" groupingUsed="true" value="${item5}"/>₫</td>
-                                            </c:forEach>
-                                          <%-- <c:set var="lala" value="${sessionScope.totalPriceCart}" />--%>
+                                            <c:if test="${not empty sessionScope.totalPriceCart }">
 
+                                                <c:set var="view2" value="${sessionScope.totalPriceCart }"/>
+                                                <form:label type="text" path="total" class="form-control" value="${sessionScope.totalPriceCart }"><fmt:formatNumber type="number" groupingUsed="true" value="${view2}"/>₫</form:label>
+
+                                            </c:if>
+                                            <c:if test="${empty sessionScope.totalPriceCart }">
+
+                                                <form:label type="text" path="total" class="form-control">0₫</form:label>
+
+                                            </c:if>
 
                                         </div>
+                                     <%--       <c:set var="view2" value="${sessionScope.totalPriceCart }"/>
+                                            <form:label type="text" path="amount" class="form-control" value="${sessionScope.totalPriceCart }"><fmt:formatNumber type="number" groupingUsed="true" value="${view2}"/>₫</form:label>
+                                       --%>
                                     </div>
-                                    <div class="form-group row">
-                                        <label for="phoneNumber" class="col-md-3 col-form-label"> Số điện thoại</label>
-                                        <div class="col-md-6">
-                                            <form:textarea class="form-control" path="phoneNumber" cols="3"  rows="3" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="createdDate" class="col-md-3 col-form-label">Ngày đặt</label>
-                                        <div class="col-md-6">
-                                                <form:textarea class="form-control" path="createdDate" cols="3" rows="3" />
-                                        </div>
-                                    </div>
-                                        <input name="details" type="hidden">
                                         <div class="text-center">
-                                            <button class="btn theme-btn--dark1 btn--md ">Thanh toán</button>
+                                            <button type="submit" class="btn theme-btn--dark1 btn--md">Thanh toán</button>
                                         </div>
                                 </div>
                             </div>
@@ -100,22 +115,5 @@
         </div>
     </section>
 </form:form>
-<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-<script>
-    $( document ).ready(function() {
-        var total = $('#amount').val();
-        /*     var myJSON = JSON.stringify(se);
-            var tl = JSON.stringify(total);
-             var bl = parseInt(tl);*/
-        console.log(total);
-    });
-
-</script>
-<%--<<script>
-    function amount() {
-        var amount = document.getElementById("auntmo").value;
-        document.getElementById("amount").setAttribute('amount', amount);
-    }
-</script>--%>
 </body>
 </html>

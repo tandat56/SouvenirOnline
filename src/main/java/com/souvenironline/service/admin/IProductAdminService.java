@@ -12,10 +12,14 @@ public interface IProductAdminService {
     ProductDTO save(ProductDTO dto);
 
     void delete(long[] ids);
+
     int getTotalItem();
 
     ProductDTO findById(long id);
 
     List<ProductDTO> findAllProductHighlight();
     List<ProductDTO> findAllNewProduct();
+
+    public List<ProductDTO> getProductLimitDesc();
+
 }

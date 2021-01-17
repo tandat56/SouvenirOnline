@@ -60,15 +60,6 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1">Giảm giá
-                                (%)</label>
-                            <div class="col-sm-9">
-                                <form:input path="discount" cssClass="col-xs-10 col-sm-5"/>
-                            </div>
-                        </div>
-
-
-                        <div class="form-group">
                             <label class="col-sm-3 control-label no-padding-right" for="form-field-1">Giá: </label>
                             <div class="col-sm-9">
                                 <form:input path="price" cssClass="col-xs-10 col-sm-5"/>

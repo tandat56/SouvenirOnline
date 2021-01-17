@@ -11,12 +11,11 @@ import com.souvenironline.entity.UserEntity;
 
 
 @Controller(value = "userControllerOfWeb")
-public class UserController extends BaseController {
+public class UserController  {
 
     @RequestMapping(value = "/dang-ky", method = RequestMethod.GET)
     public ModelAndView Register(){
-        _mav.setViewName("web/user/register");
-        _mav.addObject("user", new UserEntity());
-        return _mav;
+        ModelAndView mav = new ModelAndView("web/user/register");
+        return mav;
     }
 }

@@ -62,11 +62,11 @@
 												<thead>
 													<tr>
 														<th><input type="checkbox" id="checkAll"></th>
-														<th>Tên sản phẩm</th>
+														<th>Nội dụng 1</th>
 														<th>Hình ảnh</th>
-														<th>Nội dung</th>
-														<th>Chú thích</th>
-														<th>Chỉnh sửa</th>
+														<th>Nội dung 2</th>
+														<th>Nội dung 3</th>
+														<th class="text-center">Chỉnh sửa Silde</th>
 													</tr>
 												</thead>
 												<tbody>
@@ -74,10 +74,10 @@
 														<tr>
 															<td><input type="checkbox" id="checkbox_${item.id}" value="${item.id}"></td>
 															<td>${item.name}</td>
-															<td>${item.image}</td>
+															<td class="text-center">${item.image}</td>
 															<td>${item.content}</td>
 															<td>${item.caption}</td>
-															<td>
+															<td class="text-center">
 																<c:url var="updateSildeURL" value="/quan-tri/silde/chinh-sua">
 																	<c:param name="id" value="${item.id}"/>															
 																</c:url>																

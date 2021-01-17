@@ -120,4 +120,15 @@ public class ProductAdminService implements IProductAdminService {
         }
         return models;
     }
+
+    @Override
+    public List<ProductDTO> getProductLimitDesc() {
+        List<ProductDTO> models = new ArrayList<>();
+        List<ProductEntity> entities = productRepository.findAllProductLimit();
+        for (ProductEntity item : entities) {
+            ProductDTO productDTO = productConverter.toDTO(item);
+            models.add(productDTO);
+        }
+        return models;
+    }
 }

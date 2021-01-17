@@ -22,6 +22,9 @@ public class UserImpl implements IUserService {
         UserEntity user = new UserEntity(dto.getId(), dto.getCreatedDate(), dto.getModifiedDate(), dto.getCreatedBy(), dto.getModifiedBy()
                 ,dto.getUserName(), dto.getPassword(), dto.getFullName(), dto.getPhoneNumber(), dto.getEmail(), dto.getCity(), dto.getAddress(), dto.getStatus(),
                 Arrays.asList(new RoleEntity("USER")));
+        user.setAddress(dto.getAddress());
+        user.setEmail(dto.getEmail());
+        user.setPhoneNumber(dto.getPhoneNumber());
         user.setPassword(BCrypt.hashpw(dto.getPassword(), BCrypt.gensalt(12)));
         return repo.save(user);
     }

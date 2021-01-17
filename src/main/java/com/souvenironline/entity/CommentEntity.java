@@ -1,16 +1,24 @@
 package com.souvenironline.entity;
 
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 
 @Getter
 @Setter
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@ToString
+@EntityListeners(AuditingEntityListener.class)
 @Table(name = "Comment")
-public class CommentEntity extends BaseEntity {
+public class CommentEntity  {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
 	@Column(name = "comment")
 	private String comment;

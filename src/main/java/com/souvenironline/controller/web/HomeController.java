@@ -4,10 +4,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.souvenironline.converter.ProductConverter;
 import com.souvenironline.dto.CartDTO;
 import com.souvenironline.dto.CategoryProductDTO;
 import com.souvenironline.dto.ProductDTO;
 import com.souvenironline.dto.SildeDTO;
+import com.souvenironline.entity.ProductEntity;
+import com.souvenironline.repository.ProductRepository;
 import com.souvenironline.service.web.ICartService;
 import com.souvenironline.service.web.ICategoryProductWebService;
 import com.souvenironline.service.web.IProductWebService;
@@ -27,13 +30,10 @@ import java.util.HashMap;
 import java.util.List;
 
 @Controller(value = "homeControllerOfWeb")
-public class HomeController extends BaseController {
+public class HomeController  {
 
     @Autowired
     private IProductWebService productWebService;
-
-    @Autowired
-    private MessageUtil messageUtil;
 
     @Autowired
     private SildeWebService sildeWebService;
@@ -41,8 +41,6 @@ public class HomeController extends BaseController {
     @Autowired
     private ICategoryProductWebService categoryProductWebService;
 
-    @Autowired
-    private ICartService cartService;
 
     @RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
     public ModelAndView homePage() {
@@ -50,13 +48,13 @@ public class HomeController extends BaseController {
         ModelAndView mav = new ModelAndView("web/home");
         ProductDTO model = new ProductDTO();
         ProductDTO model1 = new ProductDTO();
+        ProductDTO topSale = new ProductDTO();
         CategoryProductDTO cates = new CategoryProductDTO();
         CategoryProductDTO category0 = new CategoryProductDTO();
         CategoryProductDTO category1 = new CategoryProductDTO();
 
         cates.setListResult(categoryProductWebService.findAll());
         category0.setListResult(categoryProductWebService.findAllByLevel(0));
-//        category1.setListResult(categoryProductWebService.findAllByLevel(1));
         model.setListResult(productWebService.findAllProductHighlight());
         model1.setListResult(productWebService.findAllNewProduct());
 
@@ -68,6 +66,7 @@ public class HomeController extends BaseController {
         mav.addObject("productHighlight", model);
         mav.addObject("newProduct", model1);
         mav.addObject("silde", silde);
+        mav.addObject("topSale", topSale);
         return mav;
     }
 

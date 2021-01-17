@@ -9,7 +9,5 @@ import java.util.List;
 
 public interface BlogRepository extends JpaRepository<BlogEntity, Long> {
 
-/*    @Query(value ="select * from Blog as b where b.categoryCode = ?1 " ,nativeQuery = true)
-    List<BlogEntity> findAllByCode(String code);*/
 
 }

@@ -1,6 +1,11 @@
 package com.souvenironline.entity;
 
 import lombok.*;
+import org.springframework.data.annotation.CreatedBy;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedBy;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -10,12 +15,18 @@ import javax.persistence.*;
 
 @Getter
 @Setter
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name = "User")
+@Builder
 @ToString
-public class UserEntity extends BaseEntity {
+@EntityListeners(AuditingEntityListener.class)
+@Table(name = "User")
+public class UserEntity  {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
 	@Column(name = "username")
 	private String userName;
@@ -40,6 +51,22 @@ public class UserEntity extends BaseEntity {
 
 	@Column
 	private Integer status;
+
+	@Column(name = "createddate", updatable = false)
+	@CreatedDate
+	private Date createdDate;
+
+	@Column(name = "modifieddate", updatable = true)
+	@LastModifiedDate
+	private Date modifiedDate;
+
+	@Column(name = "createdby", updatable = false)
+	@CreatedBy
+	private String createdBy;
+
+	@Column(name = "modifiedby", updatable = true)
+	@LastModifiedBy
+	private String modifiedBy;
 
 	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@ToString.Exclude

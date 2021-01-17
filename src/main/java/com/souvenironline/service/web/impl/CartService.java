@@ -1,10 +1,8 @@
 package com.souvenironline.service.web.impl;
 
 import com.souvenironline.converter.ProductConverter;
-import com.souvenironline.dto.BillDetailDTO;
 import com.souvenironline.dto.CartDTO;
 import com.souvenironline.dto.ProductDTO;
-import com.souvenironline.entity.ProductEntity;
 import com.souvenironline.repository.ProductRepository;
 import com.souvenironline.service.web.ICartService;
 import com.souvenironline.service.web.IProductWebService;
