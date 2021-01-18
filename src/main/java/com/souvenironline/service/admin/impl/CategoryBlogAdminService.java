@@ -2,10 +2,13 @@ package com.souvenironline.service.admin.impl;
 
 import com.souvenironline.converter.CategoryBlogConverter;
 import com.souvenironline.dto.CategoryBlogDTO;
+import com.souvenironline.dto.CategoryProductDTO;
 import com.souvenironline.entity.CategoryBlogEntity;
+import com.souvenironline.entity.CategoryProductEntity;
 import com.souvenironline.repository.CategoryBlogRepository;
 import com.souvenironline.service.admin.ICategoryBlogAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -65,4 +68,26 @@ public class CategoryBlogAdminService implements ICategoryBlogAdminService {
         }
         return models;
     }
+
+    @Override
+    public List<CategoryBlogDTO> findAlll(Pageable pageable) {
+        List<CategoryBlogDTO> models = new ArrayList<>();
+        List<CategoryBlogEntity> entities = categoryBlogRepository.findAll(pageable).getContent();
+        for (CategoryBlogEntity item : entities) {
+            CategoryBlogDTO order = categoryBlogConverter.toDTO(item);
+            models.add(order);
+        }
+        return models;
+    }
+
+    @Override
+    public int getTotalItem() {
+        return (int) categoryBlogRepository.count();
+    }
+
+    @Override
+    public CategoryBlogDTO findById(long id) {
+        return categoryBlogConverter.toDTO(categoryBlogRepository.findOne(id));
+    }
+
 }

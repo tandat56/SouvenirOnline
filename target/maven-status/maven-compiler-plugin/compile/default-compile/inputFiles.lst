@@ -14,22 +14,17 @@ C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service\admin\ICategoryBlogAdminService.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\controller\web\CartController.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\dto\CategoryBlogDTO.java
-C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\dto\BillDTO.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\dto\ProductDTO.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\controller\web\BlogController.java
-C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\entity\BillEntity.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service\admin\IBlogAdminService.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\entity\CategoryProductEntity.java
-C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\converter\BillConverter.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\converter\ProductConverter.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service\admin\impl\ProductAdminService.java
-C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\entity\BillDetailEntity.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\entity\CommentEntity.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\dto\MyUser.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service\admin\impl\AccountServiceImpl.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\controller\web\CompareController.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service\web\IOrderService.java
-C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\repository\BillRepository.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\repository\OrderDetailRepository.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\repository\BlogRepository.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\api\admin\CategoryBlogAPI.java
@@ -39,7 +34,6 @@ C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\entity\
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\entity\SildeEntity.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service\admin\ISildeAdminService.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service\web\impl\BlogWebService.java
-C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\repository\BillDetailService.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\repository\ReportRepository.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\dto\ColorsDTO.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\api\admin\ProductAPI.java
@@ -58,12 +52,10 @@ C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\control
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\converter\SildeConverter.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\api\admin\UserAPI.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\entity\OrderEntity.java
-C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\repository\BillDetailRepository.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\dto\CartDTO.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\config\JPAConfig.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service\web\ICategoryBlogWebService.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service\web\IOrderDetailService.java
-C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\dto\BillDetailDTO.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service\admin\impl\BlogAdminService.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service\web\impl\UserImpl.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\controller\web\WishtListController.java
@@ -76,10 +68,8 @@ C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\entity\
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\dto\OrderDetailCreateModifyDTO.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\dto\CategoryProductDTO.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\controller\admin\ProductController.java
-C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\converter\BillDetailConverter.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\repository\UserRepository.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\util\UploadFileUtils.java
-C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\controller\admin\ReportController.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\controller\web\UserController.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\controller\web\SingleBlogController.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\controller\admin\HomeController.java
@@ -98,7 +88,6 @@ C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\control
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\repository\SildeRepository.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\util\SecurityUtils.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service\web\impl\OrderEntityService.java
-C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\entity\TopSale.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service\admin\IProductAdminService.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service\web\ISildeWebService.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\converter\BlogConverter.java
@@ -107,7 +96,6 @@ C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\config\JpaAuditingConfig.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service\web\ICategoryProductWebService.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\api\admin\OrderAPI.java
-C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\entity\BaseEntity.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\controller\web\AboutController.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\converter\OrderDetailMapper.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\controller\admin\UserController.java
@@ -122,5 +110,6 @@ C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\util\ReadFileUtils.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\service\web\IProductWebService.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\api\web\Register.java
+C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\controller\admin\CategoryProductController.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\repository\CategoryBlogRepository.java
 C:\Users\datlt\Documents\SouvenirOnline\src\main\java\com\souvenironline\controller\admin\BlogController.java

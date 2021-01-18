@@ -66,9 +66,9 @@ cc<%@include file="/common/taglib.jsp"%>
 														<th>NAME thể loại</th>
 														<th>Người tạo</th>
 														<th>Ngày tạo</th>
-														<th>Thao tác</th>
 														<th>Người sửa</th>
 														<th>Ngày sửa</th>
+														<th>Thao tác</th>
 													</tr>
 												</thead>
 												<tbody>

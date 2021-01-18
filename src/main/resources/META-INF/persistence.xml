@@ -6,8 +6,6 @@
 	<persistence-unit name="persistence-data">
 		<class>com.souvenironline.entity.UserEntity</class>
 		<class>com.souvenironline.entity.RoleEntity</class>
-		<class>com.souvenironline.entity.BillDetailEntity</class>
-		<class>com.souvenironline.entity.BillEntity</class>
 		<class>com.souvenironline.entity.CategoryBlogEntity</class>
 		<class>com.souvenironline.entity.BlogEntity</class>
 		<class>com.souvenironline.entity.CategoryProductEntity</class>
@@ -15,11 +13,8 @@
 		<class>com.souvenironline.entity.CommentEntity</class>
 		<class>com.souvenironline.entity.ColorsEntity</class>
 		<class>com.souvenironline.entity.SildeEntity</class>
-		<class>com.souvenironline.entity.BillEntity</class>
-		<class>com.souvenironline.entity.BillDetailEntity</class>
+		<class>com.souvenironline.entity.OrderDetailEntity</class>
 		<class>com.souvenironline.entity.OrderEntity</class>
-		<class>com.souvenironline.entity.BillDetailEntity</class>
-
 	</persistence-unit>
 </persistence>
 

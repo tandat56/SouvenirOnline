@@ -39,7 +39,7 @@ public class ProductEntity  {
 	@Column(name = "more_image")
 	private String moreImage;
 
-	@Column(name = "detail")
+	@Column(name = "detail",  columnDefinition = "TEXT")
 	private String detail;
 
 	@Column(name = "sale")
@@ -83,9 +83,6 @@ public class ProductEntity  {
 	@LastModifiedBy
 	private String modifiedBy;
 
-
-
-
 	@OneToMany(mappedBy = "productComment")
 	private List<CommentEntity> comments = new ArrayList<>();
 
@@ -95,7 +92,7 @@ public class ProductEntity  {
 	private CategoryProductEntity categoryProduct;
 
 	@OneToMany(mappedBy = "product")
-	private List<BillDetailEntity> billDetails = new ArrayList<>();
+	private List<OrderDetailEntity> orderdetail = new ArrayList<>();
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "productwarehouseid")

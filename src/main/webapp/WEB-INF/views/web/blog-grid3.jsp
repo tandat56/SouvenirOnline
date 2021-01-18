@@ -72,33 +72,5 @@
 </section>
 <!-- product tab end -->
 
-<!-- news-letter start -->
-<section class="news-letter-section theme1 bg-white">
-    <div class=" container">
-        <div class="news-letter-wrapper pt-65 pb-65">
-            <div class="row">
-                <div class="col-12">
-                    <div class="form-title mb-30 text-center">
-                        <p class="text mb-10">Special Ofers For Subscribers</p>
-                        <h4 class="title text text-capitalize">Ten Percent Member Discount</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <form class="news-letter-form position-relative" action="
-                        http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef" target="_blank" method="post">
-                        <input class="form-control" type="text" placeholder="Your email address">
-                        <button class="btn news-letter-btn text-uppercase" type="submit">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- news-letter end -->
-
-
-
 </body>
 </html>

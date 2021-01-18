@@ -34,7 +34,7 @@
                                 Số lượng hóa đơn
                                 <span class="pull-right position-absolute" style="margin-left: 15px" >${order}</span>
                             </h3>
-                            <i class="fa fa-credit-card text-white fa fa-2x" style="margin-left: 60px"></i>
+                            <i class="fa fa-credit-card text-white fa fa-2x" ></i>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">

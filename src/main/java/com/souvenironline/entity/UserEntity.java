@@ -91,8 +91,8 @@ public class UserEntity  {
 	@ToString.Exclude
 	private List<CommentEntity> comments = new ArrayList<>();
 
-	@OneToMany(mappedBy = "user")
+	@OneToMany(mappedBy = "user1")
 	@ToString.Exclude
-	private List<BillEntity> bills = new ArrayList<>();
+	private List<OrderEntity> bills = new ArrayList<>();
 
 }

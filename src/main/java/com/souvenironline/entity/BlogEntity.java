@@ -32,10 +32,10 @@ public class BlogEntity {
 	@Column(name = "thumbnail")
 	private String thumbnail;
 
-	@Column(name = "content")
+	@Column(name = "content",  columnDefinition = "TEXT")
 	private String content;
 
-	@Column(name = "short_description")
+	@Column(name = "short_description",  columnDefinition = "TEXT")
 	private String shortDescription;
 
 	@Column(name = "category_code")

@@ -24,7 +24,7 @@ public interface ProductRepository extends JpaRepository<ProductEntity, Long> {
     ProductEntity findById(long id);
 
 
-    @Query(value = "select * from Product ORDER BY id desc limit 8", nativeQuery = true)
+    @Query(value = "select * from Product GROUP BY id ORDER BY id desc limit 8", nativeQuery = true)
     public List<ProductEntity> getAllIdDescLimit();
 
 

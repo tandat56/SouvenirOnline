@@ -69,5 +69,10 @@ public class OrderEntity {
 	
 	@OneToMany(mappedBy = "order")
 	List<OrderDetailEntity> orderDetails = new ArrayList<>();
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "userid_order")
+	@ToString.Exclude
+	private UserEntity user1;
 	
 }

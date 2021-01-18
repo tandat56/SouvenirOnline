@@ -124,7 +124,7 @@ public class ProductAdminService implements IProductAdminService {
     @Override
     public List<ProductDTO> getProductLimitDesc() {
         List<ProductDTO> models = new ArrayList<>();
-        List<ProductEntity> entities = productRepository.findAllProductLimit();
+        List<ProductEntity> entities = productRepository.getAllIdDescLimit();
         for (ProductEntity item : entities) {
             ProductDTO productDTO = productConverter.toDTO(item);
             models.add(productDTO);

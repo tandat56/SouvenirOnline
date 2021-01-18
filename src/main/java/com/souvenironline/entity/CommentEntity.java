@@ -20,12 +20,11 @@ public class CommentEntity  {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Column(name = "comment")
+	@Column(name = "comment",  columnDefinition = "TEXT")
 	private String comment;
 
 	@Column(name = "status")
 	private Integer status;
-
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "blogid")
